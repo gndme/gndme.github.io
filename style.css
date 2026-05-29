@@ -243,9 +243,11 @@ body::-webkit-scrollbar { display: none; }
     font-size: 0.9rem;
 }
 .directory-list li { margin-bottom: 0.5rem; }
-.directory-list a {
-    color: var(--text-main);
-    text-decoration: none;
+.directory-list a,
+.directory-list a:visited,
+.directory-list a:active {
+    color: var(--text-main) !important;
+    text-decoration: none !important;
     transition: all 0.3s ease;
     display: inline-block;
     position: relative;
