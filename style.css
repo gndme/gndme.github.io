@@ -359,6 +359,8 @@ body::-webkit-scrollbar { display: none; }
 .module-name {
     font-family: var(--font-heading);
     font-size: 1.8rem;
+    line-height: 1.2;
+    min-height: 4.4rem; /* Exactly space for 2 lines */
     margin-bottom: 1rem;
 }
 
