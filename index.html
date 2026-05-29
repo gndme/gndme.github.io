@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gndme | Founder</title>
+    <title>GNDME // SYS.CORE</title>
     <meta name="description" content="I am Gndme, the engineer behind Arsvix, Fixory Lab, and Tuctac Studio. Building bridges between hardware and software.">
     
     <!-- SEO & Open Graph Tags -->
-    <meta property="og:title" content="Gndme | Founder">
-    <meta property="og:description" content="I am Gndme, the engineer behind Arsvix, Fixory Lab, and Tuctac Studio.">
+    <meta property="og:title" content="GNDME // FOUNDER">
+    <meta property="og:description" content="Engineering the ecosystem: Arsvix, Fixory Lab, and Tuctac Studio.">
     <meta property="og:type" content="website">
     
-    <!-- Fonts -->
+    <!-- Fonts: JetBrains Mono for that technical feel, and Archivo Black for solid headers -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
@@ -24,120 +24,174 @@
     {
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Lợi Mai Công Trung",
-      "alternateName": "Gndme",
-      "jobTitle": "Founder",
+      "name": "gndme",
+      "alternateName": ["Lợi Mai Công Trung", "TrungLMC"],
+      "jobTitle": "Founder & Systems Engineer",
       "worksFor": [
-        {
-          "@type": "Organization",
-          "name": "Arsvix"
-        },
-        {
-          "@type": "Organization",
-          "name": "Fixory Lab"
-        }
+        { "@type": "Organization", "name": "Arsvix" },
+        { "@type": "Organization", "name": "Fixory Lab" },
+        { "@type": "Organization", "name": "Tuctac Studio" },
+        { "@type": "Organization", "name": "Tan Thanh Dung" }
       ]
     }
     </script>
 </head>
-<body>
+<body class="loading">
 
-    <!-- Background Effects -->
-    <div class="bg-glow"></div>
-    <div class="grid-overlay"></div>
+    <!-- Custom Cursor -->
+    <div id="cursor" class="custom-cursor">
+        <div class="cursor-crosshair"></div>
+        <div class="cursor-label">IDLE</div>
+    </div>
+
+    <!-- Technical Grid Background -->
+    <div class="tech-grid"></div>
+    
+    <!-- Frame Borders (Corners) -->
+    <div class="frame-corner frame-tl"></div>
+    <div class="frame-corner frame-tr"></div>
+    <div class="frame-corner frame-bl"></div>
+    <div class="frame-corner frame-br"></div>
+
+    <div class="sys-status">
+        <span class="status-dot"></span>
+        <span class="status-text scramble-text" data-text="SYS.ONLINE // 192.168.1.X">SYS.ONLINE // 192.168.1.X</span>
+    </div>
 
     <header class="navbar">
-        <div class="nav-container">
-            <div class="logo">Gndme<span>.</span></div>
-            <nav class="nav-links">
-                <a href="#about">About</a>
-                <a href="#ecosystem">Ecosystem</a>
-                <a href="#contact">Contact</a>
-            </nav>
+        <div class="logo scramble-text" data-text="GNDME">GNDME</div>
+        <div class="nav-metrics">
+            <span class="metric-line">UPTIME: <span id="uptime">00:00:00</span></span>
+            <span class="metric-line">LAT: 10.7626° N / LON: 106.6601° E</span>
         </div>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="hero">
-            <div class="hero-content">
-                <p class="pronunciation">/ˈɡraʊmi/</p>
-                <h1 class="title">Founder <br>& Creator</h1>
-                <p class="subtitle">I am Gndme, the engineer behind the systems.</p>
-                <div class="hero-cta">
-                    <a href="#ecosystem" class="btn btn-primary">Explore My Work</a>
+        <section id="hero" class="hero section-padding">
+            <div class="hero-wrapper">
+                <div class="hero-left">
+                    <p class="pronunciation">[ PHONETIC: /ˈɡraʊmi/ ]</p>
+                    <h1 class="title scramble-title" data-text="ARCHITECT.">ARCHITECT.</h1>
+                    <h1 class="title title-outline scramble-title delay-1" data-text="ENGINEER.">ENGINEER.</h1>
+                    <h1 class="title scramble-title delay-2" data-text="FOUNDER.">FOUNDER.</h1>
+                </div>
+                <div class="hero-right">
+                    <div class="data-block">
+                        <div class="data-label">IDENTITY_MATRIX</div>
+                        <p class="data-value scramble-text" data-text="Bridging the gap between raw hardware capabilities and high-level software abstraction.">Bridging the gap between raw hardware capabilities and high-level software abstraction.</p>
+                    </div>
+                    <div class="data-block">
+                        <div class="data-label">ACTIVE_DIRECTORIES</div>
+                        <ul class="directory-list">
+                            <li>> ./Arsvix</li>
+                            <li>> ./Fixory_Lab</li>
+                            <li>> ./Tuctac_Studio</li>
+                            <li>> ./Tan_Thanh_Dung</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Ecosystem Section (The Spokes) -->
-        <section id="ecosystem" class="ecosystem">
-            <h2 class="section-title">The Ecosystem</h2>
-            <p class="section-subtitle">Projects designed and architected with precision.</p>
+        <div class="divider-line"></div>
 
-            <div class="projects-grid">
+        <!-- Ecosystem Section -->
+        <section id="ecosystem" class="ecosystem section-padding">
+            <div class="section-header">
+                <h2 class="section-title scramble-text" data-text="[ ECOSYSTEM_MODULES ]">[ ECOSYSTEM_MODULES ]</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="modules-grid">
                 
-                <!-- Project 1: Arsvix -->
-                <div class="project-card glass">
-                    <div class="card-header">
-                        <h3>Arsvix</h3>
-                        <span class="badge">Tech / Automation</span>
+                <!-- Module: Arsvix -->
+                <article class="module-card" data-hover-label="RUN_ARSVIX.EXE">
+                    <div class="card-borders"></div>
+                    <div class="module-meta">
+                        <span class="mod-id">MOD-01</span>
+                        <span class="mod-cat">CV / AUTOMATION</span>
                     </div>
-                    <p class="card-desc">Advanced computer vision and automation solutions. Transforming complex operations into streamlined digital workflows.</p>
-                    <div class="card-footer">
-                        <span class="tagline">Arsvix | Powered by Gndme</span>
+                    <h3 class="module-name">ARSVIX</h3>
+                    <p class="module-desc">Advanced computer vision pipelines. Transforming physical observations into structured digital intelligence.</p>
+                    <div class="module-footer">
+                        <span class="status-badge">STATUS: ACTIVE</span>
                     </div>
-                </div>
+                </article>
 
-                <!-- Project 2: Fixory -->
-                <div class="project-card glass">
-                    <div class="card-header">
-                        <h3>Fixory Lab</h3>
-                        <span class="badge">Hardware / Repair</span>
+                <!-- Module: Fixory Lab -->
+                <article class="module-card" data-hover-label="RUN_FIXORY.EXE">
+                    <div class="card-borders"></div>
+                    <div class="module-meta">
+                        <span class="mod-id">MOD-02</span>
+                        <span class="mod-cat">HW / REPAIR</span>
                     </div>
-                    <p class="card-desc">Premium hardware repair and custom modding laboratory. Focused on precision recovery for mechanical keyboards and gaming gears.</p>
-                    <div class="card-footer">
-                        <span class="tagline">Fixory Lab | by Gndme</span>
+                    <h3 class="module-name">FIXORY LAB</h3>
+                    <p class="module-desc">Precision hardware intervention. Specialized laboratory for mechanical keyboards and peripheral modding.</p>
+                    <div class="module-footer">
+                        <span class="status-badge">STATUS: ACTIVE</span>
                     </div>
-                </div>
+                </article>
 
-                <!-- Project 3: Tuctac Studio -->
-                <div class="project-card glass">
-                    <div class="card-header">
-                        <h3>Tuctac Studio</h3>
-                        <span class="badge">Creative</span>
+                <!-- Module: Tuctac Studio -->
+                <article class="module-card" data-hover-label="RUN_TUCTAC.EXE">
+                    <div class="card-borders"></div>
+                    <div class="module-meta">
+                        <span class="mod-id">MOD-03</span>
+                        <span class="mod-cat">CREATIVE / PROTOTYPE</span>
                     </div>
-                    <p class="card-desc">A creative hub where technical precision meets aesthetic design. Prototyping and crafting unique physical and digital experiences.</p>
-                    <div class="card-footer">
-                        <span class="tagline">Tuctac Studio | by Gndme</span>
+                    <h3 class="module-name">TUCTAC STUDIO</h3>
+                    <p class="module-desc">Creative prototyping sandbox. Where technical constraints meet aesthetic exploration.</p>
+                    <div class="module-footer">
+                        <span class="status-badge">STATUS: ACTIVE</span>
                     </div>
-                </div>
+                </article>
 
-                <!-- Project 4: Tan Thanh Dung (Use Case) -->
-                <div class="project-card glass">
-                    <div class="card-header">
-                        <h3>Tan Thanh Dung</h3>
-                        <span class="badge">Manufacturing Operations</span>
+                <!-- Module: Tan Thanh Dung -->
+                <article class="module-card" data-hover-label="RUN_INFRA.EXE">
+                    <div class="card-borders"></div>
+                    <div class="module-meta">
+                        <span class="mod-id">MOD-04</span>
+                        <span class="mod-cat">MFG / INFRASTRUCTURE</span>
                     </div>
-                    <p class="card-desc">A custom-architected Manufacturing Execution System tailored for industrial operations. Elevating factory efficiency.</p>
-                    <div class="card-footer">
-                        <span class="tagline">Infrastructure | Architected by Gndme</span>
+                    <h3 class="module-name">TAN THANH DUNG</h3>
+                    <p class="module-desc">Manufacturing Execution System. Custom-architected infrastructure optimizing industrial workflows.</p>
+                    <div class="module-footer">
+                        <span class="status-badge">STATUS: DEPLOYED</span>
                     </div>
-                </div>
+                </article>
 
             </div>
         </section>
     </main>
 
-    <footer id="contact" class="footer">
-        <div class="footer-content">
-            <h2>Let's build something solid.</h2>
-            <div class="social-links">
-                <a href="mailto:gndme@gmail.com" class="social-link">Email</a>
-                <a href="#" class="social-link">GitHub</a>
-                <a href="#" class="social-link">LinkedIn</a>
+    <div class="divider-line"></div>
+
+    <footer id="contact" class="footer section-padding">
+        <div class="footer-wrapper">
+            <div class="terminal-box">
+                <div class="terminal-header">
+                    <span class="term-btn"></span>
+                    <span class="term-btn"></span>
+                    <span class="term-btn"></span>
+                    <span class="term-title">root@gndme:~</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="term-line"><span class="prompt">gndme@sys:~$</span> ping contact.gndme.io</p>
+                    <p class="term-line">PING contact.gndme.io (127.0.0.1): 56 data bytes</p>
+                    <p class="term-line">Connection established.</p>
+                    <p class="term-line"><span class="prompt">gndme@sys:~$</span> <a href="mailto:gndme@gmail.com" class="term-link">initiate_mail_protocol()</a></p>
+                    <p class="term-line"><span class="prompt">gndme@sys:~$</span> <a href="https://github.com/gndme" target="_blank" class="term-link">git clone https://github.com/gndme</a></p>
+                    <p class="term-line cursor-blink">_</p>
+                </div>
             </div>
-            <p class="copyright">© 2026 Gndme. Built with precision by Gndme (/ˈɡraʊmi/).</p>
+            
+            <div class="footer-meta">
+                <div class="barcode">
+                    |||||||| |||||| | |||||||| |||||
+                </div>
+                <p class="copyright">SYS.BUILD: 2026 // MAINTAINER: GNDME (/ˈɡraʊmi/)</p>
+            </div>
         </div>
     </footer>
 
