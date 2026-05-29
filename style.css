@@ -246,8 +246,10 @@ body::-webkit-scrollbar { display: none; }
 .directory-list a,
 .directory-list a:visited,
 .directory-list a:active {
-    color: var(--text-main) !important;
+    color: var(--accent-alt) !important;
     text-decoration: none !important;
+    font-weight: bold;
+    letter-spacing: 1px;
     transition: all 0.3s ease;
     display: inline-block;
     position: relative;
@@ -257,7 +259,7 @@ body::-webkit-scrollbar { display: none; }
     position: absolute;
     bottom: -2px; left: 0;
     width: 100%;
-    height: 1px;
+    height: 2px;
     background: var(--accent);
     transform: scaleX(0);
     transform-origin: left;
@@ -274,13 +276,13 @@ body::-webkit-scrollbar { display: none; }
     margin-top: 1.5rem !important;
 }
 .cta-link a {
-    color: var(--accent-alt) !important;
+    color: var(--accent) !important;
 }
 .cta-link a::after {
-    background: var(--accent-alt) !important;
+    background: var(--accent) !important;
 }
 .cta-link a:hover {
-    text-shadow: 0 0 8px rgba(0, 229, 255, 0.4) !important;
+    text-shadow: 0 0 8px rgba(212, 255, 0, 0.4) !important;
 }
 
 /* =========================================
