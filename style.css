@@ -450,17 +450,42 @@ body::-webkit-scrollbar { display: none; }
 
 .footer-meta {
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 .barcode {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 2rem;
-    color: var(--text-dim);
-    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    color: var(--text-main);
+    margin-bottom: 0.8rem;
     letter-spacing: -2px;
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+}
+.barcode::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--accent-alt);
+    box-shadow: 0 0 10px var(--accent-alt), 0 0 20px var(--accent-alt);
+    animation: scan-laser 2.5s ease-in-out infinite alternate;
+    opacity: 0.8;
+}
+@keyframes scan-laser {
+    0% { top: 0%; opacity: 0; }
+    15% { opacity: 1; }
+    85% { opacity: 1; }
+    100% { top: 100%; opacity: 0; }
 }
 .copyright {
     font-size: 0.7rem;
     color: var(--text-dim);
+    letter-spacing: 1px;
+    border-top: 1px dashed var(--border-active);
+    padding-top: 8px;
 }
 
 /* =========================================
