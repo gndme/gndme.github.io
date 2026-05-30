@@ -455,8 +455,8 @@ body::-webkit-scrollbar { display: none; }
     align-items: flex-end;
 }
 .barcode {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2.2rem;
+    font-family: 'Libre Barcode 39', 'Courier New', Courier, monospace;
+    font-size: 4rem;
     color: var(--text-main);
     margin-bottom: 0.8rem;
     letter-spacing: -2px;
