@@ -467,19 +467,85 @@ body::-webkit-scrollbar { display: none; }
    RESPONSIVE & TOUCH DEVICES
    ========================================= */
 @media (max-width: 900px) {
+    :root {
+        --pad-section: 4rem;
+        --pad-global: 1.5rem;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 80px;
+        gap: 15px;
+    }
+    
+    .nav-metrics {
+        text-align: center;
+    }
+
     .hero-wrapper {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 3rem;
+        text-align: center;
     }
+    
+    .data-block {
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .footer-wrapper {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+    
     .frame-corner { display: none; }
     
     /* Make title fit on mobile */
     .title {
-        font-size: clamp(2.5rem, 10vw, 4rem);
+        font-size: clamp(2.5rem, 8vw, 4rem);
+    }
+    
+    .sys-status {
+        width: 100%;
+        justify-content: center;
+        top: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        --pad-section: 3rem;
+        --pad-global: 1rem;
+    }
+    
+    .modules-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .module-name {
+        font-size: 1.5rem;
+        min-height: auto; /* Allow natural height on tiny screens */
+    }
+    
+    .module-desc {
+        font-size: 0.85rem;
+    }
+    
+    .footer-meta {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    .barcode {
+        font-size: 1.5rem;
+    }
+    
+    .terminal-body {
+        padding: 1rem;
+        font-size: 0.75rem;
     }
 }
 
