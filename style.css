@@ -456,7 +456,7 @@ body::-webkit-scrollbar { display: none; }
 }
 .barcode {
     font-family: 'Libre Barcode 39', 'Courier New', Courier, monospace;
-    font-size: clamp(1rem, 3vw, 2.5rem); /* Dynamic sizing for long barcodes */
+    font-size: 4rem;
     color: var(--text-main);
     margin-bottom: 0.8rem;
     letter-spacing: normal;
@@ -464,8 +464,6 @@ body::-webkit-scrollbar { display: none; }
     position: relative;
     display: inline-block;
     padding: 0 10px;
-    white-space: nowrap;
-    max-width: 100%;
 }
 .barcode::after {
     content: '';
