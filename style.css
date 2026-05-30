@@ -457,24 +457,21 @@ body::-webkit-scrollbar { display: none; }
 .barcode {
     font-family: 'Libre Barcode 39', 'Courier New', Courier, monospace;
     font-size: 4rem;
-    color: #000000; /* Black bars for scanner contrast */
-    background: #f4f4f4; /* White paper sticker background */
+    color: var(--text-main);
     margin-bottom: 0.8rem;
     letter-spacing: normal;
     font-weight: 400;
     position: relative;
     display: inline-block;
-    padding: 5px 25px; /* Add some padding so it looks like a label */
-    border-radius: 2px;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.1), 0 0 15px rgba(255, 255, 255, 0.1);
+    padding: 0 10px;
 }
 .barcode::after {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0;
     height: 2px;
-    background: rgba(255, 0, 0, 0.9); /* Red laser */
-    box-shadow: 0 0 8px rgba(255, 0, 0, 0.8), 0 0 15px rgba(255, 0, 0, 0.6);
+    background: var(--accent-alt);
+    box-shadow: 0 0 10px var(--accent-alt), 0 0 20px var(--accent-alt);
     animation: scan-laser 2.5s ease-in-out infinite alternate;
     opacity: 0.8;
 }
