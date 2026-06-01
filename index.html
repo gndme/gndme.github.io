@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html lang="vi">
+<!--
+  ========================================================
+  ARCHITECTURE NOTE - gndme
+  --------------------------------------------------------
+  This frontend is strictly static (Vanilla HTML/CSS/JS) 
+  to guarantee near 0ms Time To First Byte (TTFB). 
+  
+  Heavy data structures and case studies are dynamically 
+  fetched via AJAX from the /data API to maintain a 
+  clean DOM tree and optimize the initial render path.
+  ========================================================
+-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

@@ -1,7 +1,14 @@
-/* =========================================
+/* 
+   ========================================================
    GNDME SYS.CORE // STYLE MATRIX
+   --------------------------------------------------------
    AESTHETIC: TECHNICAL MINIMALISM / BRUTALISM
-   ========================================= */
+   
+   - Approach: Utility-lite, focused on pure CSS variables.
+   - Vitals: Zero heavy frameworks to ensure max performance.
+   - Typography: Mono-spaced hierarchy for the terminal vibe.
+   ========================================================
+*/
 
    :root {
     /* Color Palette */

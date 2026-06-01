@@ -1,5 +1,11 @@
 /**
- * GNDME SYS.CORE // INTERACTION MODULE
+ * ========================================================
+ * GNDME SYS.CORE // INTERACTION & DATA MODULE
+ * --------------------------------------------------------
+ * - Custom cursor tracking via requestAnimationFrame (60fps).
+ * - IntersectionObserver for lazy-triggering UI effects.
+ * - Modular Modal system via AJAX fetch to keep DOM light.
+ * ========================================================
  */
 
 document.addEventListener('DOMContentLoaded', () => {
