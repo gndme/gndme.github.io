@@ -2,29 +2,29 @@
         <div class="cs-meta">Architected & Operated by: CW Group (gndme) | Category: Manufacturing Execution System</div>
 
         <h3 class="cs-heading">1. EXECUTIVE SUMMARY</h3>
-        <p class="cs-text">Hệ sinh thái số hóa toàn diện bao gồm thương mại điện tử, quản trị nội bộ và điều hành sản xuất. Thiết kế theo kiến trúc Micro-Frontends & API-First, đảm bảo khả năng mở rộng, tính linh hoạt và tối ưu hóa UX & GEO SEO.</p>
+        <p class="cs-text">A comprehensive digital ecosystem encompassing e-commerce, back-office administration, and manufacturing execution. Designed with a Micro-Frontends & API-First architecture to ensure infinite scalability, operational flexibility, and localized GEO SEO dominance.</p>
 
         <h3 class="cs-heading">2. BUSINESS ARCHITECTURE</h3>
         <div class="cs-grid">
             <div class="cs-card">
-                <h4>[ Khách hàng B2B/B2C ]</h4>
+                <h4>[ B2B/B2C Clients ]</h4>
                 <ul>
-                    <li>Trải nghiệm mua sắm trực quan</li>
-                    <li>Tra cứu thông tin nhựa siêu tốc</li>
+                    <li>Intuitive shopping experience</li>
+                    <li>High-speed product catalog</li>
                 </ul>
             </div>
             <div class="cs-card">
-                <h4>[ Vận hành Back-office ]</h4>
+                <h4>[ Back-Office ]</h4>
                 <ul>
-                    <li>Số hóa quy trình đơn hàng</li>
-                    <li>Quản lý danh mục & Khách hàng</li>
+                    <li>Digitized order fulfillment</li>
+                    <li>Customer & Catalog management</li>
                 </ul>
             </div>
             <div class="cs-card">
-                <h4>[ Khối Sản xuất Nhà máy ]</h4>
+                <h4>[ Factory Floor ]</h4>
                 <ul>
-                    <li>Theo dõi tiến độ, vật tư</li>
-                    <li>Ứng dụng nghiệp vụ phân xưởng</li>
+                    <li>Material & progress tracking</li>
+                    <li>Dedicated manufacturing apps</li>
                 </ul>
             </div>
         </div>
@@ -32,19 +32,19 @@
         <h3 class="cs-heading">3. APPLICATION ARCHITECTURE (MICRO-FRONTENDS)</h3>
         <div class="cs-code-block">
 <pre>
-[fe-public]   -> Tối ưu SEO (SSR/SSG), tải trang siêu tốc, JSON-LD chuẩn GEO SEO.
-[fe-admin]    -> Tối ưu CSR (Tailwind CSS Sidebar), quản lý lượng lớn dữ liệu nội bộ.
-[plastic_mfg] -> Industrial UX chống lỗi (Poka-yoke) dùng trên di động & máy công nghiệp.
--------------------------------------------------------------------------------------
-[Core API]    -> RESTful/GraphQL (Single Source of Truth) xử lý Logic và phân quyền.
+[ Storefront Portal ]     -> SEO Optimized (SSR/SSG), sub-second load times, JSON-LD schema.
+[ Management Console ]    -> CSR optimized (Tailwind Sidebar), handles massive internal datasets.
+[ Manufacturing Client ]  -> Industrial UX with Poka-yoke error proofing for mobile/factory screens.
+--------------------------------------------------------------------------------------------------
+[ Core API Gateway ]      -> RESTful/GraphQL Single Source of Truth handling logic and authorization.
 </pre>
         </div>
 
         <h3 class="cs-heading">4. DATA ARCHITECTURE & SECURITY</h3>
         <ul class="cs-list">
-            <li><span class="highlight">Database:</span> PostgreSQL (Supabase) tích hợp Row-Level Security (RLS).</li>
+            <li><span class="highlight">Database:</span> PostgreSQL (Supabase) integrated with Row-Level Security (RLS).</li>
             <li><span class="highlight">Entities:</span> Users/Roles, Products, Orders, Mfg_Orders, Materials.</li>
-            <li><span class="highlight">Security Bypass:</span> Dữ liệu Public được mở khóa. fe-admin & plastic_mfg bị cô lập chặt chẽ ở cấp CSDL.</li>
+            <li><span class="highlight">Security (RLS):</span> Public data bypassed; Management & Manufacturing data strictly isolated at the database level.</li>
         </ul>
 
         <h3 class="cs-heading">5. TECHNOLOGY STACK & DEPLOYMENT</h3>
@@ -52,9 +52,9 @@
             <div class="cs-card">
                 <h4>[ Tech Stack ]</h4>
                 <ul>
-                    <li>Front: Next.js 14, React Native</li>
-                    <li>Style: Tailwind CSS, Lucide</li>
-                    <li>Back: Express / FastAPI</li>
+                    <li>Frontend: Next.js 14, React Native</li>
+                    <li>Styling: Tailwind CSS, Lucide</li>
+                    <li>Backend: Express / FastAPI</li>
                 </ul>
             </div>
             <div class="cs-card">
@@ -68,4 +68,4 @@
         </div>
 
         <h3 class="cs-heading">6. BRANDING & STRATEGY</h3>
-        <p class="cs-text">Tích hợp LocalBusiness JSON-LD thống trị Google Maps địa phương. Áp dụng chiến lược "Personal Brand backed by Corporate Brand", hệ sinh thái Tân Thanh Dung đã khép kín toàn bộ chuỗi cung ứng từ Nhà máy -> Back-office -> Khách hàng.</p>
+        <p class="cs-text">Integrated LocalBusiness JSON-LD to dominate localized Google Maps queries. Executed a "Personal Brand backed by Corporate Brand" strategy, establishing a closed-loop supply chain from Factory -> Back-Office -> Customer.</p>
