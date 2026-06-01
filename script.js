@@ -157,4 +157,57 @@ document.addEventListener('DOMContentLoaded', () => {
         uptimeEl.textContent = formatTime(simulatedUptime);
     }, 1000);
 
+    // 5. Case Study Modal Logic
+    const modalOverlay = document.getElementById('cs-modal');
+    const modalContentArea = document.getElementById('cs-content-area');
+    const closeBtn = document.getElementById('cs-close');
+
+    if (modalOverlay && modalContentArea && closeBtn) {
+        // Open Modal
+        document.querySelectorAll('.clickable-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const targetId = card.getAttribute('data-target');
+                const template = document.getElementById(targetId);
+                
+                if (template) {
+                    // Inject content
+                    modalContentArea.innerHTML = template.innerHTML;
+                    // Show modal
+                    modalOverlay.classList.add('active');
+                    // Prevent body scroll
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        });
+
+        // Close Modal Function
+        const closeModal = () => {
+            modalOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+            // Clear content after animation
+            setTimeout(() => {
+                if (!modalOverlay.classList.contains('active')) {
+                    modalContentArea.innerHTML = '';
+                }
+            }, 300);
+        };
+
+        // Close on X button
+        closeBtn.addEventListener('click', closeModal);
+
+        // Close on clicking outside the window
+        modalOverlay.addEventListener('click', (e) => {
+            if (e.target === modalOverlay) {
+                closeModal();
+            }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+                closeModal();
+            }
+        });
+    }
+
 });
