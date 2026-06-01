@@ -163,20 +163,32 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeBtn = document.getElementById('cs-close');
 
     if (modalOverlay && modalContentArea && closeBtn) {
-        // Open Modal
+        // Open Modal (AJAX Fetch)
         document.querySelectorAll('.clickable-card').forEach(card => {
             card.addEventListener('click', () => {
-                const targetId = card.getAttribute('data-target');
-                const template = document.getElementById(targetId);
+                let targetId = card.getAttribute('data-target');
+                // Target ID looks like "cs-arsvix", we need "arsvix"
+                const fileName = targetId.replace('cs-', '');
                 
-                if (template) {
-                    // Inject content
-                    modalContentArea.innerHTML = template.innerHTML;
-                    // Show modal
-                    modalOverlay.classList.add('active');
-                    // Prevent body scroll
-                    document.body.style.overflow = 'hidden';
-                }
+                // Show modal with loading state
+                modalContentArea.innerHTML = '<div class="cs-code-block"><pre style="color: var(--accent);">> FETCHING DATA FROM SERVER...\n> ESTABLISHING SECURE CONNECTION...\n> PLEASE WAIT...</pre></div>';
+                modalOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                
+                // Fetch data with artificial delay for "hacker" effect
+                setTimeout(() => {
+                    fetch(`data/${fileName}.html`)
+                        .then(response => {
+                            if (!response.ok) throw new Error('Network response was not ok');
+                            return response.text();
+                        })
+                        .then(html => {
+                            modalContentArea.innerHTML = html;
+                        })
+                        .catch(err => {
+                            modalContentArea.innerHTML = `<div class="cs-code-block"><pre style="color: #ff5f56;">> ERROR: CONNECTION LOST.\n> FAILED TO RETRIEVE DATA FOR [${fileName.toUpperCase()}].</pre></div>`;
+                        });
+                }, 600);
             });
         });
 

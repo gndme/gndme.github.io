@@ -1,0 +1,44 @@
+        <h2 class="cs-title">FIXORY LAB - SERVICE MANAGEMENT SYSTEM</h2>
+        <div class="cs-meta">Founder: gndme | Category: Repair & Hardware Services</div>
+
+        <h3 class="cs-heading">1. BUSINESS ARCHITECTURE</h3>
+        <p class="cs-text">Số hóa toàn diện quy trình tiếp nhận, sửa chữa, theo dõi và bàn giao thiết bị. Hệ thống mang lại giá trị cốt lõi là sự minh bạch (Tracking realtime) và tối ưu quản lý Kỹ thuật viên & Tồn kho.</p>
+
+        <h3 class="cs-heading">2. APPLICATION ARCHITECTURE</h3>
+        <div class="cs-grid">
+            <div class="cs-card">
+                <h4>[ Frontend / Client ]</h4>
+                <ul>
+                    <li>HTML5, Vanilla JS, CSS3 (Utility-first)</li>
+                    <li>Responsive Web Design, FOUT Optimization</li>
+                    <li>Real-time AJAX/Fetch API & WebSockets</li>
+                </ul>
+            </div>
+            <div class="cs-card">
+                <h4>[ Backend / Core API ]</h4>
+                <ul>
+                    <li>Python, FastAPI</li>
+                    <li>Modular Monolith (Auth, Orders, Staff, Inventory)</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3 class="cs-heading">3. DATA ARCHITECTURE</h3>
+        <div class="cs-code-block">
+<pre>
+- DB Engine: SQLite (File-based, tối ưu cho SMB, backup dễ dàng)
+- ORM: SQLAlchemy (Sẵn sàng scale lên PostgreSQL)
+- Core Entities:
+  + Orders &lt;--&gt; Customer & Devices
+  + Staff (Role, Status)
+  + InventoryItem (Linh kiện xuất/nhập)
+  + ServiceTicket (Dịch vụ đính kèm thiết bị)
+</pre>
+        </div>
+
+        <h3 class="cs-heading">4. DEPLOYMENT & SECURITY</h3>
+        <ul class="cs-list">
+            <li><span class="highlight">Infrastructure:</span> Linux VPS (Ubuntu) quản lý tiến trình bằng PM2.</li>
+            <li><span class="highlight">Reverse Proxy:</span> Nginx phân giải tên miền, SSL/TLS Let's Encrypt.</li>
+            <li><span class="highlight">Firewall:</span> UFW bảo vệ toàn diện, chặn truy cập cổng nội bộ (FastAPI chạy ngầm).</li>
+        </ul>
