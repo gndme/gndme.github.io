@@ -32,15 +32,27 @@
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
     
-    <!-- Schema Markup for GEO/SEO -->
+    <!-- SEO & Canonical -->
+    <link rel="canonical" href="https://gndme.github.io/">
+    
+    <!-- Schema Markup for GEO/SEO & Entity Knowledge Graph -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "gndme",
-      "alternateName": ["Lợi Mai Công Trung", "TrungLMC"],
+      "alternateName": ["Lợi Mai Công Trung", "TrungLMC", "gndme Founder", "gndme CW Group"],
+      "url": "https://gndme.github.io/",
+      "sameAs": [
+        "https://github.com/gndme"
+      ],
       "jobTitle": "Founder & Systems Engineer",
-      "worksFor": [
+      "worksFor": {
+        "@type": "Organization",
+        "name": "CW Group",
+        "description": "Enterprise Architecture & Industrial AI Automation"
+      },
+      "alumniOf": [
         { "@type": "Organization", "name": "Arsvix" },
         { "@type": "Organization", "name": "Fixory Lab" },
         { "@type": "Organization", "name": "Tuctac Studio" },
