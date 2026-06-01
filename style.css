@@ -648,6 +648,19 @@ body::-webkit-scrollbar { display: none; }
     color: var(--accent-alt);
     font-size: 0.85rem;
 }
+/* Minimalist Terminal Scrollbar for Code Blocks */
+.cs-code-block::-webkit-scrollbar {
+    height: 4px;
+}
+.cs-code-block::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+.cs-code-block::-webkit-scrollbar-thumb {
+    background: var(--border-active);
+}
+.cs-code-block::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-alt);
+}
 .cs-code-block pre {
     margin: 0;
     font-family: inherit;
