@@ -23,14 +23,19 @@
     <meta property="og:description" content="Engineering the ecosystem: Arsvix, Fixory Lab, and Tuctac Studio.">
     <meta property="og:type" content="website">
     
+    <!-- Cache Busting & SEO -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
     <!-- Fonts: JetBrains Mono for that technical feel, Archivo Black for solid headers, Libre Barcode 39 for the footer -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=block" rel="stylesheet">
     
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Styles (Versioned to break cache) -->
+    <link rel="stylesheet" href="style.css?v=2.0.0">
     
     <!-- SEO & Canonical -->
     <link rel="canonical" href="https://gndme.github.io/">
@@ -242,6 +247,6 @@
 
     <!-- Data Templates for Case Studies (Moved to /data API) -->
 
-    <script src="script.js"></script>
+    <script src="script.js?v=2.0.0"></script>
 </body>
 </html>

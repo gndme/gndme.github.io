@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 // Fetch data with artificial delay for "hacker" effect
                 setTimeout(() => {
-                    fetch(`data/${fileName}.html`)
+                    fetch(`data/${fileName}.html?v=${new Date().getTime()}`, { cache: 'no-store' })
                         .then(response => {
                             if (!response.ok) throw new Error('Network response was not ok');
                             return response.text();
