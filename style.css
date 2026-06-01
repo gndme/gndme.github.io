@@ -500,7 +500,7 @@ body::-webkit-scrollbar { display: none; }
    CASE STUDY MODAL SYSTEM
    ========================================= */
 .clickable-card {
-    cursor: pointer;
+    cursor: none;
 }
 .clickable-card:hover .card-borders {
     border-color: var(--accent);
@@ -557,7 +557,7 @@ body::-webkit-scrollbar { display: none; }
     width: 12px; height: 12px;
     border-radius: 50%;
     background: #333;
-    cursor: pointer;
+    cursor: none;
     transition: 0.2s;
 }
 .close-btn { background: #ff5f56; }
