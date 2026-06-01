@@ -1,11 +1,71 @@
-        <h2 class="cs-title">TAN THANH DUNG PLASTIC - MES INFRASTRUCTURE</h2>
-        <div class="cs-meta">Engineer: gndme | Category: Manufacturing Execution System</div>
-        <h3 class="cs-heading">1. SYSTEM OVERVIEW</h3>
-        <p class="cs-text">Hệ thống phần mềm quản lý kho vật tư và điều hành sản xuất công nghiệp, thiết kế chuyên biệt cho ngành nhựa.</p>
-        
-        <h3 class="cs-heading">2. KEY METRICS & TECH</h3>
+        <h2 class="cs-title">TAN THANH DUNG PLASTIC - ENTERPRISE ARCHITECTURE</h2>
+        <div class="cs-meta">Architected & Operated by: CW Group (gndme) | Category: Manufacturing Execution System</div>
+
+        <h3 class="cs-heading">1. EXECUTIVE SUMMARY</h3>
+        <p class="cs-text">Hệ sinh thái số hóa toàn diện bao gồm thương mại điện tử, quản trị nội bộ và điều hành sản xuất. Thiết kế theo kiến trúc Micro-Frontends & API-First, đảm bảo khả năng mở rộng, tính linh hoạt và tối ưu hóa UX & GEO SEO.</p>
+
+        <h3 class="cs-heading">2. BUSINESS ARCHITECTURE</h3>
+        <div class="cs-grid">
+            <div class="cs-card">
+                <h4>[ Khách hàng B2B/B2C ]</h4>
+                <ul>
+                    <li>Trải nghiệm mua sắm trực quan</li>
+                    <li>Tra cứu thông tin nhựa siêu tốc</li>
+                </ul>
+            </div>
+            <div class="cs-card">
+                <h4>[ Vận hành Back-office ]</h4>
+                <ul>
+                    <li>Số hóa quy trình đơn hàng</li>
+                    <li>Quản lý danh mục & Khách hàng</li>
+                </ul>
+            </div>
+            <div class="cs-card">
+                <h4>[ Khối Sản xuất Nhà máy ]</h4>
+                <ul>
+                    <li>Theo dõi tiến độ, vật tư</li>
+                    <li>Ứng dụng nghiệp vụ phân xưởng</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3 class="cs-heading">3. APPLICATION ARCHITECTURE (MICRO-FRONTENDS)</h3>
+        <div class="cs-code-block">
+<pre>
+[fe-public]   -> Tối ưu SEO (SSR/SSG), tải trang siêu tốc, JSON-LD chuẩn GEO SEO.
+[fe-admin]    -> Tối ưu CSR (Tailwind CSS Sidebar), quản lý lượng lớn dữ liệu nội bộ.
+[plastic_mfg] -> Industrial UX chống lỗi (Poka-yoke) dùng trên di động & máy công nghiệp.
+-------------------------------------------------------------------------------------
+[Core API]    -> RESTful/GraphQL (Single Source of Truth) xử lý Logic và phân quyền.
+</pre>
+        </div>
+
+        <h3 class="cs-heading">4. DATA ARCHITECTURE & SECURITY</h3>
         <ul class="cs-list">
-            <li><span class="highlight">Tech Stack:</span> React, Firebase/Supabase, TailwindCSS.</li>
-            <li><span class="highlight">Architecture:</span> Single Page Application tích hợp Real-time DB.</li>
-            <li><span class="highlight">Impact:</span> Giảm thiểu 40% thời gian kiểm kê, xử lý triệt để bài toán tồn kho âm.</li>
+            <li><span class="highlight">Database:</span> PostgreSQL (Supabase) tích hợp Row-Level Security (RLS).</li>
+            <li><span class="highlight">Entities:</span> Users/Roles, Products, Orders, Mfg_Orders, Materials.</li>
+            <li><span class="highlight">Security Bypass:</span> Dữ liệu Public được mở khóa. fe-admin & plastic_mfg bị cô lập chặt chẽ ở cấp CSDL.</li>
         </ul>
+
+        <h3 class="cs-heading">5. TECHNOLOGY STACK & DEPLOYMENT</h3>
+        <div class="cs-grid">
+            <div class="cs-card">
+                <h4>[ Tech Stack ]</h4>
+                <ul>
+                    <li>Front: Next.js 14, React Native</li>
+                    <li>Style: Tailwind CSS, Lucide</li>
+                    <li>Back: Express / FastAPI</li>
+                </ul>
+            </div>
+            <div class="cs-card">
+                <h4>[ Server & Ops ]</h4>
+                <ul>
+                    <li>Linux VPS (Ubuntu) + PM2</li>
+                    <li>Nginx Reverse Proxy & Load Balance</li>
+                    <li>CI/CD (Github Actions + SSH)</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3 class="cs-heading">6. BRANDING & STRATEGY</h3>
+        <p class="cs-text">Tích hợp LocalBusiness JSON-LD thống trị Google Maps địa phương. Áp dụng chiến lược "Personal Brand backed by Corporate Brand", hệ sinh thái Tân Thanh Dung đã khép kín toàn bộ chuỗi cung ứng từ Nhà máy -> Back-office -> Khách hàng.</p>
