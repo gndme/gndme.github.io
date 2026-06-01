@@ -647,23 +647,21 @@ body::-webkit-scrollbar { display: none; }
     margin-bottom: 2rem;
     color: var(--accent-alt);
     font-size: 0.85rem;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    cursor: none; /* Hide default, we will handle it with custom cursor */
 }
-/* Minimalist Terminal Scrollbar for Code Blocks */
+/* Hide scrollbar for Chrome/Safari */
 .cs-code-block::-webkit-scrollbar {
-    height: 4px;
+    display: none;
 }
-.cs-code-block::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.05);
-}
-.cs-code-block::-webkit-scrollbar-thumb {
-    background: var(--border-active);
-}
-.cs-code-block::-webkit-scrollbar-thumb:hover {
-    background: var(--accent-alt);
+.cs-code-block.is-dragging {
+    user-select: none;
 }
 .cs-code-block pre {
     margin: 0;
     font-family: inherit;
+    pointer-events: none; /* Let the block handle events */
 }
 .cs-list {
     list-style: none;

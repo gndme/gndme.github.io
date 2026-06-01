@@ -190,6 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         })
                         .then(html => {
                             modalContentArea.innerHTML = html;
+                            initDragScroll(); // Enable drag-to-pan on injected code blocks
                         })
                         .catch(err => {
                             modalContentArea.innerHTML = `<div class="cs-code-block"><pre style="color: #ff5f56;">> ERROR: CONNECTION LOST.\n> FAILED TO RETRIEVE DATA FOR [${fileName.toUpperCase()}].</pre></div>`;
@@ -226,6 +227,50 @@ document.addEventListener('DOMContentLoaded', () => {
                 closeModal();
             }
         });
+
+        // Drag-to-Pan Logic for Code Blocks
+        function initDragScroll() {
+            const codeBlocks = modalContentArea.querySelectorAll('.cs-code-block');
+            codeBlocks.forEach(slider => {
+                let isDown = false;
+                let startX;
+                let scrollLeft;
+
+                // Mouse Events
+                slider.addEventListener('mousedown', (e) => {
+                    isDown = true;
+                    slider.classList.add('is-dragging');
+                    startX = e.pageX - slider.offsetLeft;
+                    scrollLeft = slider.scrollLeft;
+                    cursorLabel.textContent = 'PANNING';
+                });
+                
+                slider.addEventListener('mouseleave', () => {
+                    isDown = false;
+                    slider.classList.remove('is-dragging');
+                    cursorLabel.textContent = 'IDLE';
+                });
+                
+                slider.addEventListener('mouseup', () => {
+                    isDown = false;
+                    slider.classList.remove('is-dragging');
+                    cursorLabel.textContent = 'DRAG_TO_PAN';
+                });
+                
+                slider.addEventListener('mousemove', (e) => {
+                    if(!isDown) return;
+                    e.preventDefault();
+                    const x = e.pageX - slider.offsetLeft;
+                    const walk = (x - startX) * 1.5; // Scroll speed multiplier
+                    slider.scrollLeft = scrollLeft - walk;
+                });
+
+                // Hover Effects
+                slider.addEventListener('mouseenter', () => {
+                    if(!isDown) cursorLabel.textContent = 'DRAG_TO_PAN';
+                });
+            });
+        }
     }
 
 });
