@@ -1,27 +1,28 @@
 /* 
    ========================================================
-   GNDME DESIGN SYSTEM v3.5 // MISSION CONTROL ART DIRECTION
+   GNDME DESIGN SYSTEM v3.6 // COMPLETE UNIFIED ARCHITECTURE
    --------------------------------------------------------
-   Art Direction: Mission Control × Linear × Raycast × Vercel
-   - Visual Tension: Extreme Typography Scale Contrast
-   - Color Tiers: #FFF / #CFCFCF / #7D7D7D / #444 / #1D1D1D
-   - Border Hygiene: Minimal Borders, Heavy Whitespace Dividers
-   - Live Status Cards with Real Metrics & Badges
+   Aesthetic: Mission Control × Linear × Apple × Vercel
+   - Unified styling for Homepage, Journal, About & Project Pages.
+   - Zero missing classes. High-contrast typography & spacing.
    ========================================================
 */
 
 :root {
     /* Color Scale & Hierarchy Tiers */
     --bg-main: #050505;
-    --surface-100: #0d0d0d;
-    --surface-200: #181818;
+    --surface-100: #0a0a0a;
+    --surface-200: #141414;
     
     /* Text Hierarchy Scale */
     --text-white: #FFFFFF;
+    --text-100: #FFFFFF;
     --text-high: #CFCFCF;
+    --text-70: rgba(255, 255, 255, 0.70);
     --text-mid: #7D7D7D;
+    --text-40: rgba(255, 255, 255, 0.40);
     --text-dark: #444444;
-    --text-dim: #1D1D1D;
+    --text-20: rgba(255, 255, 255, 0.15);
     
     /* Accents */
     --accent-lime: #D4FF00;
@@ -31,7 +32,7 @@
     --accent-red: #FF453A;
 
     /* Borders */
-    --border-subtle: rgba(255, 255, 255, 0.06);
+    --border-subtle: rgba(255, 255, 255, 0.08);
     --border-active: rgba(212, 255, 0, 0.35);
 
     /* Fonts */
@@ -40,7 +41,9 @@
 
     /* Rhythm & Spacing Scale (8px system) */
     --space-8: 8px;
+    --space-12: 12px;
     --space-16: 16px;
+    --space-20: 20px;
     --space-24: 24px;
     --space-32: 32px;
     --space-48: 48px;
@@ -134,7 +137,7 @@ body::-webkit-scrollbar { display: none; }
     color: var(--text-mid);
     z-index: 90;
     letter-spacing: 1.5px;
-    background: rgba(13, 13, 13, 0.85);
+    background: rgba(10, 10, 10, 0.85);
     backdrop-filter: blur(12px);
     padding: 8px 20px;
     border: 1px solid var(--border-subtle);
@@ -167,6 +170,175 @@ body::-webkit-scrollbar { display: none; }
     color: var(--text-white);
 }
 
+/* =========================================
+   HERO SECTION (Index / Homepage)
+   ========================================= */
+.hero-section {
+    padding-top: var(--space-96);
+    padding-bottom: var(--space-96);
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: var(--space-64);
+    align-items: center;
+}
+
+.hero-main-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.8rem, 5.5vw, 5.2rem);
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+    color: var(--text-white);
+    margin-bottom: var(--space-24);
+    text-transform: uppercase;
+}
+
+.hero-subtitle {
+    font-size: 1.15rem;
+    color: var(--text-70);
+    max-width: 620px;
+    line-height: 1.6;
+}
+
+/* Hero Right: Bento Metrics Cards */
+.bento-metrics {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+}
+
+.metric-card {
+    background: var(--surface-100);
+    border: 1px solid var(--border-subtle);
+    padding: var(--space-24);
+    border-radius: 6px;
+    transition: border-color 0.3s, transform 0.3s;
+}
+.metric-card:hover {
+    border-color: var(--border-active);
+    transform: translateX(4px);
+}
+.metric-number {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: var(--accent-lime);
+    line-height: 1;
+    margin-bottom: var(--space-8);
+}
+.metric-label {
+    font-size: 0.75rem;
+    color: var(--text-mid);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* =========================================
+   PROJECTS SECTION (Linear-style Cards)
+   ========================================= */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: var(--space-48);
+    padding-bottom: var(--space-16);
+    border-bottom: 1px solid var(--border-subtle);
+}
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--text-white);
+    letter-spacing: -0.5px;
+}
+.section-count {
+    font-size: 0.8rem;
+    color: var(--text-mid);
+    letter-spacing: 1px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: var(--space-24);
+    margin-bottom: var(--space-120);
+}
+
+.os-card {
+    background: var(--surface-100);
+    border: 1px solid var(--border-subtle);
+    padding: var(--space-32);
+    border-radius: 8px;
+    position: relative;
+    opacity: 0.85;
+    transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+                border-color 0.3s ease, 
+                box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 260px;
+}
+
+.os-card:hover {
+    opacity: 1;
+    transform: translateY(-4px) scale(1.01);
+    border-color: var(--border-active);
+    box-shadow: 0 12px 40px rgba(212, 255, 0, 0.08);
+}
+
+.os-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-16);
+}
+.os-code {
+    font-size: 0.75rem;
+    color: var(--accent-lime);
+    letter-spacing: 1.5px;
+}
+.os-category {
+    font-size: 0.7rem;
+    color: var(--text-mid);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.os-name {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--text-white);
+    margin-bottom: var(--space-8);
+    line-height: 1.1;
+}
+
+.os-desc {
+    font-size: 0.9rem;
+    color: var(--text-70);
+    line-height: 1.5;
+    margin-bottom: var(--space-24);
+}
+
+.os-tags {
+    font-size: 0.75rem;
+    color: var(--text-mid);
+    letter-spacing: 0.5px;
+    border-top: 1px dashed var(--border-subtle);
+    padding-top: var(--space-12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.os-card:hover .os-action {
+    color: var(--accent-lime);
+    transform: translateX(4px);
+}
+.os-action {
+    transition: transform 0.2s, color 0.2s;
+}
+
 /* Massive Typography Scale (Mission Control Hero) */
 .hero-title-massive {
     font-family: var(--font-heading);
@@ -185,19 +357,13 @@ body::-webkit-scrollbar { display: none; }
     font-weight: 300;
 }
 
-/* Section Dividers without heavy box borders */
-.section-divider {
-    height: 1px;
-    background: linear-gradient(90deg, var(--accent-lime) 0%, rgba(255,255,255,0.1) 40%, transparent 100%);
-    margin: var(--space-64) 0;
-}
-
 /* Live Data-Rich Cards (Mission Control Modules) */
 .live-module-card {
     background: var(--surface-100);
     padding: var(--space-24);
-    border-radius: 6px;
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s;
+    border-radius: 8px;
+    border: 1px solid var(--border-subtle);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s, border-color 0.3s;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -206,6 +372,7 @@ body::-webkit-scrollbar { display: none; }
 }
 .live-module-card:hover {
     transform: translateY(-4px);
+    border-color: var(--border-active);
     box-shadow: 0 16px 40px rgba(0,0,0,0.8), 0 0 20px var(--accent-lime-glow);
 }
 .card-header-status {
@@ -269,8 +436,43 @@ body::-webkit-scrollbar { display: none; }
 .dot-yellow { background: #FFBD2E; }
 .dot-green { background: #27C93F; }
 
+/* Footer */
+.footer {
+    border-top: 1px solid var(--border-subtle);
+    padding: var(--space-64) 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-text {
+    font-size: 0.8rem;
+    color: var(--text-mid);
+}
+.footer-text span {
+    color: var(--text-white);
+}
+.footer-links a {
+    color: var(--text-mid);
+    text-decoration: none;
+    margin-left: var(--space-24);
+    font-size: 0.8rem;
+    transition: color 0.2s;
+}
+.footer-links a:hover {
+    color: var(--accent-lime);
+}
+
 /* Responsive */
 @media (max-width: 900px) {
+    .hero-section {
+        grid-template-columns: 1fr;
+        gap: var(--space-48);
+        padding-top: var(--space-48);
+        padding-bottom: var(--space-64);
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
     .hero-title-massive { font-size: 2.8rem; }
     .hero-subtitle-massive { font-size: 1.1rem; }
 }
