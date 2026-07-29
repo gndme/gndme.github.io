@@ -1,12 +1,12 @@
 # gndme // System Architecture & Brand Engineering Hub
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-lime.svg)](LICENSE)
-[![Status: Active Development](https://img.shields.io/badge/Status-Active_Development-00E5FF.svg)](https://gndme.github.io)
-[![Version: v0.5.0](https://img.shields.io/badge/Version-v0.5.0-D4FF00.svg)](CHANGELOG.md)
+[![Status: Pre-Release Active Dev](https://img.shields.io/badge/Status-Pre--Release_Active_Dev-00E5FF.svg)](https://gndme.github.io)
+[![Version: v0.6.0](https://img.shields.io/badge/Version-v0.6.0-D4FF00.svg)](CHANGELOG.md)
 
 ---
 
-## Overview
+## 1. Overview
 
 **`gndme.github.io`** is the public engineering portfolio of **gndme** (Lợi Mai Công Trung).
 
@@ -14,7 +14,7 @@ It documents system architecture, technical case studies, engineering decisions,
 
 ---
 
-## Architecture
+## 2. Architecture
 
 The ecosystem operates on a **2-Tier Internet Infrastructure**:
 * **Tier 1 (Architecture Hub)**: `gndme.github.io` — Public technical case profiles, design tokens, and enterprise case studies served via GitHub Pages Edge CDN.
@@ -22,7 +22,7 @@ The ecosystem operates on a **2-Tier Internet Infrastructure**:
 
 ---
 
-## Project Structure
+## 3. Project Structure
 
 ```text
 gndme.github.io/
@@ -43,14 +43,14 @@ gndme.github.io/
 ├── .nojekyll             # Bypass Jekyll Static Delivery Directive
 ├── sitemap.xml           # Structured XML Sitemap
 ├── robots.txt            # Search Engine Directives
-├── CHANGELOG.md          # Honest Versioning History (v0.1.0 -> v0.5.0)
+├── CHANGELOG.md          # Honest Versioning History (v0.1.0 -> v0.6.0)
 ├── SECURITY.md           # Security Policy & Directives
 └── LICENSE               # MIT License 2026
 ```
 
 ---
 
-## Development Workflow
+## 4. Development Workflow
 
 Our engineering process enforces a strict **Documentation-First** philosophy:
 
@@ -66,22 +66,17 @@ Documentation First ──► Architecture ──► Implementation ──► QA
 
 ---
 
-## Roadmap
+## 5. Roadmap & Release Progress
 
-### Near Term
-- [x] Establish flagship repository structure & documentation.
-- [x] Complete Design System & UI/UX QA Hub (`design-system.html`).
-- [x] Publish FIXORY Lab, TUCTAC Studio, and Arsvix brand profiles.
-- [x] Publish Tan Thanh Dung Plastic multi-project case study & TT25 Consulting case study.
-- [ ] Finalize custom domain mapping (`gndme.ai` / `gndme.tech`).
-
-### Mid Term
-- [ ] Refactor static HTML engine into Next.js App Router with TypeScript.
-- [ ] Deploy MDX-based engine for System Architecture Essays.
-- [ ] Integrate automated Playwright Visual Regression CI/CD pipeline on GitHub Actions.
-
-### Long Term
-- [ ] Develop AI-assisted Architecture Explorer (`gndme Copilot`).
+### Version Milestone Tracker
+- [x] **v0.1.0**: Repository initialized & setup
+- [x] **v0.2.0**: Mission Control Homepage
+- [x] **v0.3.0**: Brands Hub & Technical Profiles (`fixory-lab`, `tuctac-studio`, `arsvix`)
+- [x] **v0.4.0**: Enterprise Case Studies Hub (`tan-thanh-dung`, `tt25`)
+- [x] **v0.5.0**: Journal Engine (`journal.html`)
+- [x] **v0.6.0**: Design System & UI/UX QA Hub (`design-system.html`)
+- [ ] **v0.7.0**: Full Responsive Audit & Lighthouse Performance Optimizations
+- [ ] 🏁 **v1.0.0**: First Public Stable Release (Custom Domain & Official Launch)
 
 ---
 
