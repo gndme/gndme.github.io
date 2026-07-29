@@ -2,34 +2,34 @@
 
 ## Supported Versions
 
-The following table lists the security support status for `gndme.github.io` repository releases:
-
-| Version | Supported          |
-| ------- | ------------------ |
-| 3.9.x   | :white_check_mark: |
-| 3.x.x   | :white_check_mark: |
-| < 3.0.0 | :x:                |
+Security updates are provided for the latest public release (`v0.5.0`).
 
 ---
 
 ## Reporting a Vulnerability
 
-If you discover a potential security vulnerability within this repository or any connected production domains (`fixorylab.vn`, `tuctac.net`, `tanthanhdung.vn`), please follow these guidelines:
+If you discover a potential security vulnerability within this repository or any related production systems, please report it responsibly via email.
 
-1. **Email Security Report**: Send an encrypted report to **congtrung9910@gmail.com**.
-2. **Details to Include**:
-   - Description of the vulnerability or security header misconfiguration.
-   - Steps to reproduce the issue.
-   - Proof of Concept (PoC) code if applicable.
-3. **Response SLA**: Acknowledgment will be sent within **24 hours**, with a patch or remediation plan issued within **72 hours**.
+**Contact**: [congtrung9910@gmail.com](mailto:congtrung9910@gmail.com)
+
+**Please include in your report**:
+- A clear description of the vulnerability or security misconfiguration
+- Steps to reproduce the issue
+- Potential impact
+- Screenshots, logs, or Proof of Concept (if available)
+
+The maintainer will make reasonable efforts to acknowledge reports promptly and provide updates as remediation progresses.
 
 ---
 
-## Security Engineering Directives
+## Security Principles
 
-The `gndme` platform enforces strict security policies across static delivery and API layers:
+This repository follows a security-first approach:
 
-* **HTTP Strict Transport Security (HSTS)**: Enforced via HTTPS redirect.
-* **Content Security Policy (CSP)**: Restrictions on inline scripts and external origins.
-* **Payload Encryption**: Sensitive enterprise payloads encrypted via `AES-256-GCM`.
-* **Zero Secret Leakage**: API credentials and secrets strictly isolated in private repositories and environment variables.
+- **HTTPS-Only**: Enforced via HTTPS redirects across static edge delivery.
+- **Strict Headers**: HTTP Strict Transport Security (HSTS) and Content Security Policy (CSP) directives.
+- **Zero Secret Leakage**: Secrets, API credentials, and production configurations are never committed to this public repository.
+- **Environment-Based Config**: Production keys and environment variables are strictly isolated in secure server environments.
+- **Responsible Disclosure**: Open communication channel for security researchers and community feedback.
+
+Where applicable, the security practices described in this document are also adopted across related production systems (`fixorylab.vn`, `tuctac.net`, `tanthanhdung.vn`).
