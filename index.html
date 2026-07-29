@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gndme | Building Business Operating Systems</title>
+    <title>gndme | Dashboard & Business OS Suite</title>
     <meta name="description" content="gndme is the architect of specialized AI & Business Operating Systems for Industry, Commerce, and Hardware Infrastructure.">
     <meta name="google-site-verification" content="SBjC-z1Qz-_4PcRSXMz73PPwhWViDOzFQOM-ByWCNPc" />
     
@@ -12,18 +12,14 @@
     <meta property="og:description" content="Architecting specialized Business OS for Industry, Commerce, and Hardware Infrastructure.">
     <meta property="og:type" content="website">
     
-    <!-- Fonts: Archivo Black for solid headers, JetBrains Mono for command feel -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css?v=3.0.0">
-    
-    <!-- Canonical -->
+    <link rel="stylesheet" href="style.css?v=3.5.0">
     <link rel="canonical" href="https://gndme.github.io/">
     
-    <!-- Schema Markup for AI Crawlers & SEO -->
+    <!-- Schema Markup -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -32,13 +28,6 @@
       "alternateName": ["Lợi Mai Công Trung", "gndme Founder", "gndme CW Group"],
       "url": "https://gndme.github.io/",
       "description": "gndme is the builder of specialized Enterprise AI & Business Operating Systems.",
-      "knowsAbout": [
-        "AI Operating Systems",
-        "Business Operating Systems",
-        "Industrial Computer Vision",
-        "Manufacturing Digital Transformation",
-        "Hardware Repair Systems"
-      ],
       "sameAs": [
         "https://github.com/gndme",
         "https://www.facebook.com/j73117"
@@ -57,7 +46,7 @@
     <!-- Custom Cursor -->
     <div id="cursor" class="custom-cursor">
         <div class="cursor-crosshair"></div>
-        <div class="cursor-label">IDLE</div>
+        <div class="cursor-label">DASHBOARD</div>
     </div>
 
     <!-- Technical Grid Overlay -->
@@ -66,25 +55,31 @@
     <!-- System Status Bar -->
     <div class="sys-status">
         <span class="status-dot"></span>
-        <span>gndme // Founder of CW Group</span>
+        <span>SYS.CONTROL // gndme DASHBOARD</span>
+        <span style="color: var(--text-dark);">|</span>
+        <span>STATUS: <span class="status-badge">ONLINE</span></span>
     </div>
 
     <div class="container">
         
-        <!-- Header Nav -->
+        <!-- Clean Ultra-Minimal Navbar -->
         <header class="navbar">
-            <div class="brand-logo">gndme</div>
-            <div class="nav-status">
-                <span>LAT: 10.7626° N</span>
-                <span>LON: 106.6601° E</span>
-            </div>
+            <div class="brand-logo"><a href="index.html" style="color: inherit; text-decoration: none;">gndme</a></div>
+            <nav style="display: flex; gap: var(--space-24); font-size: 0.85rem; text-transform: uppercase;">
+                <a href="#projects" style="color: var(--accent-lime); text-decoration: underline;">Projects</a>
+                <a href="journal.html" style="color: var(--text-mid); text-decoration: none;">Journal</a>
+                <a href="about.html" style="color: var(--text-mid); text-decoration: none;">About</a>
+                <a href="https://github.com/gndme" target="_blank" style="color: var(--text-mid); text-decoration: none;">GitHub ↗</a>
+            </nav>
         </header>
 
         <main>
-            <!-- Single Dominant Hero Section -->
+            <!-- 1. HERO SECTION -->
             <section class="hero-section">
                 <div class="hero-content">
-                    <div class="hero-tag">[ ARCHITECT / CREATOR ]</div>
+                    <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16); text-transform: uppercase;">
+                        [ ARCHITECT / CREATOR ]
+                    </div>
                     <h1 class="hero-main-title">BUILDING BUSINESS OPERATING SYSTEMS FOR THE AI ERA.</h1>
                     <p class="hero-subtitle">
                         Architecting specialized operating systems across industrial automation, niche commerce, hardware repair, and enterprise manufacturing.
@@ -108,7 +103,7 @@
                 </div>
             </section>
 
-            <!-- Projects Section (Linear Style Cards) -->
+            <!-- 2. PROJECTS SECTION (Linear-style Cards) -->
             <section id="projects">
                 <div class="section-header">
                     <h2 class="section-title">BUSINESS OS SUITE</h2>
@@ -141,10 +136,10 @@
                                 <span class="os-category">REPAIR OS</span>
                             </div>
                             <h3 class="os-name">FIXORY LAB</h3>
-                            <p class="os-desc">FIXORY Lab is a Repair Operating System created by gndme. Specialized hardware intervention, warranty tracking, and custom gear modding workflows.</p>
+                            <p class="os-desc">FIXORY Lab is a Repair Operating System created by gndme. Built for modern hardware intervention, live SLA tracking, and service management.</p>
                         </div>
                         <div class="os-tags">
-                            <span>Hardware Servicing · Warranty Engine</span>
+                            <span>Hardware Servicing · Live SLA Engine</span>
                             <span class="os-action">EXPLORE →</span>
                         </div>
                     </a>
@@ -157,7 +152,7 @@
                                 <span class="os-category">COMMERCE OS</span>
                             </div>
                             <h3 class="os-name">TUCTAC STUDIO</h3>
-                            <p class="os-desc">TUCTAC Studio is a Commerce Operating System created by gndme. Powering niche e-commerce, 3D collectible figure crafting, and multi-channel fulfillment.</p>
+                            <p class="os-desc">TUCTAC Studio is a Commerce Operating System created by gndme. Powering niche e-commerce, 3D collectible figure drops, and multi-channel fulfillment.</p>
                         </div>
                         <div class="os-tags">
                             <span>Niche B2C · 3D Collectible · Multi-Channel</span>
@@ -200,6 +195,42 @@
                 </div>
             </section>
 
+            <!-- 3. LATEST JOURNAL SECTION -->
+            <section style="margin-bottom: var(--space-120);">
+                <div class="section-header">
+                    <h2 class="section-title">LATEST JOURNAL NOTES</h2>
+                    <span class="section-count"><a href="journal.html" style="color: var(--accent-lime); text-decoration: underline;">VIEW ALL NOTES →</a></span>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-24);">
+                    <a href="journal.html" style="background: var(--surface-100); padding: var(--space-24); border-radius: 6px; text-decoration: none; color: inherit; display: block;" class="live-module-card">
+                        <div style="font-size: 0.75rem; color: var(--accent-lime); margin-bottom: 8px;">2026-07-28 // #workflow · #fixory</div>
+                        <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-white); margin-bottom: 8px;">Why Queue-First Architecture Matters in Hardware Repair</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-mid);">A deep dive into active queue state engines vs passive database entries.</p>
+                    </a>
+                    
+                    <a href="journal.html" style="background: var(--surface-100); padding: var(--space-24); border-radius: 6px; text-decoration: none; color: inherit; display: block;" class="live-module-card">
+                        <div style="font-size: 0.75rem; color: var(--accent-cyan); margin-bottom: 8px;">2026-07-20 // #ai · #manufacturing</div>
+                        <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-white); margin-bottom: 8px;">Edge AI vs Cloud Latency on Factory Conveyor Lines</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-mid);">Sub-5ms defect ejection using TensorRT on edge neural hardware.</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 4. ABOUT & MISSION (Brief) -->
+            <section style="margin-bottom: var(--space-120); background: var(--surface-100); padding: var(--space-48); border-radius: 8px;">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16); text-transform: uppercase;">
+                    // ARCHITECT PROFILE
+                </div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-16);">
+                    20% PORTFOLIO // 80% PRODUCT
+                </h2>
+                <p style="font-size: 1.1rem; color: var(--text-high); max-width: 800px; line-height: 1.8; margin-bottom: var(--space-24);">
+                    gndme is the digital architecture identity of Lợi Mai Công Trung, Founder of CW Group. I don't build generic websites—I build specialized AI & Business Operating Systems for physical industries, repair networks, and niche commerce.
+                </p>
+                <a href="about.html" style="color: var(--accent-lime); font-weight: bold; text-decoration: underline; font-size: 0.9rem;">READ FULL PROFILE & TECH STACK →</a>
+            </section>
+
         </main>
 
         <!-- Footer -->
@@ -208,6 +239,8 @@
                 SYS.BUILD: 2026 // Created by <span>gndme</span> (/ˈɡraʊmi/)
             </div>
             <div class="footer-links">
+                <a href="journal.html">Journal</a>
+                <a href="about.html">About</a>
                 <a href="https://github.com/gndme" target="_blank">GitHub</a>
                 <a href="https://www.facebook.com/j73117" target="_blank">Facebook</a>
                 <a href="mailto:congtrung9910@gmail.com">Email</a>
@@ -217,6 +250,6 @@
     </div>
 
     <!-- Interaction Script -->
-    <script src="script.js?v=3.0.0"></script>
+    <script src="script.js?v=3.5.0"></script>
 </body>
 </html>
