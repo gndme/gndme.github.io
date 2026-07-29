@@ -40,35 +40,37 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- Implementations & Case Studies -->
+  <!-- Brands Technical Profiles -->
   <url>
-    <loc>https://gndme.github.io/projects/fixory-lab.html</loc>
+    <loc>https://gndme.github.io/brands/fixory-lab/</loc>
     <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://gndme.github.io/projects/tuctac-studio.html</loc>
+    <loc>https://gndme.github.io/brands/tuctac-studio/</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://gndme.github.io/projects/arsvix.html</loc>
+    <loc>https://gndme.github.io/brands/arsvix/</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Enterprise Case Studies -->
+  <url>
+    <loc>https://gndme.github.io/case-studies/tan-thanh-dung/</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://gndme.github.io/projects/tan-thanh-dung.html</loc>
+    <loc>https://gndme.github.io/case-studies/tt25/</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://gndme.github.io/projects/tt25-consulting.html</loc>
-    <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.80</priority>
   </url>
 </urlset>
