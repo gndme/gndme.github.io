@@ -3,112 +3,64 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-lime.svg)](LICENSE)
 [![Status: Production](https://img.shields.io/badge/Status-Production-00E5FF.svg)](https://gndme.github.io)
 [![Lighthouse: 95+](https://img.shields.io/badge/Lighthouse-95%2B-27C93F.svg)](docs/UI_QA.md)
-[![Design System: v3.9](https://img.shields.io/badge/Design_System-v3.9.0-D4FF00.svg)](design.html)
-
-> **Flagship Engineering Repository** for `gndme` (/ˈɡraʊmi/) — the personal digital identity of **Lợi Mai Công Trung**, Founder of CW Group. Architecting specialized operating systems for owned tech brands and engineering enterprise digital transformations.
 
 ---
 
-## 🏛️ Ecosystem Architecture
+## 1. Overview
 
-This repository serves as the **System Architecture & Portfolio Hub** for the `gndme` ecosystem, operating on a 2-Tier Internet Infrastructure.
-
-```text
-gndme Ecosystem Link Graph
-│
-├── Tier 1: gndme.github.io (System Architecture Hub)
-│     └── Public Technical Case Profiles & Multi-Project Case Studies
-│
-└── Tier 2: Live Production Domains
-      ├── https://fixorylab.vn  ↗ (Gaming Hardware Repair B2C Portal)
-      ├── https://tuctac.net     ↗ (3D Collectibles & Pre-Order Storefront)
-      └── https://tanthanhdung.vn ↗ (Plastic Manufacturing Corporate Website)
-```
+**`gndme.github.io`** is the Flagship System Architecture & Brand Engineering Hub for **Lợi Mai Công Trung** ([gndme](https://github.com/gndme)), Founder of CW Group. It documents the technical specifications, operating system architectures, and enterprise case studies for owned tech brands and client transformations.
 
 ---
 
-## 🛠️ Repository Structure
+## 2. Architecture
+
+The ecosystem operates on a **2-Tier Internet Infrastructure**:
+* **Tier 1 (Architecture Hub)**: `gndme.github.io` — Serves static engineering profiles, design tokens, and multi-project case studies globally via GitHub Pages Edge CDN.
+* **Tier 2 (Production Domains)**: Live operational platforms (`https://fixorylab.vn`, `https://tuctac.net`, `https://tanthanhdung.vn`).
+
+---
+
+## 3. Project Structure
 
 ```text
 gndme.github.io/
-├── .github/                 # GitHub Issue/PR Templates & Governance
-│   ├── ISSUE_TEMPLATE/
-│   │   ├── bug_report.md
-│   │   └── feature_request.md
-│   ├── PULL_REQUEST_TEMPLATE.md
-│   └── CODEOWNERS
-│
-├── docs/                    # Architectural Specifications & Guidelines
-│   ├── ARCHITECTURE.md      # Technical Philosophy & System Design
-│   ├── DESIGN_SYSTEM.md     # Spacing Tokens (8px Grid), Colors & Typography
-│   ├── UI_QA.md            # 10-Phase UI/UX QA Testing Suite Protocol
-│   ├── ROADMAP.md           # Engineering Evolution & Release Milestones
-│   └── CONTRIBUTING.md      # Conventional Commit & Branching Standards
-│
-├── assets/                  # High-Resolution UI Dashboard Assets & Logos
-│   ├── images/
-│   │   ├── brands/
-│   │   │   ├── fixory/
-│   │   │   ├── tuctac/
-│   │   │   └── arsvix/
-│   │   ├── case-studies/
-│   │   │   ├── tan-thanh-dung/
-│   │   │   └── tt25/
-│   │   ├── ui/
-│   │   ├── logos/
-│   │   └── icons/
-│
-├── styles/                  # Modular Design System CSS Core (v3.9.0)
-│   ├── reset.css
-│   ├── tokens.css
-│   ├── layout.css
-│   ├── components.css
-│   ├── pages.css
-│   └── utilities.css
-│
-├── projects/                # Technical Case Profiles & Case Studies
-│   ├── fixory-lab.html      # Brand Technical Profile: FIXORY Lab Repair OS
-│   ├── tuctac-studio.html   # Brand Technical Profile: TUCTAC Studio Commerce OS
-│   ├── arsvix.html          # Brand Technical Profile: Arsvix Edge Vision OS
-│   ├── tan-thanh-dung.html  # Multi-Project Enterprise Case Study: Tan Thanh Dung
-│   └── tt25-consulting.html # Service Case Study: TT25 Consulting Service OS
-│
-├── index.html               # Personal Identity & System Architecture Hub
-├── brands.html              # Brands Founded Hub (FIXORY, TUCTAC, Arsvix)
-├── case-studies.html        # Enterprise Case Studies Hub (Tan Thanh Dung, TT25)
-├── journal.html             # System Architect Essays & Notes Hub
-├── about.html               # Architect Profile & Tech Stack
-├── design-system.html       # Interactive Design System & UI/UX QA Hub
-├── script.js                # Custom Cursor & Micro-Interactions
-├── sitemap.xml              # Structured XML Sitemap for Crawlers
-├── robots.txt               # Search Engine Directives
-├── CHANGELOG.md             # Release Versioning History
-├── SECURITY.md              # Security Directives & Headers Policy
-└── LICENSE                  # MIT License
+├── .github/              # Issue/PR Templates & Repository Governance
+├── docs/                 # Architectural & Engineering Specifications
+├── content/              # Structured JSON/MD Datasets (brands, case-studies)
+├── assets/               # High-Resolution Visual Assets & Logos
+├── styles/               # Modular CSS Engine (reset, tokens, layout, components, pages, utilities)
+├── scripts/              # Modular JavaScript Engine (cursor, navigation, scroll)
+├── projects/             # Brands Technical Profiles & Case Studies
+├── index.html            # Personal Identity & Architecture Hub
+├── brands.html           # Brands Founded Hub (FIXORY, TUCTAC, Arsvix)
+├── case-studies.html     # Enterprise Case Studies Hub (Tan Thanh Dung, TT25)
+├── journal.html          # Architect Essays & Notes Hub
+├── about.html            # Profile & Technical Stack
+├── design-system.html    # Interactive Design System & UI/UX QA Hub
+├── script.js             # ES Module Application Entry Point
+├── sitemap.xml           # Structured XML Sitemap
+├── robots.txt            # Search Engine Directives
+├── CHANGELOG.md          # Versioning History
+├── SECURITY.md           # Security Policy & Directives
+└── LICENSE               # MIT License 2026
 ```
 
 ---
 
-## ⚡ Technical Specification
+## 4. Development Workflow
 
-* **Design System**: Vanilla CSS with strict CSS Custom Properties tokens (8px grid spacing, custom dark surface hierarchy, `#D4FF00` lime accent).
-* **Typography**: `Archivo Black` (Display & Headings) + `JetBrains Mono` (Technical Body & Monospace Code).
-* **Performance**: Zero external JavaScript frameworks. Zero runtime bundle overhead. Instant static edge delivery via GitHub Pages CDN.
-* **SEO & GEO**: Native `Schema.org` JSON-LD structured data, Open Graph protocol, and XML sitemaps.
-
----
-
-## 📖 Key Documentation
-
-* 📐 [Architecture Philosophy](docs/ARCHITECTURE.md)
-* 🎨 [Design System Specification](docs/DESIGN_SYSTEM.md)
-* 🛡️ [10-Phase UI/UX QA Suite](docs/UI_QA.md)
-* 🚀 [Project Evolution Roadmap](docs/ROADMAP.md)
-* 📜 [Release History (CHANGELOG)](CHANGELOG.md)
+1. **Design & Tokens**: All visual elements conform to `styles/tokens.css` (8px grid spacing, HSL color scale).
+2. **Quality Assurance**: Every modification must pass the [10-Phase UI/UX QA Protocol](docs/UI_QA.md).
+3. **Commit Standards**: Strictly follow [Conventional Commits](docs/CONTRIBUTING.md) (`feat`, `fix`, `docs`, `style`, `refactor`).
 
 ---
 
-## 📄 License & Attribution
+## 5. Roadmap
 
-Designed and engineered by **Lợi Mai Công Trung** ([gndme](https://github.com/gndme)).  
+* **v3.9 (Current)**: Modular CSS/JS architecture, 2-tier infrastructure, 10-Phase QA Pipeline & Design System Hub.
+* **v4.0 (Q3 2026)**: Next.js App Router refactor & MDX architecture essays engine.
+* **v5.0 (Q4 2026)**: Interactive AI Architecture Assistant (`gndme Copilot`).
+
+---
+
 Distributed under the [MIT License](LICENSE). Copyright © 2026 gndme.

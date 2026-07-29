@@ -1,0 +1,18 @@
+{
+  "id": "tan-thanh-dung",
+  "client": "TÂN THANH DUNG",
+  "industry": "Plastic Manufacturing",
+  "projects": [
+    {
+      "id": "project-01",
+      "title": "Corporate Digital Ecosystem",
+      "domain": "https://tanthanhdung.vn",
+      "duration": "Q4 2025 – Q1 2026"
+    },
+    {
+      "id": "project-02",
+      "title": "Enterprise Business Operating System",
+      "duration": "Q1 2026 – Q2 2026"
+    }
+  ]
+}
