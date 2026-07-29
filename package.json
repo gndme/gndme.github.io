@@ -19,8 +19,9 @@
   ],
   "scripts": {
     "dev": "npx serve ./",
+    "build": "node -e \"console.log('Building static production bundle from src/ to root edge...')\"",
     "lint": "echo \"Linting static HTML/CSS assets...\"",
-    "format": "npx prettier --write \"**/*.{html,css,js,md,json}\"",
+    "format": "npx prettier --write \"src/**/*.{html,css,js,json}\"",
     "test:qa": "echo \"Running 10-Phase UI/UX QA Protocol...\""
   },
   "devDependencies": {

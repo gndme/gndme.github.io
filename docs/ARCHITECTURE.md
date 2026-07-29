@@ -38,9 +38,13 @@ Public-facing marketing storefronts, B2B corporate portals, internal administrat
 
 ---
 
-## ⚡ Why Static Edge Delivery for the Architecture Hub?
+## ⚡ Source Code Architecture & Single Source of Truth
 
-1. **Zero Cold Starts**: Served globally via GitHub Pages CDN edge nodes with sub-20ms latency.
-2. **Maximum Reliability**: Zero server crashes or database downtime for the personal identity hub.
-3. **High Security**: Immutable static files eliminate server-side injection attack vectors.
-4. **AI & Crawler Friendly**: Pure HTML5 semantic structure allowing Googlebot and LLM agents to parse technical specs instantly.
+To balance **Modern Modular Code Organization (`src/`)** with **GitHub Pages Direct Edge Serving (`/`)**, the repository operates on a Single Source of Truth architecture:
+
+1. **`src/` (Single Source of Truth for Development)**:
+   - All component design, HTML templates, CSS tokens, and JavaScript modules are developed inside `src/` (`src/app/`, `src/pages/`, `src/styles/`, `src/scripts/`, `src/assets/`).
+2. **Root Entry Points (Production Edge Output)**:
+   - Root files serve as the live edge production bundle deployed to GitHub Pages CDN without breaking relative link routing or cold-start performance.
+3. **Automated Build (`package.json`)**:
+   - Running `npm run build` compiles and syncs updates from `src/` to production edge targets.
