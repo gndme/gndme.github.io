@@ -24,7 +24,7 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Business OS Products -->
+  <!-- Business OS Framework Editions -->
   <url>
     <loc>https://gndme.github.io/projects/fixory-lab.html</loc>
     <lastmod>2026-07-29</lastmod>
@@ -38,7 +38,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://gndme.github.io/projects/plasticapp.html</loc>
+    <loc>https://gndme.github.io/projects/arsvix.html</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -50,7 +50,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://gndme.github.io/projects/arsvix.html</loc>
+    <loc>https://gndme.github.io/projects/tt25-consulting.html</loc>
     <lastmod>2026-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
