@@ -3,46 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tan Thanh Dung - Manufacturing Transformation | gndme</title>
-    <meta name="description" content="Tan Thanh Dung is a Manufacturing Digital Transformation initiative created by gndme. Industrial MES deployment, supply chain tracking, and plant automation.">
+    <title>Case Study: Tan Thanh Dung Plastic // Enterprise Business OS | gndme</title>
+    <meta name="description" content="Enterprise Case Study: How gndme architected the Enterprise Business OS for Tan Thanh Dung Plastic, unifying injection molding MES, raw material intake, inventory & finance.">
     <link rel="canonical" href="https://gndme.github.io/projects/tan-thanh-dung.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css?v=3.0.0">
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Tan Thanh Dung MES",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web-based",
-      "description": "Tan Thanh Dung is a Manufacturing Digital Transformation initiative created by gndme.",
-      "author": {
-        "@type": "Person",
-        "name": "Lợi Mai Công Trung",
-        "alternateName": "gndme",
-        "url": "https://gndme.github.io/"
-      }
-    }
-    </script>
+    <link rel="stylesheet" href="../style.css?v=3.9.0">
 </head>
 <body>
     <!-- Custom Cursor -->
     <div id="cursor" class="custom-cursor">
         <div class="cursor-crosshair"></div>
-        <div class="cursor-label">IDLE</div>
+        <div class="cursor-label">CASE_STUDY</div>
     </div>
 
     <div class="tech-grid"></div>
     
+    <!-- Status Bar -->
     <div class="sys-status">
         <span class="status-dot"></span>
-        <span>OS-MODULE // TAN THANH DUNG (v4.0)</span>
+        <span>CASE STUDY // TAN THANH DUNG PLASTIC</span>
+        <span style="color: var(--text-dark);">|</span>
+        <span>STATUS: <span class="status-badge">PRODUCTION</span></span>
     </div>
 
     <div class="container">
+        <!-- 5-Menu Navbar -->
         <header class="navbar">
             <div class="brand-logo"><a href="../index.html">gndme</a></div>
             <nav style="display: flex; gap: var(--space-20); font-size: 0.85rem; text-transform: uppercase;">
@@ -55,182 +42,218 @@
         </header>
 
         <main>
-            <!-- 1. HERO STORYTELLING -->
-            <section style="padding-top: var(--space-64); padding-bottom: var(--space-48);">
-                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">
-                    [ OS-05 // INDUSTRIAL DIGITAL TRANSFORMATION ]
+            <!-- 1. HERO & METADATA -->
+            <section style="padding-top: var(--space-96); padding-bottom: var(--space-64);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 3px; margin-bottom: var(--space-24); text-transform: uppercase;">
+                    // ENTERPRISE CASE STUDY
                 </div>
-                <h1 style="font-family: var(--font-heading); font-size: clamp(2.8rem, 5.5vw, 5rem); color: var(--text-100); line-height: 1.05; margin-bottom: var(--space-16);">
-                    TAN THANH DUNG
+                
+                <h1 class="hero-title-massive">
+                    TAN THANH DUNG<br>
+                    <span style="color: var(--accent-lime);">PLASTIC</span>
                 </h1>
-                <div style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--accent-lime); margin-bottom: var(--space-24);">
-                    Built for enterprise manufacturing digital transformation.
+                
+                <p class="hero-subtitle-massive" style="margin-top: var(--space-16);">
+                    Digital transformation and Enterprise Business OS deployment for a Vietnamese plastic injection molding manufacturer.
+                </p>
+
+                <!-- Metadata Grid -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-20); margin-top: var(--space-48); background: var(--surface-100); padding: var(--space-24); border-radius: 8px; border: 1px solid var(--border-subtle);">
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--text-mid); text-transform: uppercase;">STATUS</div>
+                        <div style="font-size: 1rem; color: var(--accent-lime); font-weight: bold; margin-top: 4px;">Production (2026)</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--text-mid); text-transform: uppercase;">LOCATION</div>
+                        <div style="font-size: 1rem; color: var(--text-white); font-weight: bold; margin-top: 4px;">Ho Chi Minh City</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--text-mid); text-transform: uppercase;">INDUSTRY</div>
+                        <div style="font-size: 1rem; color: var(--text-white); font-weight: bold; margin-top: 4px;">Plastic Manufacturing</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--text-mid); text-transform: uppercase;">DEPLOYED MODULES</div>
+                        <div style="font-size: 1rem; color: var(--accent-cyan); font-weight: bold; margin-top: 4px;">14 Modules</div>
+                    </div>
                 </div>
-                <p style="font-size: 1.15rem; color: var(--text-70); max-width: 750px; line-height: 1.7; background: var(--surface-100); border-left: 2px solid var(--accent-lime); padding: var(--space-24); border-radius: 0 4px 4px 0;">
-                    Modernizing an industrial plant requires more than off-the-shelf software. Tan Thanh Dung transforms legacy manufacturing operations into a modern, data-driven Manufacturing Execution System.
+            </section>
+
+            <!-- 2. CLIENT OVERVIEW -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 01. CLIENT OVERVIEW</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-24);">WHO IS TAN THANH DUNG PLASTIC?</h2>
+                <p style="font-size: 1.1rem; color: var(--text-high); max-width: 850px; line-height: 1.8;">
+                    Tan Thanh Dung Plastic is a Vietnamese industrial plastic packaging manufacturer. The company operates multi-shift plastic injection molding lines, raw polymer procurement, B2B sales, warehouse inventory, and accounting operations.
                 </p>
             </section>
 
-            <!-- 2. THE PROBLEM VS THE SOLUTION -->
-            <section style="margin-bottom: var(--space-64);">
-                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-16);">// THE OPERATIONAL SHIFT</div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--space-24);">
-                    <!-- Today -->
-                    <div style="background: rgba(255, 95, 86, 0.05); border: 1px solid rgba(255, 95, 86, 0.2); padding: var(--space-24); border-radius: 4px;">
-                        <div style="font-size: 0.75rem; color: #ff5f56; font-weight: bold; letter-spacing: 1.5px; margin-bottom: var(--space-16);">[ TODAY: LEGACY PLANT ]</div>
-                        <p style="font-size: 0.85rem; color: rgba(255, 95, 86, 0.8); line-height: 1.8;">
-                            Client Order ➔ Verbal Schedule ➔ Plant Blindspots ➔ Manual Invoicing ➔ Friction
-                        </p>
+            <!-- 3. BUSINESS CHALLENGE -->
+            <section style="margin-bottom: var(--space-96); background: rgba(255, 69, 58, 0.04); padding: var(--space-48); border-radius: 8px; border: 1px solid rgba(255, 69, 58, 0.2);">
+                <div style="font-size: 0.75rem; color: var(--accent-red); letter-spacing: 2px; margin-bottom: var(--space-16);">// 02. THE CHALLENGE</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--accent-red); margin-bottom: var(--space-24);">BEFORE: FRAGMENTED OPERATIONAL SILOS</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-24); margin-bottom: var(--space-32);">
+                    <div style="background: var(--surface-100); padding: var(--space-20); border-radius: 6px;">
+                        <div style="color: var(--accent-red); font-weight: bold; margin-bottom: 6px;">⚠️ Inventory Mismatch</div>
+                        <div style="font-size: 0.85rem; color: var(--text-mid);">Discrepancy between raw resin intake and finished goods stock on warehouse floors.</div>
                     </div>
-                    <!-- With Tan Thanh Dung -->
-                    <div style="background: rgba(212, 255, 0, 0.05); border: 1px solid rgba(212, 255, 0, 0.2); padding: var(--space-24); border-radius: 4px;">
-                        <div style="font-size: 0.75rem; color: var(--accent-lime); font-weight: bold; letter-spacing: 1.5px; margin-bottom: var(--space-16);">[ WITH MES ENGINE: DIGITAL PLANT ]</div>
-                        <p style="font-size: 0.85rem; color: var(--accent-lime); line-height: 1.8;">
-                            Client Portal ➔ Auto MES Schedule ➔ Telemetry ➔ Audit ➔ Auto Invoice & Dispatch
-                        </p>
+                    <div style="background: var(--surface-100); padding: var(--space-20); border-radius: 6px;">
+                        <div style="color: var(--accent-red); font-weight: bold; margin-bottom: 6px;">⚠️ Debt & Payment Delays</div>
+                        <div style="font-size: 0.85rem; color: var(--text-mid);">Un-tracked customer debt balances managed via paper invoices and Zalo chats.</div>
+                    </div>
+                    <div style="background: var(--surface-100); padding: var(--space-20); border-radius: 6px;">
+                        <div style="color: var(--accent-red); font-weight: bold; margin-bottom: 6px;">⚠️ Manual Shift Planning</div>
+                        <div style="font-size: 0.85rem; color: var(--text-mid);">No real-time visibility into machine downtime, scrap ratios, or shift yield output.</div>
+                    </div>
+                </div>
+
+                <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-red); background: #111; padding: 16px 24px; border-radius: 6px; text-align: center;">
+                    Excel ➔ Paper Forms ➔ Phone Calls ➔ Zalo Messages ➔ Disconnected Departments
+                </div>
+            </section>
+
+            <!-- 4. SOLUTION ARCHITECTURE -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 03. SOLUTION ARCHITECTURE</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-24);">ENTERPRISE BUSINESS OPERATING SYSTEM</h2>
+                <p style="font-size: 1.1rem; color: var(--text-high); max-width: 850px; line-height: 1.8; margin-bottom: var(--space-32);">
+                    gndme architected a closed-loop Business Operating System unifying Sales, Inventory, Machine MES, Operations, Finance, and AI Analytics into one single operational platform.
+                </p>
+            </section>
+
+            <!-- 5. MODULES DEPLOYED (Grouped Logically) -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 04. MODULES DEPLOYED</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-32);">14 SYSTEM MODULES</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-24);">
+                    <div style="background: var(--surface-100); padding: var(--space-24); border-radius: 6px; border: 1px solid var(--border-subtle);">
+                        <div style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--accent-lime); margin-bottom: 12px;">COMMERCIAL</div>
+                        <ul style="font-size: 0.85rem; color: var(--text-high); list-style: none; display: flex; flex-direction: column; gap: 8px;">
+                            <li>• B2B Sales Orders</li>
+                            <li>• Customer Directory</li>
+                            <li>• Receivables & Debt Tracker</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: var(--surface-100); padding: var(--space-24); border-radius: 6px; border: 1px solid var(--border-subtle);">
+                        <div style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--accent-cyan); margin-bottom: 12px;">OPERATIONS & MES</div>
+                        <ul style="font-size: 0.85rem; color: var(--text-high); list-style: none; display: flex; flex-direction: column; gap: 8px;">
+                            <li>• Shift Production Planning</li>
+                            <li>• Machine Telemetry</li>
+                            <li>• Quality Control (QC)</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: var(--surface-100); padding: var(--space-24); border-radius: 6px; border: 1px solid var(--border-subtle);">
+                        <div style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--accent-orange); margin-bottom: 12px;">LOGISTICS</div>
+                        <ul style="font-size: 0.85rem; color: var(--text-high); list-style: none; display: flex; flex-direction: column; gap: 8px;">
+                            <li>• Resin Stock Warehouse</li>
+                            <li>• Raw Material Intake</li>
+                            <li>• Delivery Dispatch</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: var(--surface-100); padding: var(--space-24); border-radius: 6px; border: 1px solid var(--border-subtle);">
+                        <div style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-white); margin-bottom: 12px;">FINANCE & PEOPLE</div>
+                        <ul style="font-size: 0.85rem; color: var(--text-high); list-style: none; display: flex; flex-direction: column; gap: 8px;">
+                            <li>• Double-Entry Accounting</li>
+                            <li>• M-Invoice E-Invoicing</li>
+                            <li>• Shift Payroll & Workers</li>
+                        </ul>
                     </div>
                 </div>
             </section>
 
-            <!-- 3. WHY OPERATING SYSTEM? -->
-            <section style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-48); border-radius: 6px; margin-bottom: var(--space-64); text-align: center; position: relative; overflow: hidden;">
-                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// CORE PHILOSOPHY</div>
-                <h2 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--text-100); margin-bottom: var(--space-24);">WHY OPERATING SYSTEM?</h2>
-                <div style="font-size: 1.05rem; color: var(--text-70); max-width: 700px; margin: 0 auto; line-height: 1.8; font-style: italic;">
-                    "Tan Thanh Dung Digital Transformation is not just an IT upgrade. Every client order flows through an isolated, secure MES architecture. Every delivery schedule is auditable. Every invoice is generated automatically. That's why Tan Thanh Dung is executed as an Industrial Operating System."
-                </div>
-            </section>
+            <!-- 6. OPERATIONAL WORKFLOW ("THE GNDME SIGNATURE") -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 05. OPERATIONAL WORKFLOW</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-32);">STANDARDIZED STATE MACHINE PIPELINE</h2>
 
-            <!-- 4. WORKFLOW STEPS -->
-            <section style="margin-bottom: var(--space-64);">
-                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// STANDARDIZED WORKFLOW PIPELINE</div>
-                <div style="display: flex; gap: var(--space-12); overflow-x: auto; padding-bottom: var(--space-16);">
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
-                        <div style="font-size: 0.7rem; color: var(--accent-lime);">01</div>
-                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">PO Intake</div>
-                    </div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
-                        <div style="font-size: 0.7rem; color: var(--accent-lime);">02</div>
-                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">MES Schedule</div>
-                    </div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
-                        <div style="font-size: 0.7rem; color: var(--accent-lime);">03</div>
-                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">Line Run</div>
-                    </div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
-                        <div style="font-size: 0.7rem; color: var(--accent-lime);">04</div>
-                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">QA Check</div>
-                    </div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
-                        <div style="font-size: 0.7rem; color: var(--accent-lime);">05</div>
-                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">Inventory Audit</div>
-                    </div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
-                        <div style="font-size: 0.7rem; color: var(--accent-lime);">06</div>
-                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">Auto Invoice</div>
-                    </div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
-                        <div style="font-size: 0.7rem; color: var(--accent-lime);">07</div>
-                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">Dispatch</div>
+                <div style="background: var(--surface-100); padding: var(--space-32); border-radius: 8px; border: 1px solid var(--border-subtle); overflow-x: auto;">
+                    <div style="min-width: 800px; display: flex; justify-between; align-items: center; text-align: center; font-family: var(--font-mono); font-size: 0.8rem;">
+                        <div style="background: var(--surface-200); padding: 12px 16px; border-radius: 4px; color: var(--text-white);">Customer Order</div>
+                        <span style="color: var(--accent-lime);">➔</span>
+                        <div style="background: var(--surface-200); padding: 12px 16px; border-radius: 4px; color: var(--accent-lime);">Production Plan</div>
+                        <span style="color: var(--accent-lime);">➔</span>
+                        <div style="background: var(--surface-200); padding: 12px 16px; border-radius: 4px; color: var(--accent-cyan);">Injection Molding</div>
+                        <span style="color: var(--accent-lime);">➔</span>
+                        <div style="background: var(--surface-200); padding: 12px 16px; border-radius: 4px; color: var(--accent-orange);">Warehouse Stock</div>
+                        <span style="color: var(--accent-lime);">➔</span>
+                        <div style="background: var(--surface-200); padding: 12px 16px; border-radius: 4px; color: var(--text-white);">Delivery</div>
+                        <span style="color: var(--accent-lime);">➔</span>
+                        <div style="background: var(--surface-200); padding: 12px 16px; border-radius: 4px; color: var(--accent-lime);">E-Invoicing & Audit</div>
                     </div>
                 </div>
             </section>
 
-            <!-- 5. MODULES (SLEEK 2-LINE CARDS) -->
-            <section style="margin-bottom: var(--space-64);">
-                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// SYSTEM MODULES</div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-16);">
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 4px;">
-                        <h3 style="font-size: 1.1rem; color: var(--text-100); margin-bottom: 4px;">MES Core Engine</h3>
-                        <p style="font-size: 0.8rem; color: var(--text-40);">FastAPI order lifecycle tracking & scheduling</p>
+            <!-- 7. TECHNOLOGY STACK -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 06. TECH STACK</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-24);">ENTERPRISE STACK</h2>
+
+                <div style="display: flex; gap: var(--space-12); flex-wrap: wrap; font-size: 0.85rem;">
+                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: 4px; color: var(--text-white);">Next.js (App Router)</span>
+                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: 4px; color: var(--text-white);">FastAPI Python</span>
+                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: 4px; color: var(--text-white);">PostgreSQL Database</span>
+                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: 4px; color: var(--accent-lime);">JWT & AES-256 Encryption</span>
+                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: 4px; color: var(--accent-cyan);">M-Invoice API Integration</span>
+                </div>
+            </section>
+
+            <!-- 8. OUTCOME & RESULTS -->
+            <section style="margin-bottom: var(--space-96); background: var(--surface-100); padding: var(--space-48); border-radius: 8px; border: 1px solid var(--border-active);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 07. RESULTS & OUTCOME</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-24);">ONE OPERATIONAL PLATFORM</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-24);">
+                    <div>
+                        <div style="font-family: var(--font-heading); font-size: 2rem; color: var(--accent-lime);">14</div>
+                        <div style="font-size: 0.85rem; color: var(--text-mid);">Unified Business Modules</div>
                     </div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 4px;">
-                        <h3 style="font-size: 1.1rem; color: var(--text-100); margin-bottom: 4px;">Secure Infrastructure</h3>
-                        <p style="font-size: 0.8rem; color: var(--text-40);">Ubuntu, PM2, Nginx SSL, UFW local port isolation</p>
+                    <div>
+                        <div style="font-family: var(--font-heading); font-size: 2rem; color: var(--accent-cyan);">100%</div>
+                        <div style="font-size: 0.85rem; color: var(--text-mid);">Auditable State Machine Logs</div>
                     </div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 4px;">
-                        <h3 style="font-size: 1.1rem; color: var(--text-100); margin-bottom: 4px;">B2B Client Portal</h3>
-                        <p style="font-size: 0.8rem; color: var(--text-40);">Real-time PO tracking & automated invoice generation</p>
-                    </div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 4px;">
-                        <h3 style="font-size: 1.1rem; color: var(--text-100); margin-bottom: 4px;">Supply Audit Trail</h3>
-                        <p style="font-size: 0.8rem; color: var(--text-40);">Raw material intake to delivery dispatch ledger</p>
+                    <div>
+                        <div style="font-family: var(--font-heading); font-size: 2rem; color: var(--accent-orange);">0ms</div>
+                        <div style="font-size: 0.85rem; color: var(--text-mid);">Realtime Dashboard Latency</div>
                     </div>
                 </div>
             </section>
 
-            <!-- 6. AI ASSISTANT -->
-            <section style="margin-bottom: var(--space-64);">
-                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// AI INTEGRATION</div>
-                <div style="display: flex; gap: var(--space-16); flex-wrap: wrap; font-size: 0.85rem;">
-                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 10px 16px; border-radius: 4px; color: var(--text-70);">Logistics Lead Time AI</span>
-                    <span style="color: var(--accent-lime);">→</span>
-                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 10px 16px; border-radius: 4px; color: var(--text-70);">Inventory Reorder Audit</span>
-                    <span style="color: var(--accent-lime);">→</span>
-                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 10px 16px; border-radius: 4px; color: var(--text-70);">Yield Prediction</span>
-                    <span style="color: var(--accent-lime);">→</span>
-                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 10px 16px; border-radius: 4px; color: var(--text-70);">Future Vision</span>
-                </div>
+            <!-- 9. LESSONS LEARNED (FAVORITE FOR GOOGLE & AI) -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 08. LESSONS LEARNED</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-24);">WORKFLOW-FIRST LESSONS</h2>
+                <p style="font-size: 1.1rem; color: var(--text-high); max-width: 850px; line-height: 1.8;">
+                    This enterprise transformation reinforced the foundational importance of <strong>workflow-first architecture</strong>. Instead of merely digitizing existing paper forms, the system redesigned raw operational processes into standardized, machine-verified state machine pipelines.
+                </p>
             </section>
 
-            <!-- 7. ARCHITECTURE DIAGRAM -->
-            <section style="margin-bottom: var(--space-64);">
-                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// SYSTEM ARCHITECTURE</div>
-                <div style="background: #000; border: 1px solid var(--border-subtle); padding: var(--space-24); font-family: var(--font-mono); font-size: 0.9rem; color: var(--accent-lime); overflow-x: auto; border-radius: 4px;">
-                    Client Browser ➔ Nginx SSL Proxy ➔ FastAPI Engine ➔ SQLite/PostgreSQL ➔ Local SMB Audit
-                </div>
-            </section>
-
-            <!-- 8. DESIGN PRINCIPLES -->
-            <section style="margin-bottom: var(--space-64);">
-                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// DESIGN PRINCIPLES</div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-16);">
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">Data-driven MES before paper</div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">Zero Open Internal Ports</div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">Auditable Supply Chain</div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">Transparent B2B Status</div>
-                </div>
-            </section>
-
-            <!-- 9. ROADMAP TIERS -->
-            <section style="margin-bottom: var(--space-64);">
-                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// EVOLUTION ROADMAP</div>
-                <div style="display: flex; flex-direction: column; gap: var(--space-16); font-family: var(--font-mono); font-size: 0.9rem;">
-                    <div style="display: flex; justify-between; align-items: center;">
-                        <span style="color: var(--text-70);">2026 // MES Core & Digitization</span>
-                        <span style="color: var(--accent-lime);">████████████ 100%</span>
-                    </div>
-                    <div style="display: flex; justify-between; align-items: center;">
-                        <span style="color: var(--text-70);">2027 // Secure Nginx/FastAPI Infra</span>
-                        <span style="color: var(--accent-lime);">████████████ 100%</span>
-                    </div>
-                    <div style="display: flex; justify-between; align-items: center;">
-                        <span style="color: var(--text-70);">2028 // Auto B2B Dispatch Portal</span>
-                        <span style="color: var(--text-40);">████ 50%</span>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Cross-Link OS Navigator -->
-            <section style="border-top: 1px solid var(--border-subtle); padding-top: var(--space-32); margin-bottom: var(--space-64);">
-                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-16);">EXPLORE OTHER OS MODULES IN THE SUITE</div>
-                <div style="display: flex; gap: var(--space-16); flex-wrap: wrap; font-size: 0.85rem;">
-                    <a href="fixory-lab.html" style="color: var(--accent-lime); text-decoration: none;">./FIXORY Lab (Repair OS) →</a>
-                    <a href="tuctac-studio.html" style="color: var(--accent-lime); text-decoration: none;">./TUCTAC Studio (Commerce OS) →</a>
-                    <a href="plasticapp.html" style="color: var(--accent-lime); text-decoration: none;">./PlasticApp (Manufacturing OS) →</a>
-                    <a href="arsvix.html" style="color: var(--accent-lime); text-decoration: none;">./Arsvix (Vision OS) →</a>
+            <!-- 10. NEXT CASE STUDY FOOTER NAVIGATION -->
+            <section style="border-top: 1px solid var(--border-subtle); padding-top: var(--space-48); margin-bottom: var(--space-64);">
+                <div style="display: flex; justify-between; align-items: center;">
+                    <div style="font-size: 0.8rem; color: var(--text-mid);">NEXT CASE STUDY</div>
+                    <a href="tt25-consulting.html" style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--accent-lime);">TT25 CONSULTING (SERVICE OS) →</a>
                 </div>
             </section>
         </main>
 
         <footer class="footer">
             <div class="footer-text">
-                SYS.BUILD: 2026 // Tan Thanh Dung - Manufacturing Transformation by <span>gndme</span> (/ˈɡraʊmi/)
+                SYS.BUILD: 2026 // Case Study by <span>gndme</span> (/ˈɡraʊmi/)
+            </div>
+            <div class="footer-links">
+                <a href="../companies.html">Companies</a>
+                <a href="../solutions.html">Solutions</a>
+                <a href="../journal.html">Journal</a>
+                <a href="../about.html">About</a>
+                <a href="https://github.com/gndme" target="_blank">GitHub</a>
             </div>
         </footer>
     </div>
 
-    <!-- Interaction Script for Custom Cursor -->
-    <script src="../script.js?v=3.0.0"></script>
+    <script src="../script.js?v=3.9.0"></script>
 </body>
 </html>
