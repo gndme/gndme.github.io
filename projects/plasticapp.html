@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlasticApp // Internal Manufacturing Operating System | gndme Encyclopedia</title>
-    <meta name="description" content="PlasticApp is an Internal Manufacturing Operating System created by gndme. Digitizing production scheduling, material intake, and factory floor monitoring.">
+    <title>PlasticApp - Manufacturing Operating System | gndme</title>
+    <meta name="description" content="PlasticApp is an Internal Manufacturing Operating System created by gndme. Built for modern industrial polymer processing plants.">
     <link rel="canonical" href="https://gndme.github.io/projects/plasticapp.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,99 +45,161 @@
         </header>
 
         <main>
-            <!-- OS Deck Header -->
+            <!-- 1. HERO STORYTELLING -->
             <section style="padding-top: var(--space-64); padding-bottom: var(--space-48);">
                 <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">
                     [ OS-04 // INTERNAL MANUFACTURING OPERATING SYSTEM ]
                 </div>
-                <h1 style="font-family: var(--font-heading); font-size: clamp(2.5rem, 5vw, 4.5rem); color: var(--text-100); line-height: 1.1; margin-bottom: var(--space-16);">
+                <h1 style="font-family: var(--font-heading); font-size: clamp(2.8rem, 5.5vw, 5rem); color: var(--text-100); line-height: 1.05; margin-bottom: var(--space-16);">
                     PLASTICAPP
                 </h1>
-                <p style="font-size: 1.2rem; color: var(--text-70); max-width: 750px; line-height: 1.6;">
-                    PlasticApp is an Internal Manufacturing Operating System created by gndme. Digitizing polymer injection molding, raw material batching, and floor line scheduling.
+                <div style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--accent-lime); margin-bottom: var(--space-24);">
+                    Built for modern industrial polymer processing plants.
+                </div>
+                <p style="font-size: 1.15rem; color: var(--text-70); max-width: 750px; line-height: 1.7; background: var(--surface-100); border-left: 2px solid var(--accent-lime); padding: var(--space-24); border-radius: 0 4px 4px 0;">
+                    Managing a manufacturing plant shouldn't rely on paper clipboards, un-tracked resin waste, and verbal shift handovers. PlasticApp transforms polymer injection molding into a modern, workflow-driven Manufacturing Operating System.
                 </p>
             </section>
 
-            <!-- OS Quick Nav Bar -->
-            <nav style="display: flex; gap: var(--space-16); flex-wrap: wrap; padding: var(--space-16) 0; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); margin-bottom: var(--space-64); font-size: 0.75rem;">
-                <a href="#mission" style="color: var(--text-70); text-decoration: none;">01. MISSION</a>
-                <span style="color: var(--text-20);">|</span>
-                <a href="#workflow" style="color: var(--text-70); text-decoration: none;">02. WORKFLOW</a>
-                <span style="color: var(--text-20);">|</span>
-                <a href="#modules" style="color: var(--text-70); text-decoration: none;">03. CORE MODULES</a>
-                <span style="color: var(--text-20);">|</span>
-                <a href="#architecture" style="color: var(--text-70); text-decoration: none;">04. ARCHITECTURE</a>
-                <span style="color: var(--text-20);">|</span>
-                <a href="#ai-layer" style="color: var(--text-70); text-decoration: none;">05. AI LAYER</a>
-                <span style="color: var(--text-20);">|</span>
-                <a href="#roadmap" style="color: var(--text-70); text-decoration: none;">06. ROADMAP</a>
-            </nav>
-
-            <!-- Sections -->
-            <article style="display: flex; flex-direction: column; gap: var(--space-64); margin-bottom: var(--space-96);">
-                
-                <section id="mission">
-                    <h2 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--accent-lime); margin-bottom: var(--space-16);">01. MISSION & VISION</h2>
-                    <p style="color: var(--text-70); font-size: 1rem; line-height: 1.7; max-width: 850px;">
-                        Industrial polymer processing requires precise tracking of resin consumption, mold cycle counts, and operator output. PlasticApp operates as a dedicated Manufacturing OS that replaces physical clipboards with real-time floor telemetry, ensuring zero un-tracked scrap and maximum machine uptime.
-                    </p>
-                </section>
-
-                <section id="workflow">
-                    <h2 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--accent-lime); margin-bottom: var(--space-16);">02. OPERATIONAL WORKFLOW</h2>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 4px;">
-                        <p style="font-size: 0.85rem; color: var(--text-70); font-family: var(--font-mono); line-height: 1.8;">
-                            [RESIN INTAKE & BATCHING] ➔ [MOLD MOUNT & SETUP] ➔ [CYCLE RUN TELEMETRY] <br>
-                            ➔ [QUALITY ASSURANCE INSPECTION] ➔ [SCRAP & YIELD CALCULATION] ➔ [WAREHOUSE DISPATCH]
+            <!-- 2. THE PROBLEM VS THE SOLUTION -->
+            <section style="margin-bottom: var(--space-64);">
+                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-16);">// THE OPERATIONAL SHIFT</div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--space-24);">
+                    <!-- Today -->
+                    <div style="background: rgba(255, 95, 86, 0.05); border: 1px solid rgba(255, 95, 86, 0.2); padding: var(--space-24); border-radius: 4px;">
+                        <div style="font-size: 0.75rem; color: #ff5f56; font-weight: bold; letter-spacing: 1.5px; margin-bottom: var(--space-16);">[ TODAY: PAPERWORK FACTORY ]</div>
+                        <p style="font-size: 0.85rem; color: rgba(255, 95, 86, 0.8); line-height: 1.8;">
+                            Raw Resin ➔ Paper Logs ➔ Shift Friction ➔ Mold Breakdown ➔ Un-tracked Scrap ➔ Loss
                         </p>
                     </div>
-                </section>
-
-                <section id="modules">
-                    <h2 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--accent-lime); margin-bottom: var(--space-16);">03. OS CORE MODULES</h2>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-16);">
-                        <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24);">
-                            <h3 style="font-size: 1rem; color: var(--text-100); margin-bottom: var(--space-8);">[ Floor Line Telemetry ]</h3>
-                            <p style="font-size: 0.85rem; color: var(--text-40);">Real-time monitoring of injection molding cycle times, temperature drift, and operator shift output.</p>
-                        </div>
-                        <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24);">
-                            <h3 style="font-size: 1rem; color: var(--text-100); margin-bottom: var(--space-8);">[ Resin & Batch Calculator ]</h3>
-                            <p style="font-size: 0.85rem; color: var(--text-40);">Calculates exact masterbatch additive ratios and tracks raw polymer inventory intake.</p>
-                        </div>
-                        <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24);">
-                            <h3 style="font-size: 1rem; color: var(--text-100); margin-bottom: var(--space-8);">[ Mold Maintenance Engine ]</h3>
-                            <p style="font-size: 0.85rem; color: var(--text-40);">Tracks total shot cycles per mold set to schedule preventive servicing before tool wear degrades quality.</p>
-                        </div>
+                    <!-- With PlasticApp -->
+                    <div style="background: rgba(212, 255, 0, 0.05); border: 1px solid rgba(212, 255, 0, 0.2); padding: var(--space-24); border-radius: 4px;">
+                        <div style="font-size: 0.75rem; color: var(--accent-lime); font-weight: bold; letter-spacing: 1.5px; margin-bottom: var(--space-16);">[ WITH PLASTICAPP: MANUFACTURING OS ]</div>
+                        <p style="font-size: 0.85rem; color: var(--accent-lime); line-height: 1.8;">
+                            Intake ➔ Batching ➔ Machine Cycle Telemetry ➔ Defect Detection ➔ Dispatch
+                        </p>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <section id="architecture">
-                    <h2 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--accent-lime); margin-bottom: var(--space-16);">04. DECOUPLED ARCHITECTURE & TECH STACK</h2>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); color: var(--text-70); font-size: 0.9rem;">
-                        <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-12);">
-                            <li><strong style="color: var(--text-100);">Core Application Engine:</strong> Python, FastAPI / Django Core Services</li>
-                            <li><strong style="color: var(--text-100);">Data & Cache Layer:</strong> PostgreSQL, Redis Caching Engine</li>
-                            <li><strong style="color: var(--text-100);">UI Layer:</strong> Responsive Tablet Interface for Floor Operators (React/Tailwind)</li>
-                            <li><strong style="color: var(--text-100);">Deployment:</strong> Dockerized On-Premise Container Isolation</li>
-                        </ul>
+            <!-- 3. WHY OPERATING SYSTEM? -->
+            <section style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-48); border-radius: 6px; margin-bottom: var(--space-64); text-align: center; position: relative; overflow: hidden;">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// CORE PHILOSOPHY</div>
+                <h2 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--text-100); margin-bottom: var(--space-24);">WHY OPERATING SYSTEM?</h2>
+                <div style="font-size: 1.05rem; color: var(--text-70); max-width: 700px; margin: 0 auto; line-height: 1.8; font-style: italic;">
+                    "PlasticApp is not another ERP entry form. Every resin batch flows through a standardized operating model. Every machine cycle is telemetry-tracked. Every mold maintenance window is automated. That's why PlasticApp is designed as a Manufacturing Operating System."
+                </div>
+            </section>
+
+            <!-- 4. WORKFLOW STEPS -->
+            <section style="margin-bottom: var(--space-64);">
+                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// STANDARDIZED WORKFLOW PIPELINE</div>
+                <div style="display: flex; gap: var(--space-12); overflow-x: auto; padding-bottom: var(--space-16);">
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
+                        <div style="font-size: 0.7rem; color: var(--accent-lime);">01</div>
+                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">Resin Intake</div>
                     </div>
-                </section>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
+                        <div style="font-size: 0.7rem; color: var(--accent-lime);">02</div>
+                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">Batching</div>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
+                        <div style="font-size: 0.7rem; color: var(--accent-lime);">03</div>
+                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">Mold Setup</div>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
+                        <div style="font-size: 0.7rem; color: var(--accent-lime);">04</div>
+                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">Cycle Run</div>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
+                        <div style="font-size: 0.7rem; color: var(--accent-lime);">05</div>
+                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">QA Check</div>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
+                        <div style="font-size: 0.7rem; color: var(--accent-lime);">06</div>
+                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">Yield Audit</div>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
+                        <div style="font-size: 0.7rem; color: var(--accent-lime);">07</div>
+                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">Dispatch</div>
+                    </div>
+                </div>
+            </section>
 
-                <section id="ai-layer">
-                    <h2 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--accent-lime); margin-bottom: var(--space-16);">05. AI & ANALYTICS LAYER</h2>
-                    <p style="color: var(--text-70); font-size: 0.95rem; line-height: 1.6;">
-                        PlasticApp feeds floor telemetry into anomaly detection models to flag sudden cycle time spikes, resin consumption variance, or unexpected scrap percentage increases in real time.
-                    </p>
-                </section>
+            <!-- 5. MODULES (SLEEK 2-LINE CARDS) -->
+            <section style="margin-bottom: var(--space-64);">
+                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// SYSTEM MODULES</div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-16);">
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 4px;">
+                        <h3 style="font-size: 1.1rem; color: var(--text-100); margin-bottom: 4px;">Line Telemetry</h3>
+                        <p style="font-size: 0.8rem; color: var(--text-40);">Cycle counts & temperature drift monitoring</p>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 4px;">
+                        <h3 style="font-size: 1.1rem; color: var(--text-100); margin-bottom: 4px;">Batch Calculator</h3>
+                        <p style="font-size: 0.8rem; color: var(--text-40);">Resin masterbatch ratio intelligence</p>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 4px;">
+                        <h3 style="font-size: 1.1rem; color: var(--text-100); margin-bottom: 4px;">Mold Life Engine</h3>
+                        <p style="font-size: 0.8rem; color: var(--text-40);">Shot cycle threshold & preventive maintenance</p>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 4px;">
+                        <h3 style="font-size: 1.1rem; color: var(--text-100); margin-bottom: 4px;">Operator Desk</h3>
+                        <p style="font-size: 0.8rem; color: var(--text-40);">Responsive tablet shift logging interface</p>
+                    </div>
+                </div>
+            </section>
 
-                <section id="roadmap">
-                    <h2 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--accent-lime); margin-bottom: var(--space-16);">06. ROADMAP & EVOLUTION</h2>
-                    <p style="color: var(--text-70); font-size: 0.95rem; line-height: 1.6;">
-                        Phase 1 (Material & Mold Core) ➔ Phase 2 (Tablet Operator Dashboards) ➔ Phase 3 (Integration with Arsvix Vision OS for automated conveyor defect rejection).
-                    </p>
-                </section>
+            <!-- 6. AI ASSISTANT -->
+            <section style="margin-bottom: var(--space-64);">
+                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// AI INTEGRATION</div>
+                <div style="display: flex; gap: var(--space-16); flex-wrap: wrap; font-size: 0.85rem;">
+                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 10px 16px; border-radius: 4px; color: var(--text-70);">Anomaly Detection</span>
+                    <span style="color: var(--accent-lime);">→</span>
+                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 10px 16px; border-radius: 4px; color: var(--text-70);">Resin Waste Audit</span>
+                    <span style="color: var(--accent-lime);">→</span>
+                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 10px 16px; border-radius: 4px; color: var(--text-70);">Yield Prediction</span>
+                    <span style="color: var(--accent-lime);">→</span>
+                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 10px 16px; border-radius: 4px; color: var(--text-70);">Future Vision</span>
+                </div>
+            </section>
 
-            </article>
+            <!-- 7. ARCHITECTURE DIAGRAM -->
+            <section style="margin-bottom: var(--space-64);">
+                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// SYSTEM ARCHITECTURE</div>
+                <div style="background: #000; border: 1px solid var(--border-subtle); padding: var(--space-24); font-family: var(--font-mono); font-size: 0.9rem; color: var(--accent-lime); overflow-x: auto; border-radius: 4px;">
+                    Operator Tablet ➔ Python FastAPI ➔ PostgreSQL ➔ Redis Caching ➔ Docker On-Prem
+                </div>
+            </section>
+
+            <!-- 8. DESIGN PRINCIPLES -->
+            <section style="margin-bottom: var(--space-64);">
+                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// DESIGN PRINCIPLES</div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-16);">
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">Telemetry before paperwork</div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">Zero Un-tracked Resin</div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">Preventive Maintenance</div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">Action Driven Floor Desk</div>
+                </div>
+            </section>
+
+            <!-- 9. ROADMAP TIERS -->
+            <section style="margin-bottom: var(--space-64);">
+                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// EVOLUTION ROADMAP</div>
+                <div style="display: flex; flex-direction: column; gap: var(--space-16); font-family: var(--font-mono); font-size: 0.9rem;">
+                    <div style="display: flex; justify-between; align-items: center;">
+                        <span style="color: var(--text-70);">2026 // Material & Mold Core</span>
+                        <span style="color: var(--accent-lime);">████████████ 100%</span>
+                    </div>
+                    <div style="display: flex; justify-between; align-items: center;">
+                        <span style="color: var(--text-70);">2027 // Tablet Operator Desk</span>
+                        <span style="color: var(--accent-lime);">████████ 80%</span>
+                    </div>
+                    <div style="display: flex; justify-between; align-items: center;">
+                        <span style="color: var(--text-70);">2028 // Vision OS Conveyor Integration</span>
+                        <span style="color: var(--text-40);">████ 40%</span>
+                    </div>
+                </div>
+            </section>
 
             <!-- Cross-Link OS Navigator -->
             <section style="border-top: 1px solid var(--border-subtle); padding-top: var(--space-32); margin-bottom: var(--space-64);">

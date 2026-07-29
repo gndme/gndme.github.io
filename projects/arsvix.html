@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arsvix // Vision & Automation Operating System | gndme Encyclopedia</title>
-    <meta name="description" content="Arsvix is a Vision & Automation Operating System created by gndme. Computer vision pipelines, automated product inspection, and AI-driven industrial analytics.">
+    <title>Arsvix - Vision & Automation Operating System | gndme</title>
+    <meta name="description" content="Arsvix is a Vision & Automation Operating System created by gndme. Transforming physical conveyor observations into real-time industrial telemetry.">
     <link rel="canonical" href="https://gndme.github.io/projects/arsvix.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,99 +45,161 @@
         </header>
 
         <main>
-            <!-- OS Deck Header -->
+            <!-- 1. HERO STORYTELLING -->
             <section style="padding-top: var(--space-64); padding-bottom: var(--space-48);">
                 <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">
                     [ OS-01 // VISION & AUTOMATION OPERATING SYSTEM ]
                 </div>
-                <h1 style="font-family: var(--font-heading); font-size: clamp(2.5rem, 5vw, 4.5rem); color: var(--text-100); line-height: 1.1; margin-bottom: var(--space-16);">
+                <h1 style="font-family: var(--font-heading); font-size: clamp(2.8rem, 5.5vw, 5rem); color: var(--text-100); line-height: 1.05; margin-bottom: var(--space-16);">
                     ARSVIX
                 </h1>
-                <p style="font-size: 1.2rem; color: var(--text-70); max-width: 750px; line-height: 1.6;">
-                    Arsvix is a Vision & Automation Operating System created by gndme. Transforming physical conveyer observations into real-time industrial telemetry.
+                <div style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--accent-lime); margin-bottom: var(--space-24);">
+                    Built for real-time edge computer vision & industrial automation.
+                </div>
+                <p style="font-size: 1.15rem; color: var(--text-70); max-width: 750px; line-height: 1.7; background: var(--surface-100); border-left: 2px solid var(--accent-lime); padding: var(--space-24); border-radius: 0 4px 4px 0;">
+                    High-speed manufacturing line inspection shouldn't rely on human eyes, manual tally sheets, or post-shift error reports. Arsvix transforms optical camera feeds into a modern, workflow-driven Vision Operating System.
                 </p>
             </section>
 
-            <!-- OS Quick Nav Bar -->
-            <nav style="display: flex; gap: var(--space-16); flex-wrap: wrap; padding: var(--space-16) 0; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); margin-bottom: var(--space-64); font-size: 0.75rem;">
-                <a href="#mission" style="color: var(--text-70); text-decoration: none;">01. MISSION</a>
-                <span style="color: var(--text-20);">|</span>
-                <a href="#workflow" style="color: var(--text-70); text-decoration: none;">02. WORKFLOW</a>
-                <span style="color: var(--text-20);">|</span>
-                <a href="#modules" style="color: var(--text-70); text-decoration: none;">03. CORE MODULES</a>
-                <span style="color: var(--text-20);">|</span>
-                <a href="#architecture" style="color: var(--text-70); text-decoration: none;">04. ARCHITECTURE</a>
-                <span style="color: var(--text-20);">|</span>
-                <a href="#ai-layer" style="color: var(--text-70); text-decoration: none;">05. AI LAYER</a>
-                <span style="color: var(--text-20);">|</span>
-                <a href="#roadmap" style="color: var(--text-70); text-decoration: none;">06. ROADMAP</a>
-            </nav>
-
-            <!-- Sections -->
-            <article style="display: flex; flex-direction: column; gap: var(--space-64); margin-bottom: var(--space-96);">
-                
-                <section id="mission">
-                    <h2 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--accent-lime); margin-bottom: var(--space-16);">01. MISSION & VISION</h2>
-                    <p style="color: var(--text-70); font-size: 1rem; line-height: 1.7; max-width: 850px;">
-                        Industrial production lines move at high speeds where human visual inspection causes fatigue, missed defects, and inaccurate unit counts. Arsvix operates as a Vision & Automation OS that connects high-framerate camera sensors directly to edge neural inference engines, delivering zero-fatigue defect rejection and 99.9% counting accuracy.
-                    </p>
-                </section>
-
-                <section id="workflow">
-                    <h2 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--accent-lime); margin-bottom: var(--space-16);">02. OPERATIONAL WORKFLOW</h2>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 4px;">
-                        <p style="font-size: 0.85rem; color: var(--text-70); font-family: var(--font-mono); line-height: 1.8;">
-                            [CONVEYOR OPTICAL CAPTURE] ➔ [REAL-TIME EDGE INFERENCE] ➔ [DEFECT CLASSIFICATION] <br>
-                            ➔ [PLC SIGNAL REJECTION] ➔ [TELEMETRY BROADCAST (MQTT)] ➔ [MES DASHBOARD SYNC]
+            <!-- 2. THE PROBLEM VS THE SOLUTION -->
+            <section style="margin-bottom: var(--space-64);">
+                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-16);">// THE OPERATIONAL SHIFT</div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--space-24);">
+                    <!-- Today -->
+                    <div style="background: rgba(255, 95, 86, 0.05); border: 1px solid rgba(255, 95, 86, 0.2); padding: var(--space-24); border-radius: 4px;">
+                        <div style="font-size: 0.75rem; color: #ff5f56; font-weight: bold; letter-spacing: 1.5px; margin-bottom: var(--space-16);">[ TODAY: MANUAL INSPECTION ]</div>
+                        <p style="font-size: 0.85rem; color: rgba(255, 95, 86, 0.8); line-height: 1.8;">
+                            Conveyor ➔ Eye Fatigue ➔ Missed Defects ➔ Manual Tally ➔ Un-tracked Miscounts ➔ Waste
                         </p>
                     </div>
-                </section>
-
-                <section id="modules">
-                    <h2 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--accent-lime); margin-bottom: var(--space-16);">03. OS CORE MODULES</h2>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-16);">
-                        <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24);">
-                            <h3 style="font-size: 1rem; color: var(--text-100); margin-bottom: var(--space-8);">[ High-Speed Optical Counter ]</h3>
-                            <p style="font-size: 0.85rem; color: var(--text-40);">Automated unit counting on fast moving conveyor lines with 99.9% precision.</p>
-                        </div>
-                        <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24);">
-                            <h3 style="font-size: 1rem; color: var(--text-100); margin-bottom: var(--space-8);">[ Defect Classification Engine ]</h3>
-                            <p style="font-size: 0.85rem; color: var(--text-40);">YOLO / OpenCV custom trained models for surface crack, flash, and dimension error detection.</p>
-                        </div>
-                        <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24);">
-                            <h3 style="font-size: 1rem; color: var(--text-100); margin-bottom: var(--space-8);">[ PLC Hardware Rejection ]</h3>
-                            <p style="font-size: 0.85rem; color: var(--text-40);">Low-latency GPIO / Relay output signals to physical pneumatic actuators for defect ejection.</p>
-                        </div>
+                    <!-- With Arsvix -->
+                    <div style="background: rgba(212, 255, 0, 0.05); border: 1px solid rgba(212, 255, 0, 0.2); padding: var(--space-24); border-radius: 4px;">
+                        <div style="font-size: 0.75rem; color: var(--accent-lime); font-weight: bold; letter-spacing: 1.5px; margin-bottom: var(--space-16);">[ WITH ARSVIX: VISION OS ]</div>
+                        <p style="font-size: 0.85rem; color: var(--accent-lime); line-height: 1.8;">
+                            Camera ➔ Edge AI Inference ➔ Defect Scoring ➔ PLC Pneumatic Eject ➔ Telemetry Sync
+                        </p>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <section id="architecture">
-                    <h2 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--accent-lime); margin-bottom: var(--space-16);">04. DECOUPLED ARCHITECTURE & TECH STACK</h2>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); color: var(--text-70); font-size: 0.9rem;">
-                        <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-12);">
-                            <li><strong style="color: var(--text-100);">Vision Core:</strong> Python, PyTorch, C++ OpenCV Bindings</li>
-                            <li><strong style="color: var(--text-100);">Streaming & Protocol:</strong> MQTT, WebSockets, FastAPI High-concurrency Server</li>
-                            <li><strong style="color: var(--text-100);">Edge Deployment:</strong> NVIDIA Jetson / Raspberry Pi Edge Containers</li>
-                            <li><strong style="color: var(--text-100);">Dashboard Layer:</strong> Next.js Telemetry Portal with Framer Motion charts</li>
-                        </ul>
+            <!-- 3. WHY OPERATING SYSTEM? -->
+            <section style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-48); border-radius: 6px; margin-bottom: var(--space-64); text-align: center; position: relative; overflow: hidden;">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// CORE PHILOSOPHY</div>
+                <h2 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--text-100); margin-bottom: var(--space-24);">WHY OPERATING SYSTEM?</h2>
+                <div style="font-size: 1.05rem; color: var(--text-70); max-width: 700px; margin: 0 auto; line-height: 1.8; font-style: italic;">
+                    "Arsvix is not just a camera script. Every frame flows through an edge inference pipeline. Every defect triggers physical hardware ejection. Every unit count is broadcast via MQTT to the MES. That's why Arsvix is designed as a Vision & Automation Operating System."
+                </div>
+            </section>
+
+            <!-- 4. WORKFLOW STEPS -->
+            <section style="margin-bottom: var(--space-64);">
+                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// STANDARDIZED WORKFLOW PIPELINE</div>
+                <div style="display: flex; gap: var(--space-12); overflow-x: auto; padding-bottom: var(--space-16);">
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
+                        <div style="font-size: 0.7rem; color: var(--accent-lime);">01</div>
+                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">Optic Capture</div>
                     </div>
-                </section>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
+                        <div style="font-size: 0.7rem; color: var(--accent-lime);">02</div>
+                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">Edge Inference</div>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
+                        <div style="font-size: 0.7rem; color: var(--accent-lime);">03</div>
+                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">Defect Score</div>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
+                        <div style="font-size: 0.7rem; color: var(--accent-lime);">04</div>
+                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">PLC Eject</div>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
+                        <div style="font-size: 0.7rem; color: var(--accent-lime);">05</div>
+                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">MQTT Stream</div>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
+                        <div style="font-size: 0.7rem; color: var(--accent-lime);">06</div>
+                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">Tally Audit</div>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
+                        <div style="font-size: 0.7rem; color: var(--accent-lime);">07</div>
+                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">MES Sync</div>
+                    </div>
+                </div>
+            </section>
 
-                <section id="ai-layer">
-                    <h2 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--accent-lime); margin-bottom: var(--space-16);">05. AI & COMPUTER VISION LAYER</h2>
-                    <p style="color: var(--text-70); font-size: 0.95rem; line-height: 1.6;">
-                        Arsvix utilizes custom fine-tuned YOLO object detection models running on TensorRT edge accelerators, performing multi-object tracking and sub-millisecond defect scoring directly on the factory floor.
-                    </p>
-                </section>
+            <!-- 5. MODULES (SLEEK 2-LINE CARDS) -->
+            <section style="margin-bottom: var(--space-64);">
+                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// SYSTEM MODULES</div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-16);">
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 4px;">
+                        <h3 style="font-size: 1.1rem; color: var(--text-100); margin-bottom: 4px;">Optical Counter</h3>
+                        <p style="font-size: 0.8rem; color: var(--text-40);">High-speed conveyor unit tallying · 99.9% accuracy</p>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 4px;">
+                        <h3 style="font-size: 1.1rem; color: var(--text-100); margin-bottom: 4px;">Defect Classifier</h3>
+                        <p style="font-size: 0.8rem; color: var(--text-40);">YOLO / OpenCV custom model scoring</p>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 4px;">
+                        <h3 style="font-size: 1.1rem; color: var(--text-100); margin-bottom: 4px;">PLC Relay Interface</h3>
+                        <p style="font-size: 0.8rem; color: var(--text-40);">Sub-millisecond GPIO pneumatic ejection</p>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 4px;">
+                        <h3 style="font-size: 1.1rem; color: var(--text-100); margin-bottom: 4px;">Telemetry Broker</h3>
+                        <p style="font-size: 0.8rem; color: var(--text-40);">MQTT & WebSocket real-time factory stream</p>
+                    </div>
+                </div>
+            </section>
 
-                <section id="roadmap">
-                    <h2 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--accent-lime); margin-bottom: var(--space-16);">06. ROADMAP & EVOLUTION</h2>
-                    <p style="color: var(--text-70); font-size: 0.95rem; line-height: 1.6;">
-                        Phase 1 (Conveyor Vision Counting Core) ➔ Phase 2 (PLC Pneumatic Ejection Hardware Interface) ➔ Phase 3 (Multi-Camera Centralized Factory AI Telemetry).
-                    </p>
-                </section>
+            <!-- 6. AI ASSISTANT -->
+            <section style="margin-bottom: var(--space-64);">
+                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// AI INTEGRATION</div>
+                <div style="display: flex; gap: var(--space-16); flex-wrap: wrap; font-size: 0.85rem;">
+                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 10px 16px; border-radius: 4px; color: var(--text-70);">YOLO Edge Inference</span>
+                    <span style="color: var(--accent-lime);">→</span>
+                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 10px 16px; border-radius: 4px; color: var(--text-70);">TensorRT Acceleration</span>
+                    <span style="color: var(--accent-lime);">→</span>
+                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 10px 16px; border-radius: 4px; color: var(--text-70);">Multi-Object Tracking</span>
+                    <span style="color: var(--accent-lime);">→</span>
+                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 10px 16px; border-radius: 4px; color: var(--text-70);">Future Vision</span>
+                </div>
+            </section>
 
-            </article>
+            <!-- 7. ARCHITECTURE DIAGRAM -->
+            <section style="margin-bottom: var(--space-64);">
+                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// SYSTEM ARCHITECTURE</div>
+                <div style="background: #000; border: 1px solid var(--border-subtle); padding: var(--space-24); font-family: var(--font-mono); font-size: 0.9rem; color: var(--accent-lime); overflow-x: auto; border-radius: 4px;">
+                    Camera ➔ PyTorch/OpenCV ➔ TensorRT Edge ➔ GPIO PLC ➔ MQTT ➔ Next.js Portal
+                </div>
+            </section>
+
+            <!-- 8. DESIGN PRINCIPLES -->
+            <section style="margin-bottom: var(--space-64);">
+                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// DESIGN PRINCIPLES</div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-16);">
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">Edge Inference over Cloud latency</div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">Sub-millisecond Hardware Eject</div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">Zero Fatigue Inspection</div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">Real-time Telemetry Stream</div>
+                </div>
+            </section>
+
+            <!-- 9. ROADMAP TIERS -->
+            <section style="margin-bottom: var(--space-64);">
+                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// EVOLUTION ROADMAP</div>
+                <div style="display: flex; flex-direction: column; gap: var(--space-16); font-family: var(--font-mono); font-size: 0.9rem;">
+                    <div style="display: flex; justify-between; align-items: center;">
+                        <span style="color: var(--text-70);">2026 // Conveyor Vision Core</span>
+                        <span style="color: var(--accent-lime);">████████████ 100%</span>
+                    </div>
+                    <div style="display: flex; justify-between; align-items: center;">
+                        <span style="color: var(--text-70);">2027 // PLC Pneumatic Hardware Ejection</span>
+                        <span style="color: var(--accent-lime);">████████ 85%</span>
+                    </div>
+                    <div style="display: flex; justify-between; align-items: center;">
+                        <span style="color: var(--text-70);">2028 // Multi-Camera Centralized Factory AI</span>
+                        <span style="color: var(--text-40);">████ 45%</span>
+                    </div>
+                </div>
+            </section>
 
             <!-- Cross-Link OS Navigator -->
             <section style="border-top: 1px solid var(--border-subtle); padding-top: var(--space-32); margin-bottom: var(--space-64);">
