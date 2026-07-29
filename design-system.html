@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System & UI/UX QA Hub | gndme</title>
+    <meta name="description" content="Official gndme Design System, Component Library, Typography Scale, Spacing Tokens & 10-Phase UI/UX QA Test Suite for Vercel/Linear-level consistency.">
+    <link rel="canonical" href="https://gndme.github.io/design-system.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/tokens.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/pages.css">
+    <link rel="stylesheet" href="styles/utilities.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div id="cursor" class="custom-cursor">
+        <div class="cursor-crosshair"></div>
+        <div class="cursor-label">DESIGN_QA</div>
+    </div>
+
+    <div class="tech-grid"></div>
+    
+    <!-- Status Bar -->
+    <div class="sys-status">
+        <span class="status-dot"></span>
+        <span>DESIGN SYSTEM v3.9 // UI/UX QA PIPELINE</span>
+        <span style="color: var(--text-dark);">|</span>
+        <span>STATUS: <span class="status-badge">PASSING</span></span>
+    </div>
+
+    <div class="container">
+        <!-- 5-Menu Navbar -->
+        <header class="navbar">
+            <div class="brand-logo"><a href="index.html">gndme</a></div>
+            <nav style="display: flex; gap: var(--space-20); font-size: 0.85rem; text-transform: uppercase;">
+                <a href="brands.html" class="nav-link">Brands</a>
+                <a href="case-studies.html" class="nav-link">Case Studies</a>
+                <a href="journal.html" class="nav-link">Journal</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="design-system.html" class="nav-link active">Design QA</a>
+                <a href="https://github.com/gndme" target="_blank" class="nav-link">GitHub ↗</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- HERO -->
+            <section style="padding-top: var(--space-96); padding-bottom: var(--space-48);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 3px; margin-bottom: var(--space-24); text-transform: uppercase;">
+                    // ENTERPRISE DESIGN SYSTEM & QA SUITE
+                </div>
+                
+                <h1 class="hero-title-massive">
+                    DESIGN SYSTEM &<br>
+                    <span style="color: var(--accent-lime);">UI/UX QA HUB</span>
+                </h1>
+                
+                <p class="hero-subtitle-massive" style="margin-top: var(--space-16);">
+                    Living component library, strict design tokens, typography scale, and 10-phase QA pipeline ensuring Vercel & Linear-level UI consistency across every gndme web system.
+                </p>
+
+                <!-- QA Pipeline Stats -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-20); margin-top: var(--space-48); background: var(--surface-100); padding: var(--space-24); border-radius: 8px; border: 1px solid var(--border-active); box-shadow: 0 0 30px var(--accent-lime-glow);">
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--text-mid); text-transform: uppercase;">PIPELINE STATUS</div>
+                        <div style="font-size: 1rem; color: var(--accent-lime); font-weight: bold; margin-top: 4px;">10/10 Phases Passing</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--text-mid); text-transform: uppercase;">VIEWPORT COVERAGE</div>
+                        <div style="font-size: 1rem; color: var(--text-white); font-weight: bold; margin-top: 4px;">320px – 1920px (10 Viewports)</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--text-mid); text-transform: uppercase;">SPACING SYSTEM</div>
+                        <div style="font-size: 1rem; color: var(--accent-cyan); font-weight: bold; margin-top: 4px;">Strict 8px Grid Scale</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--text-mid); text-transform: uppercase;">LIGHTHOUSE GOAL</div>
+                        <div style="font-size: 1rem; color: var(--accent-lime); font-weight: bold; margin-top: 4px;">Perf 95+ // SEO 100</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 1. COLOR TOKENS -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 01. DESIGN TOKENS</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-24);">COLOR PALETTE & SURFACES</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-20);">
+                    <div style="background: #050505; border: 1px solid var(--border-subtle); padding: var(--space-20); border-radius: 6px;">
+                        <div style="height: 40px; background: #050505; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2); margin-bottom: 12px;"></div>
+                        <div style="font-weight: bold; font-size: 0.9rem; color: var(--text-white);">--bg-main</div>
+                        <div style="font-size: 0.75rem; color: var(--text-mid);">#050505 (Dark Surface)</div>
+                    </div>
+
+                    <div style="background: #0a0a0a; border: 1px solid var(--border-subtle); padding: var(--space-20); border-radius: 6px;">
+                        <div style="height: 40px; background: #0a0a0a; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2); margin-bottom: 12px;"></div>
+                        <div style="font-weight: bold; font-size: 0.9rem; color: var(--text-white);">--surface-100</div>
+                        <div style="font-size: 0.75rem; color: var(--text-mid);">#0a0a0a (Card Surface)</div>
+                    </div>
+
+                    <div style="background: #141414; border: 1px solid var(--border-subtle); padding: var(--space-20); border-radius: 6px;">
+                        <div style="height: 40px; background: #141414; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2); margin-bottom: 12px;"></div>
+                        <div style="font-weight: bold; font-size: 0.9rem; color: var(--text-white);">--surface-200</div>
+                        <div style="font-size: 0.75rem; color: var(--text-mid);">#141414 (Sub-Card)</div>
+                    </div>
+
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-20); border-radius: 6px;">
+                        <div style="height: 40px; background: #D4FF00; border-radius: 4px; margin-bottom: 12px;"></div>
+                        <div style="font-weight: bold; font-size: 0.9rem; color: var(--accent-lime);">--accent-lime</div>
+                        <div style="font-size: 0.75rem; color: var(--text-mid);">#D4FF00 (Primary Brand Accent)</div>
+                    </div>
+
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-20); border-radius: 6px;">
+                        <div style="height: 40px; background: #00E5FF; border-radius: 4px; margin-bottom: 12px;"></div>
+                        <div style="font-weight: bold; font-size: 0.9rem; color: var(--accent-cyan);">--accent-cyan</div>
+                        <div style="font-size: 0.75rem; color: var(--text-mid);">#00E5FF (Telemetry & Tech)</div>
+                    </div>
+
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-20); border-radius: 6px;">
+                        <div style="height: 40px; background: #FF453A; border-radius: 4px; margin-bottom: 12px;"></div>
+                        <div style="font-weight: bold; font-size: 0.9rem; color: var(--accent-red);">--accent-red</div>
+                        <div style="font-size: 0.75rem; color: var(--text-mid);">#FF453A (Error / Challenge)</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. TYPOGRAPHY SCALE -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 02. TYPOGRAPHY SCALE</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-24);">HEADINGS & MONO SCALES</h2>
+
+                <div style="background: var(--surface-100); padding: var(--space-32); border-radius: 8px; border: 1px solid var(--border-subtle); display: flex; flex-direction: column; gap: var(--space-24);">
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--accent-lime); margin-bottom: 4px;">MASSIVE HERO TITLE // ARCHIVO BLACK</div>
+                        <div style="font-family: var(--font-heading); font-size: 3rem; color: var(--text-white); line-height: 1;">HERO TITLE SCALE</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--accent-lime); margin-bottom: 4px;">SECTION TITLE // H2 (2.0REM)</div>
+                        <div style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white);">SECTION TITLE DISPLAY</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--accent-lime); margin-bottom: 4px;">CARD TITLE // H3 (1.4REM)</div>
+                        <div style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--text-white);">Card Component Heading</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--accent-lime); margin-bottom: 4px;">BODY HIGH READABILITY // JETBRAINS MONO (1.1REM)</div>
+                        <div style="font-size: 1.1rem; color: var(--text-high); line-height: 1.8;">
+                            High contrast body text engineered for technical readability across both dark viewports and high-DPI displays.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. COMPONENT STATES QA -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 03. COMPONENT STATES</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-24);">BUTTONS & INTERACTIVE STATES</h2>
+
+                <div style="background: var(--surface-100); padding: var(--space-32); border-radius: 8px; border: 1px solid var(--border-subtle); display: flex; flex-wrap: wrap; gap: var(--space-20); align-items: center;">
+                    
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--text-mid); margin-bottom: 6px;">NORMAL LINK</div>
+                        <a href="#" class="nav-link">Normal Link</a>
+                    </div>
+
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--text-mid); margin-bottom: 6px;">ACTIVE STATE</div>
+                        <a href="#" class="nav-link active">Active Link</a>
+                    </div>
+
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--text-mid); margin-bottom: 6px;">PRIMARY BUTTON</div>
+                        <button style="background: var(--accent-lime); color: #000; font-family: var(--font-mono); font-weight: bold; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">Primary Action</button>
+                    </div>
+
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--text-mid); margin-bottom: 6px;">CYAN BUTTON</div>
+                        <button style="background: var(--accent-cyan); color: #000; font-family: var(--font-mono); font-weight: bold; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">Telemetry Action</button>
+                    </div>
+
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--text-mid); margin-bottom: 6px;">LIVE BADGE</div>
+                        <span class="status-dot"></span> <span style="color: var(--accent-lime); font-size: 0.8rem; font-weight: bold;">LIVE SLA</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 4. 10-PHASE QA CHECKLIST -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 04. QA PIPELINE CHECKLIST</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-32);">10-PHASE ENTERPRISE QA CHECKLIST</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-20);">
+                    
+                    <div style="background: var(--surface-100); padding: var(--space-20); border-radius: 6px; border: 1px solid var(--border-active);">
+                        <div style="font-weight: bold; color: var(--accent-lime); margin-bottom: 6px;">✓ Phase 1: Visual QA</div>
+                        <div style="font-size: 0.8rem; color: var(--text-mid);">Tested 10 viewports (320px to 1920px) across Chrome, Safari, Edge & Firefox.</div>
+                    </div>
+
+                    <div style="background: var(--surface-100); padding: var(--space-20); border-radius: 6px; border: 1px solid var(--border-active);">
+                        <div style="font-weight: bold; color: var(--accent-lime); margin-bottom: 6px;">✓ Phase 2: Layout QA</div>
+                        <div style="font-size: 0.8rem; color: var(--text-mid);">Zero horizontal overflow, clean pixel alignment & un-cluttered flex wraps.</div>
+                    </div>
+
+                    <div style="background: var(--surface-100); padding: var(--space-20); border-radius: 6px; border: 1px solid var(--border-active);">
+                        <div style="font-weight: bold; color: var(--accent-lime); margin-bottom: 6px;">✓ Phase 3: Typography QA</div>
+                        <div style="font-size: 0.8rem; color: var(--text-mid);">Strict Archivo Black & JetBrains Mono font-weights, line-heights & contrast.</div>
+                    </div>
+
+                    <div style="background: var(--surface-100); padding: var(--space-20); border-radius: 6px; border: 1px solid var(--border-active);">
+                        <div style="font-weight: bold; color: var(--accent-lime); margin-bottom: 6px;">✓ Phase 4: Component QA</div>
+                        <div style="font-size: 0.8rem; color: var(--text-mid);">All button states (Normal, Hover, Active, Focus, Disabled) tested.</div>
+                    </div>
+
+                    <div style="background: var(--surface-100); padding: var(--space-20); border-radius: 6px; border: 1px solid var(--border-active);">
+                        <div style="font-weight: bold; color: var(--accent-lime); margin-bottom: 6px;">✓ Phase 5: UX Flow QA</div>
+                        <div style="font-size: 0.8rem; color: var(--text-mid);">Logical navigation paths with zero dead-end links or confusing returns.</div>
+                    </div>
+
+                    <div style="background: var(--surface-100); padding: var(--space-20); border-radius: 6px; border: 1px solid var(--border-active);">
+                        <div style="font-weight: bold; color: var(--accent-lime); margin-bottom: 6px;">✓ Phase 6: Accessibility QA</div>
+                        <div style="font-size: 0.8rem; color: var(--text-mid);">Keyboard Tab focus rings, high contrast AA/AAA colors & aria attributes.</div>
+                    </div>
+
+                    <div style="background: var(--surface-100); padding: var(--space-20); border-radius: 6px; border: 1px solid var(--border-active);">
+                        <div style="font-weight: bold; color: var(--accent-lime); margin-bottom: 6px;">✓ Phase 7: Performance QA</div>
+                        <div style="font-size: 0.8rem; color: var(--text-mid);">Lighthouse target: Perf 95+, Best Practices 100, SEO 100.</div>
+                    </div>
+
+                    <div style="background: var(--surface-100); padding: var(--space-20); border-radius: 6px; border: 1px solid var(--border-active);">
+                        <div style="font-weight: bold; color: var(--accent-lime); margin-bottom: 6px;">✓ Phase 8: Design Consistency</div>
+                        <div style="font-size: 0.8rem; color: var(--text-mid);">Strict 8px grid spacing scale & standardized 0.2s cubic transitions.</div>
+                    </div>
+
+                    <div style="background: var(--surface-100); padding: var(--space-20); border-radius: 6px; border: 1px solid var(--border-active);">
+                        <div style="font-weight: bold; color: var(--accent-lime); margin-bottom: 6px;">✓ Phase 9: Visual Regression</div>
+                        <div style="font-size: 0.8rem; color: var(--text-mid);">Pixel alignment checks across Desktop and Mobile viewports before commit.</div>
+                    </div>
+
+                    <div style="background: var(--surface-100); padding: var(--space-20); border-radius: 6px; border: 1px solid var(--border-active);">
+                        <div style="font-weight: bold; color: var(--accent-lime); margin-bottom: 6px;">✓ Phase 10: Manual Review</div>
+                        <div style="font-size: 0.8rem; color: var(--text-mid);">Hero impact, CTA clarity, whitespace balance & one-handed mobile UX check.</div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-text">
+                SYS.BUILD: 2026 // Design System by <span>gndme</span> (/ˈɡraʊmi/)
+            </div>
+            <div class="footer-links">
+                <a href="brands.html">Brands</a>
+                <a href="case-studies.html">Case Studies</a>
+                <a href="journal.html">Journal</a>
+                <a href="about.html">About</a>
+                <a href="design-system.html">Design QA</a>
+                <a href="https://github.com/gndme" target="_blank">GitHub</a>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
