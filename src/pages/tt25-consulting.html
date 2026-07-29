@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: TT25 Consulting // Service Business OS | gndme</title>
+    <meta name="description" content="Service Case Study: How gndme architected the Service Business OS for TT25 Consulting, unifying investment consulting, visa procedures & work permit compliance.">
+    <link rel="canonical" href="https://gndme.github.io/projects/tt25-consulting.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css?v=3.9.0">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div id="cursor" class="custom-cursor">
+        <div class="cursor-crosshair"></div>
+        <div class="cursor-label">CASE_STUDY</div>
+    </div>
+
+    <div class="tech-grid"></div>
+    
+    <!-- Status Bar -->
+    <div class="sys-status">
+        <span class="status-dot"></span>
+        <span>CASE STUDY // TT25 CONSULTING</span>
+        <span style="color: var(--text-dark);">|</span>
+        <span>STATUS: <span class="status-badge">PRODUCTION</span></span>
+    </div>
+
+    <div class="container">
+        <!-- 5-Menu Navbar -->
+        <header class="navbar">
+            <div class="brand-logo"><a href="../index.html">gndme</a></div>
+            <nav style="display: flex; gap: var(--space-20); font-size: 0.85rem; text-transform: uppercase;">
+                <a href="../companies.html" class="nav-link">Companies</a>
+                <a href="../solutions.html" class="nav-link active">Solutions</a>
+                <a href="../journal.html" class="nav-link">Journal</a>
+                <a href="../about.html" class="nav-link">About</a>
+                <a href="https://github.com/gndme" target="_blank" class="nav-link">GitHub ↗</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- 1. HERO & METADATA -->
+            <section style="padding-top: var(--space-96); padding-bottom: var(--space-64);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 3px; margin-bottom: var(--space-24); text-transform: uppercase;">
+                    // SERVICE CASE STUDY
+                </div>
+                
+                <h1 class="hero-title-massive">
+                    TT25<br>
+                    <span style="color: var(--accent-lime);">CONSULTING</span>
+                </h1>
+                
+                <p class="hero-subtitle-massive" style="margin-top: var(--space-16);">
+                    Service Business OS deployment for foreign investment consulting, investor visa procedures, and work permit compliance.
+                </p>
+
+                <!-- Metadata Grid -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-20); margin-top: var(--space-48); background: var(--surface-100); padding: var(--space-24); border-radius: 8px; border: 1px solid var(--border-subtle);">
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--text-mid); text-transform: uppercase;">STATUS</div>
+                        <div style="font-size: 1rem; color: var(--accent-lime); font-weight: bold; margin-top: 4px;">Production (2026)</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--text-mid); text-transform: uppercase;">LOCATION</div>
+                        <div style="font-size: 1rem; color: var(--text-white); font-weight: bold; margin-top: 4px;">Ho Chi Minh City</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--text-mid); text-transform: uppercase;">INDUSTRY</div>
+                        <div style="font-size: 1rem; color: var(--text-white); font-weight: bold; margin-top: 4px;">Immigration & Investment</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.7rem; color: var(--text-mid); text-transform: uppercase;">DEPLOYED MODULES</div>
+                        <div style="font-size: 1rem; color: var(--accent-cyan); font-weight: bold; margin-top: 4px;">12 Modules</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. CLIENT OVERVIEW -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 01. CLIENT OVERVIEW</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-24);">WHO IS TT25 CONSULTING?</h2>
+                <p style="font-size: 1.1rem; color: var(--text-high); max-width: 850px; line-height: 1.8;">
+                    TT25 Consulting is a professional Vietnamese advisory agency specializing in foreign direct investment (FDI) advisory, investor visa procedures, temporary residence cards (TRC), and work permit compliance for foreign experts and enterprises.
+                </p>
+            </section>
+
+            <!-- 3. BUSINESS CHALLENGE -->
+            <section style="margin-bottom: var(--space-96); background: rgba(255, 69, 58, 0.04); padding: var(--space-48); border-radius: 8px; border: 1px solid rgba(255, 69, 58, 0.2);">
+                <div style="font-size: 0.75rem; color: var(--accent-red); letter-spacing: 2px; margin-bottom: var(--space-16);">// 02. THE CHALLENGE</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--accent-red); margin-bottom: var(--space-24);">BEFORE: MANUAL PERMIT TRACKING</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-24); margin-bottom: var(--space-32);">
+                    <div style="background: var(--surface-100); padding: var(--space-20); border-radius: 6px;">
+                        <div style="color: var(--accent-red); font-weight: bold; margin-bottom: 6px;">⚠️ Missed Expiry Deadlines</div>
+                        <div style="font-size: 0.85rem; color: var(--text-mid);">No automated alerts for upcoming work permit and TRC visa expirations.</div>
+                    </div>
+                    <div style="background: var(--surface-100); padding: var(--surface-20); border-radius: 6px;">
+                        <div style="color: var(--accent-red); font-weight: bold; margin-bottom: 6px;">⚠️ Document Chaos</div>
+                        <div style="font-size: 0.85rem; color: var(--text-mid);">Client passports, legalized diplomas & notarized documents stored across loose folders.</div>
+                    </div>
+                    <div style="background: var(--surface-100); padding: var(--space-20); border-radius: 6px;">
+                        <div style="color: var(--accent-red); font-weight: bold; margin-bottom: 6px;">⚠️ Opaque Case Progress</div>
+                        <div style="font-size: 0.85rem; color: var(--text-mid);">Clients constantly calling for status updates on government application queues.</div>
+                    </div>
+                </div>
+
+                <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-red); background: #111; padding: 16px 24px; border-radius: 6px; text-align: center;">
+                    Un-tracked Emails ➔ Zalo Files ➔ Loose Paper Folders ➔ Missed Expiry Dates ➔ Client Inquiries
+                </div>
+            </section>
+
+            <!-- 4. SOLUTION ARCHITECTURE -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 03. SOLUTION ARCHITECTURE</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-24);">SERVICE BUSINESS OPERATING SYSTEM</h2>
+                <p style="font-size: 1.1rem; color: var(--text-high); max-width: 850px; line-height: 1.8; margin-bottom: var(--space-32);">
+                    gndme architected a specialized Service Edition OS unifying Client Intake, Permit Case State Machine, Expiry SLA Alerts, Passport OCR, and Legal AI RAG into one single advisory platform.
+                </p>
+            </section>
+
+            <!-- 5. MODULES DEPLOYED -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 04. MODULES DEPLOYED</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-32);">12 SYSTEM MODULES</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-24);">
+                    <div style="background: var(--surface-100); padding: var(--space-24); border-radius: 6px; border: 1px solid var(--border-subtle);">
+                        <div style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--accent-lime); margin-bottom: 12px;">CLIENT WORKSPACE</div>
+                        <ul style="font-size: 0.85rem; color: var(--text-high); list-style: none; display: flex; flex-direction: column; gap: 8px;">
+                            <li>• Investment Lead Intake</li>
+                            <li>• Permit Case Pipeline</li>
+                            <li>• Client Document Vault</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: var(--surface-100); padding: var(--space-24); border-radius: 6px; border: 1px solid var(--border-subtle);">
+                        <div style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--accent-cyan); margin-bottom: 12px;">COMPLIANCE & SLA</div>
+                        <ul style="font-size: 0.85rem; color: var(--text-high); list-style: none; display: flex; flex-direction: column; gap: 8px;">
+                            <li>• Permit Expiry Timers</li>
+                            <li>• Govt Department Track</li>
+                            <li>• Auto Renewal Alerts</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: var(--surface-100); padding: var(--space-24); border-radius: 6px; border: 1px solid var(--border-subtle);">
+                        <div style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--accent-orange); margin-bottom: 12px;">AI INTELLIGENCE</div>
+                        <ul style="font-size: 0.85rem; color: var(--text-high); list-style: none; display: flex; flex-direction: column; gap: 8px;">
+                            <li>• Passport / TRC OCR</li>
+                            <li>• Legal RAG Search</li>
+                            <li>• Document Verifier</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: var(--surface-100); padding: var(--space-24); border-radius: 6px; border: 1px solid var(--border-subtle);">
+                        <div style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-white); margin-bottom: 12px;">FINANCE</div>
+                        <ul style="font-size: 0.85rem; color: var(--text-high); list-style: none; display: flex; flex-direction: column; gap: 8px;">
+                            <li>• Dynamic Quotation</li>
+                            <li>• Contract Generator</li>
+                            <li>• Audit Trail & Invoicing</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. OPERATIONAL WORKFLOW -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 05. OPERATIONAL WORKFLOW</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-32);">STANDARDIZED SERVICE PIPELINE</h2>
+
+                <div style="background: var(--surface-100); padding: var(--space-32); border-radius: 8px; border: 1px solid var(--border-subtle); overflow-x: auto;">
+                    <div style="min-width: 800px; display: flex; justify-between; align-items: center; text-align: center; font-family: var(--font-mono); font-size: 0.8rem;">
+                        <div style="background: var(--surface-200); padding: 12px 16px; border-radius: 4px; color: var(--text-white);">Intake Inquiry</div>
+                        <span style="color: var(--accent-lime);">➔</span>
+                        <div style="background: var(--surface-200); padding: 12px 16px; border-radius: 4px; color: var(--accent-lime);">Doc Audit</div>
+                        <span style="color: var(--accent-lime);">➔</span>
+                        <div style="background: var(--surface-200); padding: 12px 16px; border-radius: 4px; color: var(--accent-cyan);">Filing Pipeline</div>
+                        <span style="color: var(--accent-lime);">➔</span>
+                        <div style="background: var(--surface-200); padding: 12px 16px; border-radius: 4px; color: var(--accent-orange);">Gov Queue</div>
+                        <span style="color: var(--accent-lime);">➔</span>
+                        <div style="background: var(--surface-200); padding: 12px 16px; border-radius: 4px; color: var(--text-white);">Visa Handover</div>
+                        <span style="color: var(--accent-lime);">➔</span>
+                        <div style="background: var(--surface-200); padding: 12px 16px; border-radius: 4px; color: var(--accent-lime);">Expiry SLA Timer</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7. TECHNOLOGY STACK -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 06. TECH STACK</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-24);">ENTERPRISE STACK</h2>
+
+                <div style="display: flex; gap: var(--space-12); flex-wrap: wrap; font-size: 0.85rem;">
+                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: 4px; color: var(--text-white);">Next.js</span>
+                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: 4px; color: var(--text-white);">FastAPI</span>
+                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: 4px; color: var(--text-white);">PostgreSQL</span>
+                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: 4px; color: var(--accent-lime);">Passport OCR Engine</span>
+                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: 4px; color: var(--accent-cyan);">Legal RAG AI</span>
+                </div>
+            </section>
+
+            <!-- 8. OUTCOME & RESULTS -->
+            <section style="margin-bottom: var(--space-96); background: var(--surface-100); padding: var(--space-48); border-radius: 8px; border: 1px solid var(--border-active);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 07. RESULTS & OUTCOME</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-24);">ZERO MISSED PERMIT EXPIRATIONS</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-24);">
+                    <div>
+                        <div style="font-family: var(--font-heading); font-size: 2rem; color: var(--accent-lime);">12</div>
+                        <div style="font-size: 0.85rem; color: var(--text-mid);">Active Compliance Modules</div>
+                    </div>
+                    <div>
+                        <div style="font-family: var(--font-heading); font-size: 2rem; color: var(--accent-cyan);">100%</div>
+                        <div style="font-size: 0.85rem; color: var(--text-mid);">Automated Expiry SLA Reminders</div>
+                    </div>
+                    <div>
+                        <div style="font-family: var(--font-heading); font-size: 2rem; color: var(--accent-orange);">&lt; 2s</div>
+                        <div style="font-size: 0.85rem; color: var(--text-mid);">Passport OCR Extraction Speed</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 9. LESSONS LEARNED -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 08. LESSONS LEARNED</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-24);">SERVICE WORKFLOW LESSONS</h2>
+                <p style="font-size: 1.1rem; color: var(--text-high); max-width: 850px; line-height: 1.8;">
+                    Advisory services require proactive SLA tracking rather than reactive customer support. By embedding automated expiration timers directly into the state machine, TT25 eliminated missed permit renewals entirely.
+                </p>
+            </section>
+
+            <!-- 10. NEXT CASE STUDY FOOTER NAVIGATION -->
+            <section style="border-top: 1px solid var(--border-subtle); padding-top: var(--space-48); margin-bottom: var(--space-64);">
+                <div style="display: flex; justify-between; align-items: center;">
+                    <div style="font-size: 0.8rem; color: var(--text-mid);">BACK TO SOLUTIONS PLATFORM</div>
+                    <a href="../solutions.html" style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--accent-lime);">SOLUTIONS & CASE STUDIES →</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-text">
+                SYS.BUILD: 2026 // Case Study by <span>gndme</span> (/ˈɡraʊmi/)
+            </div>
+            <div class="footer-links">
+                <a href="../companies.html">Companies</a>
+                <a href="../solutions.html">Solutions</a>
+                <a href="../journal.html">Journal</a>
+                <a href="../about.html">About</a>
+                <a href="https://github.com/gndme" target="_blank">GitHub</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../script.js?v=3.9.0"></script>
+</body>
+</html>
