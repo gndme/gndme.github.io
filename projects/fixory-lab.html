@@ -51,162 +51,215 @@
         </header>
 
         <main>
-            <!-- 1. HERO STORYTELLING -->
-            <section style="padding-top: var(--space-64); padding-bottom: var(--space-48);">
-                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">
+            <!-- 1. HERO SECTION (High Impact) -->
+            <section style="padding-top: var(--space-64); padding-bottom: var(--space-64);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16); text-transform: uppercase;">
                     [ OS-02 // REPAIR OPERATING SYSTEM ]
                 </div>
-                <h1 style="font-family: var(--font-heading); font-size: clamp(2.8rem, 5.5vw, 5rem); color: var(--text-100); line-height: 1.05; margin-bottom: var(--space-16);">
+                <h1 style="font-family: var(--font-heading); font-size: clamp(3rem, 6vw, 5.5rem); color: var(--text-100); line-height: 1.02; margin-bottom: var(--space-16); text-transform: uppercase;">
                     FIXORY LAB
                 </h1>
-                <div style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--accent-lime); margin-bottom: var(--space-24);">
+                <div style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--accent-lime); margin-bottom: var(--space-24);">
                     Built for modern repair businesses.
                 </div>
-                <p style="font-size: 1.15rem; color: var(--text-70); max-width: 750px; line-height: 1.7; background: var(--surface-100); border-left: 2px solid var(--accent-lime); padding: var(--space-24); border-radius: 0 4px 4px 0;">
+                <p style="font-size: 1.2rem; color: var(--text-70); max-width: 800px; line-height: 1.7; background: var(--surface-100); border-left: 3px solid var(--accent-lime); padding: var(--space-24); border-radius: 0 6px 6px 0;">
                     Managing a repair shop shouldn't rely on paper, Messenger conversations, and memory. FIXORY Lab transforms repair operations into a modern, workflow-driven operating system.
                 </p>
             </section>
 
-            <!-- 2. THE PROBLEM VS THE SOLUTION -->
-            <section style="margin-bottom: var(--space-64);">
-                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-16);">// THE OPERATIONAL SHIFT</div>
+            <!-- 2. CLIMAX 1: REAL SYSTEM UI SCREENSHOTS (Visual Showcase) -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="display: flex; justify-between; align-items: flex-end; margin-bottom: var(--space-24); border-bottom: 1px solid var(--border-subtle); padding-bottom: var(--space-16);">
+                    <div>
+                        <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: 4px;">// SYSTEM INTERFACE</div>
+                        <h2 style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--text-100);">ACTIVE WORKSPACE & REPAIR QUEUE UI</h2>
+                    </div>
+                    <span style="font-size: 0.75rem; color: var(--text-40);">v2.8 LIVE DASHBOARD</span>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr; gap: var(--space-32);">
+                    <!-- Screenshot 1: Repair Queue -->
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-active); border-radius: 8px; overflow: hidden; box-shadow: 0 16px 48px rgba(0,0,0,0.6);">
+                        <div style="background: #111; padding: 12px 20px; border-bottom: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; color: var(--text-40);">
+                            <span>SYS.UI // REPAIR QUEUE & LIVE SLA DASHBOARD</span>
+                            <span style="color: var(--accent-lime);">STATUS: ACTIVE</span>
+                        </div>
+                        <img src="images/fixory_queue_dashboard.jpg" alt="FIXORY Repair Queue UI" style="width: 100%; height: auto; display: block;">
+                    </div>
+
+                    <!-- Screenshot 2: Order Workspace -->
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); border-radius: 8px; overflow: hidden; box-shadow: 0 16px 48px rgba(0,0,0,0.6);">
+                        <div style="background: #111; padding: 12px 20px; border-bottom: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; color: var(--text-40);">
+                            <span>SYS.UI // TECHNICIAN ORDER WORKSPACE & HARDWARE DIAGNOSTICS</span>
+                            <span style="color: var(--accent-lime);">DECOUPLED STACK</span>
+                        </div>
+                        <img src="images/fixory_order_workspace.jpg" alt="FIXORY Order Workspace UI" style="width: 100%; height: auto; display: block;">
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. WHY OPERATING SYSTEM (2-COLUMN CONTRAST COMPARISON) -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// PHILOSOPHICAL SHIFT</div>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-100); margin-bottom: var(--space-32);">WHY OPERATING SYSTEM?</h2>
+                
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--space-24);">
-                    <!-- Today -->
-                    <div style="background: rgba(255, 95, 86, 0.05); border: 1px solid rgba(255, 95, 86, 0.2); padding: var(--space-24); border-radius: 4px;">
-                        <div style="font-size: 0.75rem; color: #ff5f56; font-weight: bold; letter-spacing: 1.5px; margin-bottom: var(--space-16);">[ TODAY: CHAOTIC REPAIR ]</div>
-                        <p style="font-size: 0.85rem; color: rgba(255, 95, 86, 0.8); line-height: 1.8;">
-                            Customer ➔ Messenger ➔ Paper ➔ Technician ➔ Excel ➔ Lost Warranty ➔ Confusion
-                        </p>
+                    <!-- Left: Traditional Shop -->
+                    <div style="background: rgba(255, 95, 86, 0.04); border: 1px solid rgba(255, 95, 86, 0.2); padding: var(--space-32); border-radius: 6px;">
+                        <div style="font-family: var(--font-heading); font-size: 1.1rem; color: #ff5f56; margin-bottom: var(--space-16);">TRADITIONAL REPAIR SHOP</div>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-12); font-size: 0.9rem; color: rgba(255, 95, 86, 0.85);">
+                            <li style="display: flex; items-center; gap: 8px;"><span>❌</span> Messenger chat conversations</li>
+                            <li style="display: flex; items-center; gap: 8px;"><span>❌</span> Manual Excel spreadsheets & paper tags</li>
+                            <li style="display: flex; items-center; gap: 8px;"><span>❌</span> Un-tracked component stock</li>
+                            <li style="display: flex; items-center; gap: 8px;"><span>❌</span> Phone calls for status updates</li>
+                            <li style="display: flex; items-center; gap: 8px;"><span>❌</span> Memory-based technician handovers</li>
+                        </ul>
                     </div>
-                    <!-- With FIXORY -->
-                    <div style="background: rgba(212, 255, 0, 0.05); border: 1px solid rgba(212, 255, 0, 0.2); padding: var(--space-24); border-radius: 4px;">
-                        <div style="font-size: 0.75rem; color: var(--accent-lime); font-weight: bold; letter-spacing: 1.5px; margin-bottom: var(--space-16);">[ WITH FIXORY: OPERATING SYSTEM ]</div>
-                        <p style="font-size: 0.85rem; color: var(--accent-lime); line-height: 1.8;">
-                            Customer ➔ Order ➔ Queue ➔ Repair ➔ QC ➔ Delivery
-                        </p>
+
+                    <!-- Right: FIXORY OS -->
+                    <div style="background: rgba(212, 255, 0, 0.04); border: 1px solid var(--border-active); padding: var(--space-32); border-radius: 6px; box-shadow: 0 0 30px rgba(212, 255, 0, 0.05);">
+                        <div style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--accent-lime); margin-bottom: var(--space-16);">FIXORY OPERATING SYSTEM</div>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-12); font-size: 0.9rem; color: var(--accent-lime);">
+                            <li style="display: flex; items-center; gap: 8px;"><span>⚡</span> Standardized Repair Queue Engine</li>
+                            <li style="display: flex; items-center; gap: 8px;"><span>⚡</span> Action-driven Order Workspace</li>
+                            <li style="display: flex; items-center; gap: 8px;"><span>⚡</span> Real-time Live SLA Tracking</li>
+                            <li style="display: flex; items-center; gap: 8px;"><span>⚡</span> Full Customer Timeline Audit Trail</li>
+                            <li style="display: flex; items-center; gap: 8px;"><span>⚡</span> AI Diagnostic Assistance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p style="font-size: 1.05rem; color: var(--text-70); line-height: 1.8; margin-top: var(--space-32); font-style: italic; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    "Every order flows through a standardized operating model. Every action is traceable. Every technician follows the same workflow. Every customer experiences the same service. That's why FIXORY is designed as a Repair Operating System."
+                </p>
+            </section>
+
+            <!-- 4. WORKFLOW PIPELINE (FIGMA STEP ANIMATION) -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// STANDARDIZED PIPELINE</div>
+                <h2 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--text-100); margin-bottom: var(--space-32);">OPERATIONAL WORKFLOW</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: var(--space-16);">
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-20); border-radius: 6px; position: relative;">
+                        <div style="font-size: 0.8rem; color: var(--accent-lime); font-family: var(--font-heading);">01</div>
+                        <div style="font-size: 1rem; color: var(--text-100); font-weight: bold; margin-top: 6px;">Check In</div>
+                        <div style="font-size: 0.75rem; color: var(--text-40); margin-top: 4px;">Intake QR</div>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-20); border-radius: 6px;">
+                        <div style="font-size: 0.8rem; color: var(--accent-lime); font-family: var(--font-heading);">02</div>
+                        <div style="font-size: 1rem; color: var(--text-100); font-weight: bold; margin-top: 6px;">Diagnosis</div>
+                        <div style="font-size: 0.75rem; color: var(--text-40); margin-top: 4px;">AI Analysis</div>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-20); border-radius: 6px;">
+                        <div style="font-size: 0.8rem; color: var(--accent-lime); font-family: var(--font-heading);">03</div>
+                        <div style="font-size: 1rem; color: var(--text-100); font-weight: bold; margin-top: 6px;">Quotation</div>
+                        <div style="font-size: 0.75rem; color: var(--text-40); margin-top: 4px;">Parts Audit</div>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-20); border-radius: 6px;">
+                        <div style="font-size: 0.8rem; color: var(--accent-lime); font-family: var(--font-heading);">04</div>
+                        <div style="font-size: 1rem; color: var(--text-100); font-weight: bold; margin-top: 6px;">Repair</div>
+                        <div style="font-size: 0.75rem; color: var(--text-40); margin-top: 4px;">Tech Execution</div>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-20); border-radius: 6px;">
+                        <div style="font-size: 0.8rem; color: var(--accent-lime); font-family: var(--font-heading);">05</div>
+                        <div style="font-size: 1rem; color: var(--text-100); font-weight: bold; margin-top: 6px;">HW Test</div>
+                        <div style="font-size: 0.75rem; color: var(--text-40); margin-top: 4px;">Bench Latency</div>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-20); border-radius: 6px;">
+                        <div style="font-size: 0.8rem; color: var(--accent-lime); font-family: var(--font-heading);">06</div>
+                        <div style="font-size: 1rem; color: var(--text-100); font-weight: bold; margin-top: 6px;">QC</div>
+                        <div style="font-size: 0.75rem; color: var(--text-40); margin-top: 4px;">Verification</div>
+                    </div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-20); border-radius: 6px;">
+                        <div style="font-size: 0.8rem; color: var(--accent-lime); font-family: var(--font-heading);">07</div>
+                        <div style="font-size: 1rem; color: var(--text-100); font-weight: bold; margin-top: 6px;">Delivery</div>
+                        <div style="font-size: 0.75rem; color: var(--text-40); margin-top: 4px;">Warranty Issue</div>
                     </div>
                 </div>
             </section>
 
-            <!-- 3. WHY OPERATING SYSTEM? -->
-            <section style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-48); border-radius: 6px; margin-bottom: var(--space-64); text-align: center; position: relative; overflow: hidden;">
-                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// CORE PHILOSOPHY</div>
-                <h2 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--text-100); margin-bottom: var(--space-24);">WHY OPERATING SYSTEM?</h2>
-                <div style="font-size: 1.05rem; color: var(--text-70); max-width: 700px; margin: 0 auto; line-height: 1.8; font-style: italic;">
-                    "FIXORY is not another repair management software. Every order flows through a standardized operating model. Every action is traceable. Every technician follows the same workflow. Every customer experiences the same service. That's why FIXORY is designed as a Repair Operating System."
-                </div>
-            </section>
+            <!-- 5. MODULES (Sleek 2-Line Cards) -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// OS CAPABILITIES</div>
+                <h2 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--text-100); margin-bottom: var(--space-32);">SYSTEM MODULES</h2>
 
-            <!-- 4. WORKFLOW STEPS -->
-            <section style="margin-bottom: var(--space-64);">
-                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// STANDARDIZED WORKFLOW PIPELINE</div>
-                <div style="display: flex; gap: var(--space-12); overflow-x: auto; padding-bottom: var(--space-16);">
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
-                        <div style="font-size: 0.7rem; color: var(--accent-lime);">01</div>
-                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">Check In</div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-20);">
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 6px;">
+                        <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-100); margin-bottom: 6px;">Repair Queue</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-40);">Live SLA · Real-time technician assignment</p>
                     </div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
-                        <div style="font-size: 0.7rem; color: var(--accent-lime);">02</div>
-                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">Diagnosis</div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 6px;">
+                        <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-100); margin-bottom: 6px;">Order Workspace</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-40);">Action-driven interface</p>
                     </div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
-                        <div style="font-size: 0.7rem; color: var(--accent-lime);">03</div>
-                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">Quotation</div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 6px;">
+                        <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-100); margin-bottom: 6px;">Inventory</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-40);">Parts intelligence & component tracking</p>
                     </div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
-                        <div style="font-size: 0.7rem; color: var(--accent-lime);">04</div>
-                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">Repair</div>
-                    </div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
-                        <div style="font-size: 0.7rem; color: var(--accent-lime);">05</div>
-                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">Hardware Test</div>
-                    </div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
-                        <div style="font-size: 0.7rem; color: var(--accent-lime);">06</div>
-                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">QC</div>
-                    </div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); min-width: 130px; border-radius: 4px;">
-                        <div style="font-size: 0.7rem; color: var(--accent-lime);">07</div>
-                        <div style="font-size: 0.9rem; color: var(--text-100); font-weight: bold; margin-top: 4px;">Delivery</div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 6px;">
+                        <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-100); margin-bottom: 6px;">Knowledge Base</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-40);">Public repair encyclopedia & modding specs</p>
                     </div>
                 </div>
             </section>
 
-            <!-- 5. MODULES (SLEEK 2-LINE CARDS) -->
-            <section style="margin-bottom: var(--space-64);">
-                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// SYSTEM MODULES</div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-16);">
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 4px;">
-                        <h3 style="font-size: 1.1rem; color: var(--text-100); margin-bottom: 4px;">Repair Queue</h3>
-                        <p style="font-size: 0.8rem; color: var(--text-40);">Live SLA · Real-time technician assignment</p>
+            <!-- 6. AI & ARCHITECTURE DIAGRAM -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--space-32);">
+                    <!-- AI Assistant -->
+                    <div>
+                        <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// INTELLIGENCE</div>
+                        <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--text-100); margin-bottom: var(--space-16);">AI ASSISTANT</h3>
+                        <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 6px; font-size: 0.9rem; color: var(--text-70); line-height: 1.8;">
+                            Repair Suggestion ➔ Knowledge Generation ➔ Smart Audit ➔ Future Vision
+                        </div>
                     </div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 4px;">
-                        <h3 style="font-size: 1.1rem; color: var(--text-100); margin-bottom: 4px;">Order Workspace</h3>
-                        <p style="font-size: 0.8rem; color: var(--text-40);">Action-driven interface</p>
-                    </div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 4px;">
-                        <h3 style="font-size: 1.1rem; color: var(--text-100); margin-bottom: 4px;">Inventory</h3>
-                        <p style="font-size: 0.8rem; color: var(--text-40);">Parts intelligence & stock management</p>
-                    </div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 4px;">
-                        <h3 style="font-size: 1.1rem; color: var(--text-100); margin-bottom: 4px;">Knowledge Base</h3>
-                        <p style="font-size: 0.8rem; color: var(--text-40);">Public repair encyclopedia</p>
+
+                    <!-- Tech Architecture -->
+                    <div>
+                        <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// DECOUPLED STACK</div>
+                        <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--text-100); margin-bottom: var(--space-16);">SYSTEM ARCHITECTURE</h3>
+                        <div style="background: #000; border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 6px; font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-lime); overflow-x: auto;">
+                            Browser ➔ Next.js ➔ FastAPI ➔ PostgreSQL ➔ AI ➔ Telegram
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!-- 6. AI ASSISTANT -->
-            <section style="margin-bottom: var(--space-64);">
-                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// AI INTEGRATION</div>
-                <div style="display: flex; gap: var(--space-16); flex-wrap: wrap; font-size: 0.85rem;">
-                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 10px 16px; border-radius: 4px; color: var(--text-70);">Repair Suggestion</span>
-                    <span style="color: var(--accent-lime);">→</span>
-                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 10px 16px; border-radius: 4px; color: var(--text-70);">Knowledge Generation</span>
-                    <span style="color: var(--accent-lime);">→</span>
-                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 10px 16px; border-radius: 4px; color: var(--text-70);">Smart Audit</span>
-                    <span style="color: var(--accent-lime);">→</span>
-                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 10px 16px; border-radius: 4px; color: var(--text-70);">Future Vision</span>
-                </div>
-            </section>
+            <!-- 7. DESIGN PRINCIPLES -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// CORE RULES</div>
+                <h2 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--text-100); margin-bottom: var(--space-32);">DESIGN PRINCIPLES</h2>
 
-            <!-- 7. ARCHITECTURE DIAGRAM -->
-            <section style="margin-bottom: var(--space-64);">
-                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// SYSTEM ARCHITECTURE</div>
-                <div style="background: #000; border: 1px solid var(--border-subtle); padding: var(--space-24); font-family: var(--font-mono); font-size: 0.9rem; color: var(--accent-lime); overflow-x: auto; border-radius: 4px;">
-                    Browser ➔ Next.js ➔ FastAPI ➔ PostgreSQL ➔ AI ➔ Telegram
-                </div>
-            </section>
-
-            <!-- 8. DESIGN PRINCIPLES -->
-            <section style="margin-bottom: var(--space-64);">
-                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// DESIGN PRINCIPLES</div>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-16);">
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">Workflow before CRUD</div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">One Screen. One Question.</div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">Action Driven.</div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">Repair is traceable.</div>
-                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-16); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">AI assists. Humans decide.</div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-20); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">Workflow before CRUD</div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-20); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">One Screen. One Question.</div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-20); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">Action Driven.</div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-20); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">Repair is traceable.</div>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-20); text-align: center; font-size: 0.85rem; color: var(--text-100); border-radius: 4px;">AI assists. Humans decide.</div>
                 </div>
             </section>
 
-            <!-- 9. ROADMAP TIERS -->
-            <section style="margin-bottom: var(--space-64);">
-                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-24);">// EVOLUTION ROADMAP</div>
+            <!-- 8. EVOLUTION ROADMAP TIERS -->
+            <section style="margin-bottom: var(--space-96);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// STRATEGIC TIMELINE</div>
+                <h2 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--text-100); margin-bottom: var(--space-32);">DEVELOPMENT ROADMAP</h2>
+
                 <div style="display: flex; flex-direction: column; gap: var(--space-16); font-family: var(--font-mono); font-size: 0.9rem;">
-                    <div style="display: flex; justify-between; align-items: center;">
-                        <span style="color: var(--text-70);">2026 // Core OS</span>
+                    <div style="display: flex; justify-between; align-items: center; background: var(--surface-100); padding: 14px 20px; border: 1px solid var(--border-subtle); border-radius: 4px;">
+                        <span style="color: var(--text-100);">2026 // Core OS</span>
                         <span style="color: var(--accent-lime);">████████████ 100%</span>
                     </div>
-                    <div style="display: flex; justify-between; align-items: center;">
-                        <span style="color: var(--text-70);">2027 // Automation</span>
+                    <div style="display: flex; justify-between; align-items: center; background: var(--surface-100); padding: 14px 20px; border: 1px solid var(--border-subtle); border-radius: 4px;">
+                        <span style="color: var(--text-100);">2027 // Automation</span>
                         <span style="color: var(--accent-lime);">████████ 70%</span>
                     </div>
-                    <div style="display: flex; justify-between; align-items: center;">
-                        <span style="color: var(--text-70);">2028 // Customer Platform</span>
+                    <div style="display: flex; justify-between; align-items: center; background: var(--surface-100); padding: 14px 20px; border: 1px solid var(--border-subtle); border-radius: 4px;">
+                        <span style="color: var(--text-100);">2028 // Customer Platform</span>
                         <span style="color: var(--text-40);">████ 35%</span>
                     </div>
-                    <div style="display: flex; justify-between; align-items: center;">
-                        <span style="color: var(--text-70);">2029 // Enterprise</span>
+                    <div style="display: flex; justify-between; align-items: center; background: var(--surface-100); padding: 14px 20px; border: 1px solid var(--border-subtle); border-radius: 4px;">
+                        <span style="color: var(--text-100);">2029 // Enterprise</span>
                         <span style="color: var(--text-20);">□ PLANNED</span>
                     </div>
                 </div>
