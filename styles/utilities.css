@@ -1,0 +1,11 @@
+/* Utility Classes */
+.text-lime { color: var(--accent-lime) !important; }
+.text-cyan { color: var(--accent-cyan) !important; }
+.text-orange { color: var(--accent-orange) !important; }
+.text-red { color: var(--accent-red) !important; }
+
+.bg-surface-100 { background-color: var(--surface-100) !important; }
+.bg-surface-200 { background-color: var(--surface-200) !important; }
+
+.border-subtle { border: 1px solid var(--border-subtle) !important; }
+.border-active { border: 1px solid var(--border-active) !important; }

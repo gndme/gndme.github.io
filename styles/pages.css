@@ -1,0 +1,63 @@
+/* Page Specific Typography & Hero Scaling */
+.hero-section {
+    padding-top: var(--space-96);
+    padding-bottom: var(--space-96);
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: var(--space-64);
+    align-items: center;
+}
+
+.hero-main-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.8rem, 5.5vw, 5.2rem);
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+    color: var(--text-white);
+    margin-bottom: var(--space-24);
+    text-transform: uppercase;
+}
+
+.hero-title-massive {
+    font-family: var(--font-heading);
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    line-height: 0.95;
+    letter-spacing: -2px;
+    color: var(--text-white);
+    text-transform: uppercase;
+    margin-bottom: var(--space-24);
+}
+
+.hero-subtitle-massive {
+    font-size: clamp(1.2rem, 2.2vw, 1.8rem);
+    color: var(--text-high);
+    max-width: 850px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.bento-metrics {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+}
+
+.metric-card {
+    background: var(--surface-100);
+    border: 1px solid var(--border-subtle);
+    padding: var(--space-24);
+    border-radius: 6px;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.metric-card:hover {
+    border-color: var(--border-active);
+    transform: translateX(4px);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: var(--space-24);
+    margin-bottom: var(--space-120);
+}

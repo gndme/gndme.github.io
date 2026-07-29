@@ -1,0 +1,47 @@
+/* GNDME Design System v3.9 Tokens */
+:root {
+    /* Color Scale & Hierarchy Tiers */
+    --bg-main: #050505;
+    --surface-100: #0a0a0a;
+    --surface-200: #141414;
+    
+    /* Text Hierarchy Scale */
+    --text-white: #FFFFFF;
+    --text-100: #FFFFFF;
+    --text-high: #CFCFCF;
+    --text-70: rgba(255, 255, 255, 0.70);
+    --text-mid: #7D7D7D;
+    --text-40: rgba(255, 255, 255, 0.40);
+    --text-dark: #444444;
+    --text-20: rgba(255, 255, 255, 0.15);
+    
+    /* Accents */
+    --accent-lime: #D4FF00;
+    --accent-lime-glow: rgba(212, 255, 0, 0.18);
+    --accent-cyan: #00E5FF;
+    --accent-orange: #FF9900;
+    --accent-red: #FF453A;
+
+    /* Borders & Radius */
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-active: rgba(212, 255, 0, 0.35);
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+
+    /* Fonts */
+    --font-heading: 'Archivo Black', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* Rhythm & Spacing Scale (8px system) */
+    --space-8: 8px;
+    --space-12: 12px;
+    --space-16: 16px;
+    --space-20: 20px;
+    --space-24: 24px;
+    --space-32: 32px;
+    --space-48: 48px;
+    --space-64: 64px;
+    --space-96: 96px;
+    --space-120: 120px;
+}

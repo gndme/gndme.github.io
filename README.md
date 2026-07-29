@@ -45,22 +45,41 @@ gndme.github.io/
 │   ├── ROADMAP.md           # Engineering Evolution & Release Milestones
 │   └── CONTRIBUTING.md      # Conventional Commit & Branching Standards
 │
+├── assets/                  # High-Resolution UI Dashboard Assets & Logos
+│   ├── images/
+│   │   ├── brands/
+│   │   │   ├── fixory/
+│   │   │   ├── tuctac/
+│   │   │   └── arsvix/
+│   │   ├── case-studies/
+│   │   │   ├── tan-thanh-dung/
+│   │   │   └── tt25/
+│   │   ├── ui/
+│   │   ├── logos/
+│   │   └── icons/
+│
+├── styles/                  # Modular Design System CSS Core (v3.9.0)
+│   ├── reset.css
+│   ├── tokens.css
+│   ├── layout.css
+│   ├── components.css
+│   ├── pages.css
+│   └── utilities.css
+│
 ├── projects/                # Technical Case Profiles & Case Studies
 │   ├── fixory-lab.html      # Brand Technical Profile: FIXORY Lab Repair OS
 │   ├── tuctac-studio.html   # Brand Technical Profile: TUCTAC Studio Commerce OS
 │   ├── arsvix.html          # Brand Technical Profile: Arsvix Edge Vision OS
 │   ├── tan-thanh-dung.html  # Multi-Project Enterprise Case Study: Tan Thanh Dung
-│   ├── tt25-consulting.html # Service Case Study: TT25 Consulting Service OS
-│   └── images/              # High-Resolution UI Dashboard Assets
+│   └── tt25-consulting.html # Service Case Study: TT25 Consulting Service OS
 │
 ├── index.html               # Personal Identity & System Architecture Hub
-├── companies.html           # Brands Founded Hub (FIXORY, TUCTAC, Arsvix)
-├── solutions.html           # Enterprise Case Studies Hub (Tan Thanh Dung, TT25)
+├── brands.html              # Brands Founded Hub (FIXORY, TUCTAC, Arsvix)
+├── case-studies.html        # Enterprise Case Studies Hub (Tan Thanh Dung, TT25)
 ├── journal.html             # System Architect Essays & Notes Hub
 ├── about.html               # Architect Profile & Tech Stack
-├── design.html              # Interactive Design System & UI/UX QA Hub
-├── style.css                # GNDME Design System Core CSS (v3.9.0)
-├── script.js               # Custom Cursor & Micro-Interactions
+├── design-system.html       # Interactive Design System & UI/UX QA Hub
+├── script.js                # Custom Cursor & Micro-Interactions
 ├── sitemap.xml              # Structured XML Sitemap for Crawlers
 ├── robots.txt               # Search Engine Directives
 ├── CHANGELOG.md             # Release Versioning History
