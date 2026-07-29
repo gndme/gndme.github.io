@@ -1,9 +1,9 @@
 /* 
    ========================================================
-   GNDME DESIGN SYSTEM v3.8 // NAV LINK STATES & CACHE BUST
+   GNDME DESIGN SYSTEM v3.9 // PERFECT NAV LINK HOVER & STATES
    --------------------------------------------------------
-   - Clean .nav-link & .nav-link.active classes
-   - Guaranteed cache reset across CDN edge nodes
+   - Explicit .nav-link:hover & .nav-link.active:hover
+   - Smooth 0.2s color transition across 100% of links
    ========================================================
 */
 
@@ -59,7 +59,7 @@
 }
 
 /* Global Link Reset */
-a, a:visited, a:hover, a:active {
+a, a:visited {
     color: inherit;
     text-decoration: none;
 }
@@ -159,7 +159,7 @@ body::-webkit-scrollbar { display: none; }
     font-weight: bold;
 }
 
-/* Navbar & Link States */
+/* Navbar & Link Hover States */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -179,6 +179,7 @@ body::-webkit-scrollbar { display: none; }
     color: var(--text-mid) !important;
     text-decoration: none !important;
     transition: color 0.2s ease;
+    display: inline-block;
 }
 .nav-link:hover {
     color: var(--text-white) !important;
@@ -187,6 +188,10 @@ body::-webkit-scrollbar { display: none; }
     color: var(--accent-lime) !important;
     text-decoration: underline !important;
     font-weight: bold;
+}
+.nav-link.active:hover {
+    color: var(--text-white) !important;
+    text-decoration: underline !important;
 }
 
 /* =========================================
