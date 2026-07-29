@@ -38,13 +38,15 @@ Public-facing marketing storefronts, B2B corporate portals, internal administrat
 
 ---
 
-## ⚡ Source Code Architecture & Single Source of Truth
+## ⚡ Pure Static Engine Architecture (v3.9.0)
 
-To balance **Modern Modular Code Organization (`src/`)** with **GitHub Pages Direct Edge Serving (`/`)**, the repository operates on a Single Source of Truth architecture:
+This repository operates as a **Pure Static Engine** delivered globally via GitHub Pages Edge CDN:
 
-1. **`src/` (Single Source of Truth for Development)**:
-   - All component design, HTML templates, CSS tokens, and JavaScript modules are developed inside `src/` (`src/app/`, `src/pages/`, `src/styles/`, `src/scripts/`, `src/assets/`).
-2. **Root Entry Points (Production Edge Output)**:
-   - Root files serve as the live edge production bundle deployed to GitHub Pages CDN without breaking relative link routing or cold-start performance.
-3. **Automated Build (`package.json`)**:
-   - Running `npm run build` compiles and syncs updates from `src/` to production edge targets.
+1. **Zero Cold Starts & Zero Build Overhead**:
+   - 100% native HTML5, CSS custom properties, and JavaScript.
+   - Zero runtime Node.js overhead or bundler compilation steps for v3.9.0.
+   - Every file serves 1:1 directly to the browser with sub-20ms latency.
+2. **Single Source of Truth**:
+   - Clean, non-duplicated repository structure where every page exists in exactly one authoritative location.
+3. **Future Next.js Migration (`v4.0.0`)**:
+   - The modular `src/` directory structure (`src/app/`, `src/components/`, `src/styles/`) will be introduced when officially migrating to Next.js & TypeScript in version 4.0.0.
