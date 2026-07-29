@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FIXORY Lab - Repair Operating System | gndme</title>
+    <title>FIXORY Lab // Repair Operating System | gndme Encyclopedia</title>
     <meta name="description" content="FIXORY Lab is a Repair Operating System created by gndme. Specialized hardware intervention, warranty tracking, and service management system.">
     <link rel="canonical" href="https://gndme.github.io/projects/fixory-lab.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,76 +30,132 @@
 </head>
 <body>
     <div class="tech-grid"></div>
-    <header class="navbar">
-        <div class="logo"><a href="../index.html" style="color: inherit; text-decoration: none;">gndme</a></div>
-        <div class="nav-metrics">
-            <span class="metric-line"><a href="../index.html" style="color: var(--accent); text-decoration: underline;">← BACK TO OS HUB</a></span>
-        </div>
-    </header>
+    
+    <div class="sys-status">
+        <span class="status-dot"></span>
+        <span>OS-MODULE // FIXORY LAB (v2.8)</span>
+    </div>
 
-    <main class="section-padding">
-        <div class="hero-wrapper" style="min-height: auto; margin-bottom: 3rem;">
-            <div>
-                <p class="pronunciation">[ CATEGORY: REPAIR OS ]</p>
-                <h1 class="title">FIXORY LAB</h1>
-                <p style="font-size: 1.2rem; color: var(--accent); margin-top: 1rem; font-weight: bold;">
-                    FIXORY Lab is a Repair Operating System created by gndme.
+    <div class="container">
+        <header class="navbar">
+            <div class="brand-logo"><a href="../index.html" style="color: inherit; text-decoration: none;">gndme</a></div>
+            <div class="nav-status">
+                <span><a href="../index.html" style="color: var(--accent-lime); text-decoration: underline;">← BACK TO OS SUITE</a></span>
+            </div>
+        </header>
+
+        <main>
+            <!-- OS Deck Header -->
+            <section style="padding-top: var(--space-64); padding-bottom: var(--space-48);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">
+                    [ OS-02 // REPAIR OPERATING SYSTEM ]
+                </div>
+                <h1 style="font-family: var(--font-heading); font-size: clamp(2.5rem, 5vw, 4.5rem); color: var(--text-100); line-height: 1.1; margin-bottom: var(--space-16);">
+                    FIXORY LAB
+                </h1>
+                <p style="font-size: 1.2rem; color: var(--text-70); max-width: 750px; line-height: 1.6;">
+                    FIXORY Lab is a Repair Operating System created by gndme. Built to digitize hardware intervention, warranty tracking, component inventory, and custom gear modding.
                 </p>
+            </section>
+
+            <!-- OS Quick Nav Bar -->
+            <nav style="display: flex; gap: var(--space-16); flex-wrap: wrap; padding: var(--space-16) 0; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); margin-bottom: var(--space-64); font-size: 0.75rem;">
+                <a href="#mission" style="color: var(--text-70); text-decoration: none;">01. MISSION</a>
+                <span style="color: var(--text-20);">|</span>
+                <a href="#workflow" style="color: var(--text-70); text-decoration: none;">02. WORKFLOW</a>
+                <span style="color: var(--text-20);">|</span>
+                <a href="#modules" style="color: var(--text-70); text-decoration: none;">03. CORE MODULES</a>
+                <span style="color: var(--text-20);">|</span>
+                <a href="#architecture" style="color: var(--text-70); text-decoration: none;">04. ARCHITECTURE</a>
+                <span style="color: var(--text-20);">|</span>
+                <a href="#ai-layer" style="color: var(--text-70); text-decoration: none;">05. AI LAYER</a>
+                <span style="color: var(--text-20);">|</span>
+                <a href="#roadmap" style="color: var(--text-70); text-decoration: none;">06. ROADMAP</a>
+            </nav>
+
+            <!-- Sections -->
+            <article style="display: flex; flex-direction: column; gap: var(--space-64); margin-bottom: var(--space-96);">
+                
+                <section id="mission">
+                    <h2 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--accent-lime); margin-bottom: var(--space-16);">01. MISSION & VISION</h2>
+                    <p style="color: var(--text-70); font-size: 1rem; line-height: 1.7; max-width: 850px;">
+                        Traditional repair shops suffer from opaque diagnostic status, un-tracked component stock, and fragmented customer updates. FIXORY Lab operates as a dedicated Repair OS that digitizes every hardware intake, component replacement, and custom modding job into an auditable real-time pipeline.
+                    </p>
+                </section>
+
+                <section id="workflow">
+                    <h2 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--accent-lime); margin-bottom: var(--space-16);">02. OPERATIONAL WORKFLOW</h2>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); border-radius: 4px;">
+                        <p style="font-size: 0.85rem; color: var(--text-70); font-family: var(--font-mono); line-height: 1.8;">
+                            [CUSTOMER INTAKE] ➔ [HARDWARE DIAGNOSTIC REPORT] ➔ [PARTS RESERVATION] <br>
+                            ➔ [TECHNICIAN WORKBENCH] ➔ [QC TEST & VERIFICATION] ➔ [CUSTOMER DELIVERY & WARRANTY]
+                        </p>
+                    </div>
+                </section>
+
+                <section id="modules">
+                    <h2 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--accent-lime); margin-bottom: var(--space-16);">03. OS CORE MODULES</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-16);">
+                        <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24);">
+                            <h3 style="font-size: 1rem; color: var(--text-100); margin-bottom: var(--space-8);">[ Client Tracking Engine ]</h3>
+                            <p style="font-size: 0.85rem; color: var(--text-40);">Real-time repair progress dashboard for end users with WebSocket status notifications.</p>
+                        </div>
+                        <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24);">
+                            <h3 style="font-size: 1rem; color: var(--text-100); margin-bottom: var(--space-8);">[ Inventory & Parts POS ]</h3>
+                            <p style="font-size: 0.85rem; color: var(--text-40);">Granular tracking for micro-switches, encoders, PCBs, and custom modding stock.</p>
+                        </div>
+                        <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24);">
+                            <h3 style="font-size: 1rem; color: var(--text-100); margin-bottom: var(--space-8);">[ Diagnostic Benchmark ]</h3>
+                            <p style="font-size: 0.85rem; color: var(--text-40);">Integrated peripheral testing algorithms for double-click, debounce, and scroll-wheel jitter.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="architecture">
+                    <h2 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--accent-lime); margin-bottom: var(--space-16);">04. DECOUPLED ARCHITECTURE & TECH STACK</h2>
+                    <div style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: var(--space-24); color: var(--text-70); font-size: 0.9rem;">
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-12);">
+                            <li><strong style="color: var(--text-100);">Frontend Layer:</strong> Next.js (App Router), TypeScript, Tailwind CSS, Shadcn UI</li>
+                            <li><strong style="color: var(--text-100);">Core API Engine:</strong> Python FastAPI (Daemonized), Modular Monolith Architecture</li>
+                            <li><strong style="color: var(--text-100);">Data Persistence:</strong> Supabase / PostgreSQL + Redis State Cache</li>
+                            <li><strong style="color: var(--text-100);">Deployment:</strong> Ubuntu Server, Nginx SSL Reverse Proxy, PM2 Process Manager</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="ai-layer">
+                    <h2 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--accent-lime); margin-bottom: var(--space-16);">05. AI & DIAGNOSTIC LAYER</h2>
+                    <p style="color: var(--text-70); font-size: 0.95rem; line-height: 1.6;">
+                        Fixory Lab incorporates diagnostic AI models to evaluate peripheral click signals, detect switch chattering via microsecond latency timing, and recommend exact component replacements or affiliate hardware upgrades.
+                    </p>
+                </section>
+
+                <section id="roadmap">
+                    <h2 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--accent-lime); margin-bottom: var(--space-16);">06. ROADMAP & EVOLUTION</h2>
+                    <p style="color: var(--text-70); font-size: 0.95rem; line-height: 1.6;">
+                        Phase 1 (Public Portal & Diagnostic Tools) ➔ Phase 2 (Next.js Strangler Fig Migration) ➔ Phase 3 (3D Desk Setup & Custom Gear Modder Integration). Official live service portal: <a href="https://fixorylab.vn" target="_blank" style="color: var(--accent-lime); text-decoration: underline;">fixorylab.vn</a>
+                    </p>
+                </section>
+
+            </article>
+
+            <!-- Cross-Link OS Navigator -->
+            <section style="border-top: 1px solid var(--border-subtle); padding-top: var(--space-32); margin-bottom: var(--space-64);">
+                <div style="font-size: 0.75rem; color: var(--text-40); letter-spacing: 1.5px; margin-bottom: var(--space-16);">EXPLORE OTHER OS MODULES IN THE SUITE</div>
+                <div style="display: flex; gap: var(--space-16); flex-wrap: wrap; font-size: 0.85rem;">
+                    <a href="arsvix.html" style="color: var(--accent-lime); text-decoration: none;">./Arsvix (Vision OS) →</a>
+                    <a href="tuctac-studio.html" style="color: var(--accent-lime); text-decoration: none;">./TUCTAC Studio (Commerce OS) →</a>
+                    <a href="plasticapp.html" style="color: var(--accent-lime); text-decoration: none;">./PlasticApp (Manufacturing OS) →</a>
+                    <a href="tan-thanh-dung.html" style="color: var(--accent-lime); text-decoration: none;">./Tan Thanh Dung →</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-text">
+                SYS.BUILD: 2026 // FIXORY Lab - A Repair Operating System by <span>gndme</span> (/ˈɡraʊmi/)
             </div>
-        </div>
-
-        <div class="divider-line"></div>
-
-        <article style="margin-top: 3rem; max-width: 900px;">
-            <h2 class="cs-heading">1. EXECUTIVE OVERVIEW</h2>
-            <p class="cs-text">
-                FIXORY Lab is a specialized Repair Operating System designed to digitize the end-to-end lifecycle of hardware repair, peripheral modding, and warranty management. Built for precision technicians and gaming gear customization, it bridges real-time customer tracking with inventory control and automated service workflows.
-            </p>
-
-            <h2 class="cs-heading">2. SYSTEM ARCHITECTURE & CAPABILITIES</h2>
-            <div class="cs-grid">
-                <div class="cs-card">
-                    <h4>[ Customer Portal ]</h4>
-                    <ul>
-                        <li>Real-time repair ticket tracking via WebSockets</li>
-                        <li>Automated SMS/Email notification system</li>
-                        <li>Diagnostic inspection report viewer</li>
-                    </ul>
-                </div>
-                <div class="cs-card">
-                    <h4>[ Technician Operations ]</h4>
-                    <ul>
-                        <li>Component inventory & stock management</li>
-                        <li>Service log entry with diagnostic status tracking</li>
-                        <li>POS & billing integration</li>
-                    </ul>
-                </div>
-                <div class="cs-card">
-                    <h4>[ High-Level Tech Stack ]</h4>
-                    <ul>
-                        <li>Next.js (App Router), TypeScript</li>
-                        <li>Tailwind CSS, Shadcn UI</li>
-                        <li>Python FastAPI, Supabase / PostgreSQL</li>
-                    </ul>
-                </div>
-            </div>
-
-            <h2 class="cs-heading">3. KEY PROBLEMS SOLVED</h2>
-            <ul class="cs-list">
-                <li><span class="highlight">Opaque Service Status:</span> Eliminates "Where is my device?" calls by providing customers with a transparent tracking link.</li>
-                <li><span class="highlight">Inventory Leakage:</span> Tracks individual micro-switches, encoders, and custom components mapped directly to specific service tickets.</li>
-                <li><span class="highlight">Scalable Modding Workflows:</span> Standardizes custom modding orders (lubing, switch swapping, PCB repair) into structured digital pipelines.</li>
-            </ul>
-
-            <h2 class="cs-heading">4. ECOSYSTEM INTEGRATION</h2>
-            <p class="cs-text">
-                As part of the gndme AI & Business OS ecosystem, FIXORY Lab links directly with <a href="https://fixorylab.vn" target="_blank" style="color: var(--accent-alt); text-decoration: underline;">FIXORY Lab Official Site</a> and serves as the operational backbone for hardware service delivery.
-            </p>
-        </article>
-    </main>
-
-    <footer class="footer section-padding">
-        <p class="copyright">SYS.BUILD: 2026 // FIXORY Lab - A Repair Operating System by gndme (/ˈɡraʊmi/)</p>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
