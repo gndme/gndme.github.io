@@ -1,53 +1,35 @@
 <!DOCTYPE html>
-<html lang="vi">
-<!--
-  ========================================================
-  ARCHITECTURE NOTE - gndme
-  --------------------------------------------------------
-  This frontend is strictly static (Vanilla HTML/CSS/JS) 
-  to guarantee near 0ms Time To First Byte (TTFB). 
-  
-  Heavy data structures and case studies are dynamically 
-  fetched via AJAX from the /data API to maintain a 
-  clean DOM tree and optimize the initial render path.
-  ========================================================
--->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gndme | Building Enterprise AI Operating Systems</title>
-    <meta name="description" content="gndme is the architect of specialized AI & Business Operating Systems for Industry, Commerce, and Hardware Infrastructure: Arsvix, FIXORY Lab, TUCTAC Studio, PlasticApp, and Tan Thanh Dung.">
+    <title>gndme | Building Business Operating Systems</title>
+    <meta name="description" content="gndme is the architect of specialized AI & Business Operating Systems for Industry, Commerce, and Hardware Infrastructure.">
     <meta name="google-site-verification" content="SBjC-z1Qz-_4PcRSXMz73PPwhWViDOzFQOM-ByWCNPc" />
     
-    <!-- SEO & Open Graph Tags -->
-    <meta property="og:title" content="gndme // BUILDING ENTERPRISE AI OPERATING SYSTEMS">
-    <meta property="og:description" content="Architecting specialized Business OS: Arsvix (Vision OS), FIXORY Lab (Repair OS), TUCTAC Studio (Commerce OS), PlasticApp & Tan Thanh Dung (Manufacturing OS).">
+    <!-- SEO & Open Graph -->
+    <meta property="og:title" content="gndme // BUILDING BUSINESS OPERATING SYSTEMS">
+    <meta property="og:description" content="Architecting specialized Business OS for Industry, Commerce, and Hardware Infrastructure.">
     <meta property="og:type" content="website">
     
-    <!-- Cache Busting & SEO -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    
-    <!-- Fonts: JetBrains Mono for that technical feel, Archivo Black for solid headers, Libre Barcode 39 for the footer -->
+    <!-- Fonts: Archivo Black for solid headers, JetBrains Mono for command feel -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=block" rel="stylesheet">
     
-    <!-- Styles (Versioned to break cache) -->
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css?v=3.0.0">
     
-    <!-- SEO & Canonical -->
+    <!-- Canonical -->
     <link rel="canonical" href="https://gndme.github.io/">
     
-    <!-- Schema Markup for GEO/SEO & Entity Knowledge Graph -->
+    <!-- Schema Markup for AI Crawlers & SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "gndme",
-      "alternateName": ["Lợi Mai Công Trung", "TrungLMC", "gndme Founder", "gndme CW Group"],
+      "alternateName": ["Lợi Mai Công Trung", "gndme Founder", "gndme CW Group"],
       "url": "https://gndme.github.io/",
       "description": "gndme is the builder of specialized Enterprise AI & Business Operating Systems.",
       "knowsAbout": [
@@ -61,44 +43,16 @@
         "https://github.com/gndme",
         "https://www.facebook.com/j73117"
       ],
-      "jobTitle": "Founder & Systems Architect",
+      "jobTitle": "Systems Architect & Founder",
       "worksFor": {
         "@type": "Organization",
         "name": "CW Group",
         "description": "Enterprise Architecture & Industrial AI Operating Systems"
-      },
-      "alumniOf": [
-        { "@type": "Organization", "name": "Arsvix" },
-        { 
-          "@type": "Organization", 
-          "name": "FIXORY Lab", 
-          "url": "https://fixorylab.vn/",
-          "sameAs": [
-            "https://www.facebook.com/fixory.cw",
-            "https://www.instagram.com/fixorylab.cw/",
-            "https://www.tiktok.com/@fixorylab.cw"
-          ]
-        },
-        { 
-          "@type": "Organization", 
-          "name": "Tuctac Studio",
-          "url": "https://tuctac.net/",
-          "sameAs": [
-            "https://www.facebook.com/tuctac.sop",
-            "https://www.instagram.com/tuctac.cw/",
-            "https://www.tiktok.com/@tuctac.cw"
-          ]
-        },
-        { 
-          "@type": "Organization", 
-          "name": "Tan Thanh Dung",
-          "url": "https://tanthanhdung.vn/"
-        }
-      ]
+      }
     }
     </script>
 </head>
-<body class="loading">
+<body>
 
     <!-- Custom Cursor -->
     <div id="cursor" class="custom-cursor">
@@ -106,197 +60,163 @@
         <div class="cursor-label">IDLE</div>
     </div>
 
-    <!-- Technical Grid Background -->
+    <!-- Technical Grid Overlay -->
     <div class="tech-grid"></div>
-    
-    <!-- Frame Borders (Corners) -->
-    <div class="frame-corner frame-tl"></div>
-    <div class="frame-corner frame-tr"></div>
-    <div class="frame-corner frame-bl"></div>
-    <div class="frame-corner frame-br"></div>
 
+    <!-- System Status Bar -->
     <div class="sys-status">
         <span class="status-dot"></span>
-        <span class="status-text scramble-text" data-text="gndme - Founder of CW Group">gndme - Founder of CW Group</span>
+        <span>gndme // Founder of CW Group</span>
     </div>
 
-    <header class="navbar">
-        <div class="logo scramble-text" data-text="gndme">gndme</div>
-        <div class="nav-metrics">
-            <span class="metric-line">UPTIME: <span id="uptime">00:00:00</span></span>
-            <span class="metric-line">LAT: 10.7626° N / LON: 106.6601° E</span>
-        </div>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero section-padding">
-            <div class="hero-wrapper">
-                <div class="hero-left">
-                    <p class="pronunciation">[ PHONETIC: /ˈɡraʊmi/ ]</p>
-                    <h1 class="title scramble-title" data-text="ARCHITECT.">ARCHITECT.</h1>
-                    <h1 class="title title-outline scramble-title delay-1" data-text="BUSINESS OS.">BUSINESS OS.</h1>
-                    <h1 class="title scramble-title delay-2" data-text="FOUNDER.">FOUNDER.</h1>
-                </div>
-                <div class="hero-right">
-                    <div class="data-block">
-                        <div class="data-label">IDENTITY_MATRIX</div>
-                        <p class="data-value scramble-text" data-text="Building Enterprise AI & Business Operating Systems for Industry, Commerce, and Infrastructure.">Building Enterprise AI & Business Operating Systems for Industry, Commerce, and Infrastructure.</p>
-                        <p class="data-value-sub" style="font-size: 0.85rem; color: var(--text-dim); margin-top: 0.5rem; letter-spacing: 1px;">
-                            gndme is the creator of specialized Operating Systems: Arsvix (Vision OS), <a href="projects/fixory-lab.html" style="color: var(--accent-alt); text-decoration: underline;">FIXORY Lab (Repair OS)</a>, <a href="projects/tuctac-studio.html" style="color: var(--accent-alt); text-decoration: underline;">TUCTAC Studio (Commerce OS)</a>, <a href="projects/plasticapp.html" style="color: var(--accent-alt); text-decoration: underline;">PlasticApp (Manufacturing OS)</a>, and <a href="projects/tan-thanh-dung.html" style="color: var(--accent-alt); text-decoration: underline;">Tan Thanh Dung</a>.
-                        </p>
-                    </div>
-                    <div class="data-block">
-                        <div class="data-label">SYSTEM_INDEX</div>
-                        <ul class="directory-list">
-                            <li><a href="projects/arsvix.html">> ./Arsvix (Vision OS)</a></li>
-                            <li><a href="projects/fixory-lab.html">> ./FIXORY Lab (Repair OS)</a></li>
-                            <li><a href="projects/tuctac-studio.html">> ./TUCTAC Studio (Commerce OS)</a></li>
-                            <li><a href="projects/plasticapp.html">> ./PlasticApp (Manufacturing OS)</a></li>
-                            <li><a href="projects/tan-thanh-dung.html">> ./Tan Thanh Dung (Industrial Transformation)</a></li>
-                            <li class="cta-link">> <a href="mailto:congtrung9910@gmail.com">Email: congtrung9910@gmail.com</a></li>
-                        </ul>
-                    </div>
-                </div>
+    <div class="container">
+        
+        <!-- Header Nav -->
+        <header class="navbar">
+            <div class="brand-logo">gndme</div>
+            <div class="nav-status">
+                <span>LAT: 10.7626° N</span>
+                <span>LON: 106.6601° E</span>
             </div>
-        </section>
+        </header>
 
-        <div class="divider-line"></div>
-
-        <!-- Ecosystem Section -->
-        <section id="ecosystem" class="ecosystem section-padding">
-            <div class="section-header">
-                <h2 class="section-title scramble-text" data-text="[ BUSINESS_OS_SUITE ]">[ BUSINESS_OS_SUITE ]</h2>
-                <div class="header-line"></div>
-            </div>
-
-            <div class="modules-grid">
-                
-                <!-- Module: Arsvix -->
-                <article class="module-card clickable-card" onclick="window.location.href='projects/arsvix.html'" data-hover-label="VIEW_VISION_OS">
-                    <div class="card-borders"></div>
-                    <div class="module-meta">
-                        <span class="mod-id">OS-01</span>
-                        <span class="mod-cat">VISION & AUTOMATION OS</span>
-                    </div>
-                    <h3 class="module-name">ARSVIX</h3>
-                    <p class="module-desc">Arsvix is a Vision & Automation Operating System created by gndme. Transforming physical conveyer observations into real-time industrial telemetry.</p>
-                    <div class="module-footer">
-                        <a href="projects/arsvix.html" class="status-badge" style="color: inherit; text-decoration: none;">VIEW SYSTEM DOCS →</a>
-                    </div>
-                </article>
-
-                <!-- Module: FIXORY Lab -->
-                <article class="module-card clickable-card" onclick="window.location.href='projects/fixory-lab.html'" data-hover-label="VIEW_REPAIR_OS">
-                    <div class="card-borders"></div>
-                    <div class="module-meta">
-                        <span class="mod-id">OS-02</span>
-                        <span class="mod-cat">REPAIR OPERATING SYSTEM</span>
-                    </div>
-                    <h3 class="module-name">FIXORY LAB</h3>
-                    <p class="module-desc">FIXORY Lab is a Repair Operating System created by gndme. Specialized hardware intervention, warranty tracking, and custom gear modding workflows.</p>
-                    <div class="module-footer">
-                        <a href="projects/fixory-lab.html" class="status-badge" style="color: inherit; text-decoration: none;">VIEW SYSTEM DOCS →</a>
-                    </div>
-                </article>
-
-                <!-- Module: Tuctac Studio -->
-                <article class="module-card clickable-card" onclick="window.location.href='projects/tuctac-studio.html'" data-hover-label="VIEW_COMMERCE_OS">
-                    <div class="card-borders"></div>
-                    <div class="module-meta">
-                        <span class="mod-id">OS-03</span>
-                        <span class="mod-cat">COMMERCE OPERATING SYSTEM</span>
-                    </div>
-                    <h3 class="module-name">TUCTAC STUDIO</h3>
-                    <p class="module-desc">TUCTAC Studio is a Commerce Operating System created by gndme. Powering niche e-commerce, 3D collectible figure crafting, and multi-channel fulfillment.</p>
-                    <div class="module-footer">
-                        <a href="projects/tuctac-studio.html" class="status-badge" style="color: inherit; text-decoration: none;">VIEW SYSTEM DOCS →</a>
-                    </div>
-                </article>
-
-                <!-- Module: PlasticApp -->
-                <article class="module-card clickable-card" onclick="window.location.href='projects/plasticapp.html'" data-hover-label="VIEW_MFG_OS">
-                    <div class="card-borders"></div>
-                    <div class="module-meta">
-                        <span class="mod-id">OS-04</span>
-                        <span class="mod-cat">INTERNAL MANUFACTURING OS</span>
-                    </div>
-                    <h3 class="module-name">PLASTICAPP</h3>
-                    <p class="module-desc">PlasticApp is an Internal Manufacturing Operating System created by gndme. Digitizing polymer injection molding, raw material intake, and factory scheduling.</p>
-                    <div class="module-footer">
-                        <a href="projects/plasticapp.html" class="status-badge" style="color: inherit; text-decoration: none;">VIEW SYSTEM DOCS →</a>
-                    </div>
-                </article>
-
-                <!-- Module: Tan Thanh Dung -->
-                <article class="module-card clickable-card" onclick="window.location.href='projects/tan-thanh-dung.html'" data-hover-label="VIEW_TRANSFORMATION">
-                    <div class="card-borders"></div>
-                    <div class="module-meta">
-                        <span class="mod-id">OS-05</span>
-                        <span class="mod-cat">MANUFACTURING TRANSFORMATION</span>
-                    </div>
-                    <h3 class="module-name">TAN THANH DUNG</h3>
-                    <p class="module-desc">Tan Thanh Dung is a Manufacturing Digital Transformation initiative created by gndme. Industrial MES deployment, supply chain tracking, and plant automation.</p>
-                    <div class="module-footer">
-                        <a href="projects/tan-thanh-dung.html" class="status-badge" style="color: inherit; text-decoration: none;">VIEW SYSTEM DOCS →</a>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-    </main>
-
-    <div class="divider-line"></div>
-
-    <footer id="contact" class="footer section-padding">
-        <div class="footer-wrapper">
-            <div class="terminal-box">
-                <div class="terminal-header">
-                    <span class="term-btn"></span>
-                    <span class="term-btn"></span>
-                    <span class="term-btn"></span>
-                    <span class="term-title">root@gndme:~</span>
+        <main>
+            <!-- Single Dominant Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-tag">[ ARCHITECT / CREATOR ]</div>
+                    <h1 class="hero-main-title">BUILDING BUSINESS OPERATING SYSTEMS FOR THE AI ERA.</h1>
+                    <p class="hero-subtitle">
+                        Architecting specialized operating systems across industrial automation, niche commerce, hardware repair, and enterprise manufacturing.
+                    </p>
                 </div>
-                <div class="terminal-body">
-                    <p class="term-line"><span class="prompt">gndme@sys:~$</span> ping contact.gndme.io</p>
-                    <p class="term-line">PING contact.gndme.io (127.0.0.1): 56 data bytes</p>
-                    <p class="term-line">Connection established.</p>
-                    <p class="term-line"><span class="prompt">gndme@sys:~$</span> <a href="mailto:congtrung9910@gmail.com" class="term-link">initiate_mail_protocol()</a></p>
-                    <p class="term-line"><span class="prompt">gndme@sys:~$</span> <a href="https://github.com/gndme" target="_blank" class="term-link">git clone https://github.com/gndme</a></p>
-                    <p class="term-line cursor-blink">_</p>
-                </div>
-            </div>
-            
-            <div class="footer-meta">
-                <div class="barcode" title="Decoded: 11/08">
-                    *1108*
-                </div>
-                <p class="copyright">SYS.BUILD: 2026 // MAINTAINER: gndme (/ˈɡraʊmi/)</p>
-            </div>
-        </div>
-    </footer>
 
-    <!-- Case Study Modal System -->
-    <div id="cs-modal" class="cs-modal-overlay">
-        <div class="cs-modal-window">
-            <div class="cs-modal-header">
-                <div class="cs-modal-controls">
-                    <span class="cs-btn close-btn" id="cs-close"></span>
-                    <span class="cs-btn min-btn"></span>
-                    <span class="cs-btn max-btn"></span>
+                <!-- Bento Metrics Bar -->
+                <div class="bento-metrics">
+                    <div class="metric-card">
+                        <div class="metric-number">05</div>
+                        <div class="metric-label">Active OS Modules</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">100%</div>
+                        <div class="metric-label">Private IP & Development</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">04</div>
+                        <div class="metric-label">Industrial Verticals</div>
+                    </div>
                 </div>
-                <div class="cs-modal-title">SYS.DOC_VIEWER</div>
-            </div>
-            <div class="cs-modal-body">
-                <div id="cs-content-area" class="cs-content">
-                    <!-- Dynamic Content Injected Here -->
+            </section>
+
+            <!-- Projects Section (Linear Style Cards) -->
+            <section id="projects">
+                <div class="section-header">
+                    <h2 class="section-title">BUSINESS OS SUITE</h2>
+                    <span class="section-count">// 05 OPERATING SYSTEMS</span>
                 </div>
+
+                <div class="projects-grid">
+                    
+                    <!-- OS-01: Arsvix -->
+                    <a href="projects/arsvix.html" class="os-card" data-hover-label="EXPLORE_VISION_OS">
+                        <div>
+                            <div class="os-card-header">
+                                <span class="os-code">OS-01</span>
+                                <span class="os-category">VISION OS</span>
+                            </div>
+                            <h3 class="os-name">ARSVIX</h3>
+                            <p class="os-desc">Arsvix is a Vision & Automation Operating System created by gndme. Transforming physical conveyer observations into real-time industrial telemetry.</p>
+                        </div>
+                        <div class="os-tags">
+                            <span>OpenCV · PyTorch · Edge AI</span>
+                            <span class="os-action">EXPLORE →</span>
+                        </div>
+                    </a>
+
+                    <!-- OS-02: FIXORY Lab -->
+                    <a href="projects/fixory-lab.html" class="os-card" data-hover-label="EXPLORE_REPAIR_OS">
+                        <div>
+                            <div class="os-card-header">
+                                <span class="os-code">OS-02</span>
+                                <span class="os-category">REPAIR OS</span>
+                            </div>
+                            <h3 class="os-name">FIXORY LAB</h3>
+                            <p class="os-desc">FIXORY Lab is a Repair Operating System created by gndme. Specialized hardware intervention, warranty tracking, and custom gear modding workflows.</p>
+                        </div>
+                        <div class="os-tags">
+                            <span>Hardware Servicing · Warranty Engine</span>
+                            <span class="os-action">EXPLORE →</span>
+                        </div>
+                    </a>
+
+                    <!-- OS-03: TUCTAC Studio -->
+                    <a href="projects/tuctac-studio.html" class="os-card" data-hover-label="EXPLORE_COMMERCE_OS">
+                        <div>
+                            <div class="os-card-header">
+                                <span class="os-code">OS-03</span>
+                                <span class="os-category">COMMERCE OS</span>
+                            </div>
+                            <h3 class="os-name">TUCTAC STUDIO</h3>
+                            <p class="os-desc">TUCTAC Studio is a Commerce Operating System created by gndme. Powering niche e-commerce, 3D collectible figure crafting, and multi-channel fulfillment.</p>
+                        </div>
+                        <div class="os-tags">
+                            <span>Niche B2C · 3D Collectible · Multi-Channel</span>
+                            <span class="os-action">EXPLORE →</span>
+                        </div>
+                    </a>
+
+                    <!-- OS-04: PlasticApp -->
+                    <a href="projects/plasticapp.html" class="os-card" data-hover-label="EXPLORE_MFG_OS">
+                        <div>
+                            <div class="os-card-header">
+                                <span class="os-code">OS-04</span>
+                                <span class="os-category">MANUFACTURING OS</span>
+                            </div>
+                            <h3 class="os-name">PLASTICAPP</h3>
+                            <p class="os-desc">PlasticApp is an Internal Manufacturing Operating System created by gndme. Digitizing polymer injection molding, raw material intake, and factory scheduling.</p>
+                        </div>
+                        <div class="os-tags">
+                            <span>Polymer Injection · Material Intake</span>
+                            <span class="os-action">EXPLORE →</span>
+                        </div>
+                    </a>
+
+                    <!-- OS-05: Tan Thanh Dung -->
+                    <a href="projects/tan-thanh-dung.html" class="os-card" data-hover-label="EXPLORE_TRANSFORMATION">
+                        <div>
+                            <div class="os-card-header">
+                                <span class="os-code">OS-05</span>
+                                <span class="os-category">INDUSTRIAL TRANSFORMATION</span>
+                            </div>
+                            <h3 class="os-name">TAN THANH DUNG</h3>
+                            <p class="os-desc">Tan Thanh Dung is a Manufacturing Digital Transformation initiative created by gndme. Industrial MES deployment, supply chain tracking, and plant automation.</p>
+                        </div>
+                        <div class="os-tags">
+                            <span>Industrial MES · Supply Chain Audit</span>
+                            <span class="os-action">EXPLORE →</span>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-text">
+                SYS.BUILD: 2026 // Created by <span>gndme</span> (/ˈɡraʊmi/)
             </div>
-        </div>
+            <div class="footer-links">
+                <a href="https://github.com/gndme" target="_blank">GitHub</a>
+                <a href="https://www.facebook.com/j73117" target="_blank">Facebook</a>
+                <a href="mailto:congtrung9910@gmail.com">Email</a>
+            </div>
+        </footer>
+
     </div>
 
-    <!-- Data Templates for Case Studies (Moved to /data API) -->
-
-    <script src="script.js?v=2.0.0"></script>
+    <!-- Interaction Script -->
+    <script src="script.js?v=3.0.0"></script>
 </body>
 </html>
