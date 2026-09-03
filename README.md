@@ -18,7 +18,7 @@ It documents system architecture, technical case studies, engineering decisions,
 
 The ecosystem operates on a **2-Tier Internet Infrastructure**:
 * **Tier 1 (Architecture Hub)**: `gndme.github.io` — Public technical case profiles, design tokens, and enterprise case studies served via GitHub Pages Edge CDN.
-* **Tier 2 (Production Domains)**: Live operational platforms (`https://fixorylab.vn`, `https://tuctac.net`, `https://tanthanhdung.vn`).
+* **Tier 2 (Production Domains)**: Live operational platforms (`https://fixorylab.vn`, `https://tuctac.net`, `https://tanthanhdung.vn`, `https://tt25.vn`).
 
 ---
 

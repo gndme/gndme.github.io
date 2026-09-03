@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
+## [Unreleased]
+
+### Added
+- Connected the live TT25 Investment Consulting domain (`https://tt25.vn`) across the homepage, case studies hub, TT25 case study, profile entity metadata, and repository documentation.
+
+### Fixed
+- Corrected the canonical URL and internal navigation paths on the TT25 case study page.
+
 ## [0.6.0] - 2026-07-29
 
 ### Added
