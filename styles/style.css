@@ -570,6 +570,7 @@ button:focus-visible {
 
 .case-brand-panel img {
     width: min(100%, 300px);
+    height: auto;
     margin: 0 auto var(--space-24);
 }
 
