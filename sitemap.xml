@@ -3,7 +3,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://gndme.github.io/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,31 +11,31 @@
   <!-- Companies Hub -->
   <url>
     <loc>https://gndme.github.io/brands.html</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://gndme.github.io/case-studies.html</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://gndme.github.io/journal.html</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://gndme.github.io/about.html</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://gndme.github.io/design-system.html</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -43,19 +43,19 @@
   <!-- Brands Technical Profiles -->
   <url>
     <loc>https://gndme.github.io/brands/fixory-lab/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://gndme.github.io/brands/tuctac-studio/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://gndme.github.io/brands/arsvix/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -63,13 +63,13 @@
   <!-- Enterprise Case Studies -->
   <url>
     <loc>https://gndme.github.io/case-studies/tan-thanh-dung/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://gndme.github.io/case-studies/tt25/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>

@@ -41,4 +41,24 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // 4. Journal topic filtering
+    const journalFilters = document.querySelectorAll('.journal-filter');
+    const journalEntries = document.querySelectorAll('.journal-entry');
+    journalFilters.forEach(function(filterButton) {
+        filterButton.addEventListener('click', function() {
+            const selectedFilter = filterButton.dataset.filter;
+
+            journalFilters.forEach(function(button) {
+                const isSelected = button === filterButton;
+                button.classList.toggle('is-active', isSelected);
+                button.setAttribute('aria-pressed', String(isSelected));
+            });
+
+            journalEntries.forEach(function(entry) {
+                const tags = (entry.dataset.tags || '').split(' ');
+                entry.hidden = selectedFilter !== 'all' && !tags.includes(selectedFilter);
+            });
+        });
+    });
 });

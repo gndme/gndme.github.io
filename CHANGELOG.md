@@ -10,9 +10,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Added
 - Connected the live TT25 Investment Consulting domain (`https://tt25.vn`) across the homepage, case studies hub, TT25 case study, profile entity metadata, and repository documentation.
+- Added official TT25 Investment Consulting and TÂN THANH DUNG brand assets.
+- Added three production-ready TT25 case study views covering the public website, SLA Command Center, and five-stage case workflow.
 
 ### Fixed
 - Corrected the canonical URL and internal navigation paths on the TT25 case study page.
+- Corrected the TÂN THANH DUNG name across visible content and metadata.
+- Repaired broken navigation, footer, script, and canonical paths across nested case study and brand pages.
+- Restored the native cursor as a safe fallback and improved mobile navigation, responsive case-study layouts, focus states, and reduced-motion behavior.
+- Turned Journal topic chips into working filters and removed false “Read entry” affordances.
 
 ## [0.6.0] - 2026-07-29
 
@@ -38,8 +44,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Added
 - Added `case-studies.html` (Enterprise Case Studies Hub).
-- Published multi-project case study for Tan Thanh Dung Plastic (Project 01: Corporate Digital Ecosystem & Project 02: Business OS).
-- Published service case study for TT25 Consulting.
+- Published multi-project case study for TÂN THANH DUNG (Project 01: Corporate Digital Ecosystem & Project 02: Business OS).
+- Published service case study for TT25 Investment Consulting.
 
 ---
 

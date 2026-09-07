@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Study: TT25 Consulting // Service Business OS | gndme</title>
-    <meta name="description" content="Service Case Study: How gndme architected the Service Business OS for TT25 Consulting, unifying investment consulting, visa procedures & work permit compliance.">
+    <title>TT25 Investment Consulting — Legal & Immigration Service OS | gndme</title>
+    <meta name="description" content="How Lợi Mai Công Trung (gndme) designed and shipped TT25's multilingual public website, legal operations platform, AI compliance workflow, security controls, and production cloud infrastructure.">
     <link rel="canonical" href="https://gndme.github.io/case-studies/tt25/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/style.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "CreativeWork",
-      "name": "TT25 Consulting Service Business OS Case Study",
+      "name": "TT25 Investment Consulting — Legal & Immigration Service OS",
       "url": "https://gndme.github.io/case-studies/tt25/",
+      "description": "A full-stack legal and immigration service operating system, multilingual public website, and production cloud platform.",
       "about": {
         "@type": "Organization",
         "name": "TT25 Investment Consulting",
@@ -24,258 +25,205 @@
       "creator": {
         "@type": "Person",
         "name": "Lợi Mai Công Trung",
-        "alternateName": "gndme",
+        "alternateName": ["gndme", "TrungLMC"],
         "url": "https://gndme.github.io/"
       }
     }
     </script>
 </head>
 <body>
-    <!-- Custom Cursor -->
-    <div id="cursor" class="custom-cursor">
+    <div id="cursor" class="custom-cursor" aria-hidden="true">
         <div class="cursor-crosshair"></div>
-        <div class="cursor-label">CASE_STUDY</div>
+        <div class="cursor-label">TT25_CASE</div>
     </div>
 
     <div class="tech-grid"></div>
-    
-    <!-- Status Bar -->
+
     <div class="sys-status">
         <span class="status-dot"></span>
-        <span>CASE STUDY // TT25 CONSULTING</span>
-        <span style="color: var(--text-dark);">|</span>
+        <span>CASE STUDY // TT25 INVESTMENT CONSULTING</span>
+        <span class="status-separator">|</span>
         <span>STATUS: <span class="status-badge">PRODUCTION</span></span>
     </div>
 
     <div class="container">
-        <!-- 5-Menu Navbar -->
         <header class="navbar">
             <div class="brand-logo"><a href="../../index.html">gndme</a></div>
-            <nav style="display: flex; gap: var(--space-20); font-size: 0.85rem; text-transform: uppercase;">
-                <a href="../../brands.html" class="nav-link ">Brands</a>
+            <nav class="primary-nav" aria-label="Primary navigation">
+                <a href="../../brands.html" class="nav-link">Brands</a>
                 <a href="../../case-studies.html" class="nav-link active">Case Studies</a>
-                <a href="../../journal.html" class="nav-link ">Journal</a>
-                <a href="../../about.html" class="nav-link ">About</a>
-                <a href="https://github.com/gndme" target="_blank" class="nav-link">GitHub ↗</a>
+                <a href="../../journal.html" class="nav-link">Journal</a>
+                <a href="../../about.html" class="nav-link">About</a>
+                <a href="https://github.com/gndme" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub ↗</a>
             </nav>
         </header>
 
         <main>
-            <!-- 1. HERO & METADATA -->
-            <section style="padding-top: var(--space-96); padding-bottom: var(--space-64);">
-                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 3px; margin-bottom: var(--space-24); text-transform: uppercase;">
-                    // SERVICE CASE STUDY
-                </div>
-                
-                <h1 class="hero-title-massive">
-                    TT25<br>
-                    <span style="color: var(--accent-lime);">CONSULTING</span>
-                </h1>
-                
-                <p class="hero-subtitle-massive" style="margin-top: var(--space-16);">
-                    Service Business OS deployment for foreign investment consulting, investor visa procedures, and work permit compliance.
-                </p>
-                <a href="https://tt25.vn" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: var(--space-24); color: var(--accent-lime); font-weight: bold; text-decoration: underline;">
-                    VISIT TT25.VN ↗
-                </a>
-
-                <!-- Metadata Grid -->
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-20); margin-top: var(--space-48); background: var(--surface-100); padding: var(--space-24); border-radius: 8px; border: 1px solid var(--border-subtle);">
-                    <div>
-                        <div style="font-size: 0.7rem; color: var(--text-mid); text-transform: uppercase;">STATUS</div>
-                        <div style="font-size: 1rem; color: var(--accent-lime); font-weight: bold; margin-top: 4px;">Production (2026)</div>
-                    </div>
-                    <div>
-                        <div style="font-size: 0.7rem; color: var(--text-mid); text-transform: uppercase;">LOCATION</div>
-                        <div style="font-size: 1rem; color: var(--text-white); font-weight: bold; margin-top: 4px;">Ho Chi Minh City</div>
-                    </div>
-                    <div>
-                        <div style="font-size: 0.7rem; color: var(--text-mid); text-transform: uppercase;">INDUSTRY</div>
-                        <div style="font-size: 1rem; color: var(--text-white); font-weight: bold; margin-top: 4px;">Immigration & Investment</div>
-                    </div>
-                    <div>
-                        <div style="font-size: 0.7rem; color: var(--text-mid); text-transform: uppercase;">DEPLOYED MODULES</div>
-                        <div style="font-size: 1rem; color: var(--accent-cyan); font-weight: bold; margin-top: 4px;">12 Modules</div>
-                    </div>
-                    <div>
-                        <div style="font-size: 0.7rem; color: var(--text-mid); text-transform: uppercase;">LIVE WEBSITE</div>
-                        <div style="font-size: 1rem; font-weight: bold; margin-top: 4px;"><a href="https://tt25.vn" target="_blank" rel="noopener noreferrer" style="color: var(--accent-lime); text-decoration: underline;">tt25.vn ↗</a></div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 2. CLIENT OVERVIEW -->
-            <section style="margin-bottom: var(--space-96);">
-                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 01. CLIENT OVERVIEW</div>
-                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-24);">WHO IS TT25 CONSULTING?</h2>
-                <p style="font-size: 1.1rem; color: var(--text-high); max-width: 850px; line-height: 1.8;">
-                    <a href="https://tt25.vn" target="_blank" rel="noopener noreferrer" style="color: var(--accent-lime); text-decoration: underline;">TT25 Consulting</a> is a professional Vietnamese advisory agency specializing in foreign direct investment (FDI) advisory, investor visa procedures, temporary residence cards (TRC), and work permit compliance for foreign experts and enterprises.
-                </p>
-            </section>
-
-            <!-- 3. BUSINESS CHALLENGE -->
-            <section style="margin-bottom: var(--space-96); background: rgba(255, 69, 58, 0.04); padding: var(--space-48); border-radius: 8px; border: 1px solid rgba(255, 69, 58, 0.2);">
-                <div style="font-size: 0.75rem; color: var(--accent-red); letter-spacing: 2px; margin-bottom: var(--space-16);">// 02. THE CHALLENGE</div>
-                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--accent-red); margin-bottom: var(--space-24);">BEFORE: MANUAL PERMIT TRACKING</h2>
-                
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-24); margin-bottom: var(--space-32);">
-                    <div style="background: var(--surface-100); padding: var(--space-20); border-radius: 6px;">
-                        <div style="color: var(--accent-red); font-weight: bold; margin-bottom: 6px;">⚠️ Missed Expiry Deadlines</div>
-                        <div style="font-size: 0.85rem; color: var(--text-mid);">No automated alerts for upcoming work permit and TRC visa expirations.</div>
-                    </div>
-                    <div style="background: var(--surface-100); padding: var(--surface-20); border-radius: 6px;">
-                        <div style="color: var(--accent-red); font-weight: bold; margin-bottom: 6px;">⚠️ Document Chaos</div>
-                        <div style="font-size: 0.85rem; color: var(--text-mid);">Client passports, legalized diplomas & notarized documents stored across loose folders.</div>
-                    </div>
-                    <div style="background: var(--surface-100); padding: var(--space-20); border-radius: 6px;">
-                        <div style="color: var(--accent-red); font-weight: bold; margin-bottom: 6px;">⚠️ Opaque Case Progress</div>
-                        <div style="font-size: 0.85rem; color: var(--text-mid);">Clients constantly calling for status updates on government application queues.</div>
+            <section class="case-hero case-hero--split">
+                <div>
+                    <div class="case-eyebrow">// LEGAL &amp; IMMIGRATION SERVICE OS</div>
+                    <h1 class="hero-title-massive">TT25<br><span>INVESTMENT<br>CONSULTING</span></h1>
+                    <p class="hero-subtitle-massive">
+                        One operating system connecting the public website, content administration, case operations, legal compliance, and production infrastructure.
+                    </p>
+                    <div class="case-actions">
+                        <a class="case-button case-button--primary" href="https://tt25.vn" target="_blank" rel="noopener noreferrer">VISIT TT25.VN ↗</a>
+                        <a class="case-button" href="#system-proof">VIEW SYSTEM PROOF ↓</a>
                     </div>
                 </div>
 
-                <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-red); background: #111; padding: 16px 24px; border-radius: 6px; text-align: center;">
-                    Un-tracked Emails ➔ Zalo Files ➔ Loose Paper Folders ➔ Missed Expiry Dates ➔ Client Inquiries
+                <div class="case-brand-panel">
+                    <img src="../../assets/images/logos/tt25.webp" alt="TT25 Investment Consulting logo" width="900" height="425">
+                    <div class="case-brand-statement">LEGAL CLARITY.<br>GLOBAL MOBILITY.</div>
+                    <p>We handle compliance. You focus on growth.</p>
                 </div>
             </section>
 
-            <!-- 4. SOLUTION ARCHITECTURE -->
-            <section style="margin-bottom: var(--space-96);">
-                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 03. SOLUTION ARCHITECTURE</div>
-                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-24);">SERVICE BUSINESS OPERATING SYSTEM</h2>
-                <p style="font-size: 1.1rem; color: var(--text-high); max-width: 850px; line-height: 1.8; margin-bottom: var(--space-32);">
-                    gndme architected a specialized Service Edition OS unifying Client Intake, Permit Case State Machine, Expiry SLA Alerts, Passport OCR, and Legal AI RAG into one single advisory platform.
-                </p>
-            </section>
+            <dl class="case-facts" aria-label="Project facts">
+                <div><dt>ROLE</dt><dd>Product Architecture · Full-stack · DevSecOps</dd></div>
+                <div><dt>SCOPE</dt><dd>Public Web · Web Admin · Operations OS</dd></div>
+                <div><dt>LANGUAGES</dt><dd>Vietnamese · English · Chinese</dd></div>
+                <div><dt>DELIVERY</dt><dd>Production Cloud VPS · 2026</dd></div>
+            </dl>
 
-            <!-- 5. MODULES DEPLOYED -->
-            <section style="margin-bottom: var(--space-96);">
-                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 04. MODULES DEPLOYED</div>
-                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-32);">12 SYSTEM MODULES</h2>
-
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-24);">
-                    <div style="background: var(--surface-100); padding: var(--space-24); border-radius: 6px; border: 1px solid var(--border-subtle);">
-                        <div style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--accent-lime); margin-bottom: 12px;">CLIENT WORKSPACE</div>
-                        <ul style="font-size: 0.85rem; color: var(--text-high); list-style: none; display: flex; flex-direction: column; gap: 8px;">
-                            <li>• Investment Lead Intake</li>
-                            <li>• Permit Case Pipeline</li>
-                            <li>• Client Document Vault</li>
-                        </ul>
+            <figure class="case-media case-media--lead">
+                <div class="screenshot-bar">
+                    <div class="screenshot-dots" aria-hidden="true">
+                        <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
                     </div>
+                    <span>PUBLIC WEB // TT25.VN</span>
+                    <span>01 / 03</span>
+                </div>
+                <img src="../../assets/images/case-studies/tt25/public-website.webp" alt="TT25 public website hero presenting legal and immigration services" width="1440" height="900" loading="eager">
+                <figcaption>A trilingual, SEO/GEO-ready public experience designed around TT25's premium advisory positioning.</figcaption>
+            </figure>
 
-                    <div style="background: var(--surface-100); padding: var(--space-24); border-radius: 6px; border: 1px solid var(--border-subtle);">
-                        <div style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--accent-cyan); margin-bottom: 12px;">COMPLIANCE & SLA</div>
-                        <ul style="font-size: 0.85rem; color: var(--text-high); list-style: none; display: flex; flex-direction: column; gap: 8px;">
-                            <li>• Permit Expiry Timers</li>
-                            <li>• Govt Department Track</li>
-                            <li>• Auto Renewal Alerts</li>
-                        </ul>
-                    </div>
-
-                    <div style="background: var(--surface-100); padding: var(--space-24); border-radius: 6px; border: 1px solid var(--border-subtle);">
-                        <div style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--accent-orange); margin-bottom: 12px;">AI INTELLIGENCE</div>
-                        <ul style="font-size: 0.85rem; color: var(--text-high); list-style: none; display: flex; flex-direction: column; gap: 8px;">
-                            <li>• Passport / TRC OCR</li>
-                            <li>• Legal RAG Search</li>
-                            <li>• Document Verifier</li>
-                        </ul>
-                    </div>
-
-                    <div style="background: var(--surface-100); padding: var(--space-24); border-radius: 6px; border: 1px solid var(--border-subtle);">
-                        <div style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-white); margin-bottom: 12px;">FINANCE</div>
-                        <ul style="font-size: 0.85rem; color: var(--text-high); list-style: none; display: flex; flex-direction: column; gap: 8px;">
-                            <li>• Dynamic Quotation</li>
-                            <li>• Contract Generator</li>
-                            <li>• Audit Trail & Invoicing</li>
-                        </ul>
-                    </div>
+            <section class="case-section case-section--intro">
+                <div>
+                    <div class="case-eyebrow">// 01. PRODUCT ARCHITECTURE</div>
+                    <h2>NOT AN ADMIN CRUD.<br>A CONTROLLED SERVICE OS.</h2>
+                </div>
+                <div class="case-prose">
+                    <p>TT25 was designed as an end-to-end operating model for corporate immigration services—not simply a website or database. Public acquisition, content publishing, client records, quotations, contracts, case execution, document controls, and legal checks live within one coherent product architecture.</p>
+                    <p>Multi-workspace RBAC separates the <strong>Operations OS</strong> from the <strong>Web Admin</strong>, with distinct access levels for Platform Admin, Owner, Specialist, and Staff.</p>
                 </div>
             </section>
 
-            <!-- 6. OPERATIONAL WORKFLOW -->
-            <section style="margin-bottom: var(--space-96);">
-                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 05. OPERATIONAL WORKFLOW</div>
-                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-32);">STANDARDIZED SERVICE PIPELINE</h2>
-
-                <div style="background: var(--surface-100); padding: var(--space-32); border-radius: 8px; border: 1px solid var(--border-subtle); overflow-x: auto;">
-                    <div style="min-width: 800px; display: flex; justify-between; align-items: center; text-align: center; font-family: var(--font-mono); font-size: 0.8rem;">
-                        <div style="background: var(--surface-200); padding: 12px 16px; border-radius: 4px; color: var(--text-white);">Intake Inquiry</div>
-                        <span style="color: var(--accent-lime);">➔</span>
-                        <div style="background: var(--surface-200); padding: 12px 16px; border-radius: 4px; color: var(--accent-lime);">Doc Audit</div>
-                        <span style="color: var(--accent-lime);">➔</span>
-                        <div style="background: var(--surface-200); padding: 12px 16px; border-radius: 4px; color: var(--accent-cyan);">Filing Pipeline</div>
-                        <span style="color: var(--accent-lime);">➔</span>
-                        <div style="background: var(--surface-200); padding: 12px 16px; border-radius: 4px; color: var(--accent-orange);">Gov Queue</div>
-                        <span style="color: var(--accent-lime);">➔</span>
-                        <div style="background: var(--surface-200); padding: 12px 16px; border-radius: 4px; color: var(--text-white);">Visa Handover</div>
-                        <span style="color: var(--accent-lime);">➔</span>
-                        <div style="background: var(--surface-200); padding: 12px 16px; border-radius: 4px; color: var(--accent-lime);">Expiry SLA Timer</div>
+            <section class="case-section" id="system-proof">
+                <div class="case-eyebrow">// 02. OPERATIONS CONTROL</div>
+                <h2>THE WORK THAT NEEDS ATTENTION—NOW.</h2>
+                <p class="case-section-lede">The Command Center converts case data into an actionable queue: near-SLA risks, today's work, government review, and completed outcomes. Specialists see ownership, deadlines, progress, and compliance warnings without reconstructing context from chats or spreadsheets.</p>
+                <figure class="case-media">
+                    <div class="screenshot-bar">
+                        <div class="screenshot-dots" aria-hidden="true">
+                            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                        </div>
+                        <span>OPERATIONS OS // COMMAND CENTER</span>
+                        <span>02 / 03</span>
                     </div>
+                    <img src="../../assets/images/case-studies/tt25/command-center.webp" alt="TT25 Operations OS Command Center showing SLA risk queues and assigned cases" width="1440" height="900" loading="lazy">
+                    <figcaption>Real-time workload orchestration with minute-level SLA timers, ownership, case progress, and AI-assisted compliance signals.</figcaption>
+                </figure>
+            </section>
+
+            <section class="case-section">
+                <div class="case-eyebrow">// 03. STANDARDIZED CASE EXECUTION</div>
+                <h2>A FIVE-STAGE LEGAL WORKFLOW.</h2>
+                <ol class="case-stepper">
+                    <li><span>01</span><strong>Intake</strong><small>Receive &amp; assess</small></li>
+                    <li><span>02</span><strong>Consular legalization</strong><small>HPHLS</small></li>
+                    <li><span>03</span><strong>Foreign-labor demand</strong><small>Form 01/PLI</small></li>
+                    <li><span>04</span><strong>Permit / TRC filing</strong><small>Government portal</small></li>
+                    <li><span>05</span><strong>Result handover</strong><small>Close &amp; monitor</small></li>
+                </ol>
+                <figure class="case-media">
+                    <div class="screenshot-bar">
+                        <div class="screenshot-dots" aria-hidden="true">
+                            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+                        </div>
+                        <span>CASE DETAIL // WORKFLOW &amp; LEGAL CHECKS</span>
+                        <span>03 / 03</span>
+                    </div>
+                    <img src="../../assets/images/case-studies/tt25/case-workflow.webp" alt="TT25 five-stage case workflow with document checklist and AI legal compliance engine" width="1440" height="900" loading="lazy">
+                    <figcaption>Each stage binds actions, required evidence, responsible staff, SLA status, and rule-based legal checks to the same case record.</figcaption>
+                </figure>
+            </section>
+
+            <section class="case-section">
+                <div class="case-eyebrow">// 04. CORE CAPABILITIES</div>
+                <h2>ONE SYSTEM, THREE OPERATING SURFACES.</h2>
+                <div class="case-capability-grid">
+                    <article>
+                        <div class="case-capability-number">01</div>
+                        <h3>Public Web</h3>
+                        <p>VI–EN–ZH SSR delivery, responsive desktop/mobile layouts, deep Schema.org markup, hreflang alternates, canonical redirects, and zero-404 fallback behavior.</p>
+                    </article>
+                    <article>
+                        <div class="case-capability-number">02</div>
+                        <h3>Web Admin</h3>
+                        <p>A separate editorial workspace for multilingual service content, resources, and public-site operations without exposing the case-management surface.</p>
+                    </article>
+                    <article>
+                        <div class="case-capability-number">03</div>
+                        <h3>Operations OS</h3>
+                        <p>Client intake, quotations, contracts, secure document vaults, assigned queues, five-stage case workflows, SLA controls, and auditable state changes.</p>
+                    </article>
                 </div>
             </section>
 
-            <!-- 7. TECHNOLOGY STACK -->
-            <section style="margin-bottom: var(--space-96);">
-                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 06. TECH STACK</div>
-                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-24);">ENTERPRISE STACK</h2>
-
-                <div style="display: flex; gap: var(--space-12); flex-wrap: wrap; font-size: 0.85rem;">
-                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: 4px; color: var(--text-white);">Next.js</span>
-                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: 4px; color: var(--text-white);">FastAPI</span>
-                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: 4px; color: var(--text-white);">PostgreSQL</span>
-                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: 4px; color: var(--accent-lime);">Passport OCR Engine</span>
-                    <span style="background: var(--surface-100); border: 1px solid var(--border-subtle); padding: 8px 16px; border-radius: 4px; color: var(--accent-cyan);">Legal RAG AI</span>
+            <section class="case-section case-section--split">
+                <div>
+                    <div class="case-eyebrow">// 05. LEGAL ENGINEERING</div>
+                    <h2>COMPLIANCE BUILT INTO EXECUTION.</h2>
+                    <p class="case-section-lede">The TT25 AI Legal Compliance Engine checks document readiness against operational rules derived from applicable regulations, including Decree 219/2025/NĐ-CP and Vietnam's immigration-law framework. It flags issues such as qualification or experience mismatches before filing.</p>
+                </div>
+                <div class="case-list-panel">
+                    <div class="case-list-label">FORM FIDELITY BASELINE</div>
+                    <ul>
+                        <li>Work permits: Forms 01/PLI and 11/PLI</li>
+                        <li>Visa &amp; TRC: NA1, NA2, NA5, NA6, NA7, NA8</li>
+                        <li>DOCX-to-PDF field consistency checks</li>
+                        <li>Machine-readable fidelity report</li>
+                    </ul>
                 </div>
             </section>
 
-            <!-- 8. OUTCOME & RESULTS -->
-            <section style="margin-bottom: var(--space-96); background: var(--surface-100); padding: var(--space-48); border-radius: 8px; border: 1px solid var(--border-active);">
-                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 07. RESULTS & OUTCOME</div>
-                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-24);">ZERO MISSED PERMIT EXPIRATIONS</h2>
-
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-24);">
-                    <div>
-                        <div style="font-family: var(--font-heading); font-size: 2rem; color: var(--accent-lime);">12</div>
-                        <div style="font-size: 0.85rem; color: var(--text-mid);">Active Compliance Modules</div>
-                    </div>
-                    <div>
-                        <div style="font-family: var(--font-heading); font-size: 2rem; color: var(--accent-cyan);">100%</div>
-                        <div style="font-size: 0.85rem; color: var(--text-mid);">Automated Expiry SLA Reminders</div>
-                    </div>
-                    <div>
-                        <div style="font-family: var(--font-heading); font-size: 2rem; color: var(--accent-orange);">&lt; 2s</div>
-                        <div style="font-size: 0.85rem; color: var(--text-mid);">Passport OCR Extraction Speed</div>
-                    </div>
+            <section class="case-section">
+                <div class="case-eyebrow">// 06. SECURITY &amp; PRODUCTION</div>
+                <h2>BUILT TO HANDLE SENSITIVE CASE DATA.</h2>
+                <div class="case-capability-grid case-capability-grid--four">
+                    <article><h3>File Access Control</h3><p>Authenticated file delivery replaces public static uploads, reducing IDOR exposure and protecting identity documents.</p></article>
+                    <article><h3>Defensive HTTP</h3><p>Strict CSP, one-year HSTS with subdomains, clickjacking and MIME protections, fail-closed CORS, and rate limiting.</p></article>
+                    <article><h3>Release Gates</h3><p>Automated security, i18n, route-contract, SEO, and Playwright E2E checks run before production builds.</p></article>
+                    <article><h3>Cloud Operations</h3><p>Linux VPS deployment behind Nginx reverse proxy with HTTPS certificates and automated renewal.</p></article>
                 </div>
             </section>
 
-            <!-- 9. LESSONS LEARNED -->
-            <section style="margin-bottom: var(--space-96);">
-                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16);">// 08. LESSONS LEARNED</div>
-                <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--text-white); margin-bottom: var(--space-24);">SERVICE WORKFLOW LESSONS</h2>
-                <p style="font-size: 1.1rem; color: var(--text-high); max-width: 850px; line-height: 1.8;">
-                    Advisory services require proactive SLA tracking rather than reactive customer support. By embedding automated expiration timers directly into the state machine, TT25 eliminated missed permit renewals entirely.
-                </p>
+            <section class="case-section case-outcome">
+                <div class="case-eyebrow">// 07. DELIVERED OUTCOME</div>
+                <h2>FROM DIGITAL PRESENCE TO DAILY OPERATIONS.</h2>
+                <div class="case-outcome-grid">
+                    <div><strong>3</strong><span>languages served</span></div>
+                    <div><strong>5</strong><span>standard workflow stages</span></div>
+                    <div><strong>1</strong><span>connected service platform</span></div>
+                </div>
+                <p>TT25 now has a connected product foundation spanning customer acquisition, editorial control, legal-service execution, compliance review, security, and production operations.</p>
             </section>
 
-            <!-- 10. NEXT CASE STUDY FOOTER NAVIGATION -->
-            <section style="border-top: 1px solid var(--border-subtle); padding-top: var(--space-48); margin-bottom: var(--space-64);">
-                <div style="display: flex; justify-between; align-items: center;">
-                    <div style="font-size: 0.8rem; color: var(--text-mid);">BACK TO SOLUTIONS PLATFORM</div>
-                    <a href="../../case-studies.html" style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--accent-lime);">SOLUTIONS & CASE STUDIES →</a>
-                </div>
+            <section class="case-next">
+                <span>EXPLORE THE LIVE BUSINESS</span>
+                <a href="https://tt25.vn" target="_blank" rel="noopener noreferrer">TT25.VN ↗</a>
             </section>
         </main>
 
         <footer class="footer">
-            <div class="footer-text">
-                SYS.BUILD: 2026 // Case Study by <span>gndme</span> (/ˈɡraʊmi/)
-            </div>
+            <div class="footer-text">SYS.BUILD: 2026 // Case Study by <span>gndme</span> (/ˈɡraʊmi/)</div>
             <div class="footer-links">
                 <a href="../../brands.html">Brands</a>
                 <a href="../../case-studies.html">Case Studies</a>
                 <a href="../../journal.html">Journal</a>
                 <a href="../../about.html">About</a>
-                <a href="https://github.com/gndme" target="_blank">GitHub</a>
+                <a href="https://github.com/gndme" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
         </footer>
     </div>

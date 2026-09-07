@@ -10,7 +10,7 @@ This document outlines the product evolution and architectural milestones for `g
 - [x] Establish flagship repository structure, governance templates, and documentation suite.
 - [x] Complete Design System & UI/UX QA Hub (`design-system.html`).
 - [x] Publish FIXORY Lab, TUCTAC Studio, and Arsvix brand profiles.
-- [x] Publish Tan Thanh Dung Plastic multi-project case study & TT25 Consulting case study.
+- [x] Publish TÂN THANH DUNG multi-project case study & TT25 Investment Consulting case study.
 - [ ] Finalize custom domain mapping (`gndme.ai` / `gndme.tech`).
 
 ---

@@ -54,19 +54,19 @@
             </section>
 
             <!-- Tag Filter Bar -->
-            <div style="display: flex; gap: var(--space-12); flex-wrap: wrap; margin-bottom: var(--space-64); font-size: 0.8rem;">
-                <span style="background: var(--surface-100); border: 1px solid var(--border-active); padding: 6px 14px; border-radius: 20px; color: var(--accent-lime);">#ALL (04)</span>
-                <span style="background: var(--surface-100); padding: 6px 14px; border-radius: 20px; color: var(--text-mid);">#workflow</span>
-                <span style="background: var(--surface-100); padding: 6px 14px; border-radius: 20px; color: var(--text-mid);">#ai</span>
-                <span style="background: var(--surface-100); padding: 6px 14px; border-radius: 20px; color: var(--text-mid);">#fixory</span>
-                <span style="background: var(--surface-100); padding: 6px 14px; border-radius: 20px; color: var(--text-mid);">#manufacturing</span>
+            <div class="journal-filters" role="group" aria-label="Filter journal entries">
+                <button class="journal-filter is-active" type="button" data-filter="all" aria-pressed="true">#ALL (04)</button>
+                <button class="journal-filter" type="button" data-filter="workflow" aria-pressed="false">#workflow</button>
+                <button class="journal-filter" type="button" data-filter="ai" aria-pressed="false">#ai</button>
+                <button class="journal-filter" type="button" data-filter="fixory" aria-pressed="false">#fixory</button>
+                <button class="journal-filter" type="button" data-filter="manufacturing" aria-pressed="false">#manufacturing</button>
             </div>
 
             <!-- Journal Entries List -->
             <section style="display: flex; flex-direction: column; gap: var(--space-32); margin-bottom: var(--space-96);">
                 
                 <!-- Entry 1 -->
-                <article style="background: var(--surface-100); padding: var(--space-32); border-radius: 8px; transition: transform 0.2s;" class="live-module-card">
+                <article style="background: var(--surface-100); padding: var(--space-32); border-radius: 8px; transition: transform 0.2s;" class="live-module-card journal-entry" data-tags="workflow fixory">
                     <div style="display: flex; justify-between; align-items: center; font-size: 0.75rem; color: var(--text-mid); margin-bottom: var(--space-12);">
                         <span>2026-07-28 // JOURNAL #04</span>
                         <span style="color: var(--accent-lime);">#workflow · #fixory</span>
@@ -78,12 +78,12 @@
                         Traditional repair management relies on CRUD entries where orders sit passively in a database. FIXORY Lab was re-architected around a Queue-First SLA engine—forcing every incoming device through active status queues and live technician assignments.
                     </p>
                     <div style="font-size: 0.8rem; color: var(--accent-lime);">
-                        READ ENTRY →
+                        NOTE EXCERPT
                     </div>
                 </article>
 
                 <!-- Entry 2 -->
-                <article style="background: var(--surface-100); padding: var(--space-32); border-radius: 8px; transition: transform 0.2s;" class="live-module-card">
+                <article style="background: var(--surface-100); padding: var(--space-32); border-radius: 8px; transition: transform 0.2s;" class="live-module-card journal-entry" data-tags="ai manufacturing">
                     <div style="display: flex; justify-between; align-items: center; font-size: 0.75rem; color: var(--text-mid); margin-bottom: var(--space-12);">
                         <span>2026-07-20 // JOURNAL #03</span>
                         <span style="color: var(--accent-cyan);">#ai · #manufacturing</span>
@@ -95,12 +95,12 @@
                         Deploying computer vision models on cloud APIs fails on 120 RPM conveyor belts due to network jitter. How we trained YOLO models for NVIDIA TensorRT edge devices in Arsvix Vision OS to achieve sub-5ms defect ejection.
                     </p>
                     <div style="font-size: 0.8rem; color: var(--accent-cyan);">
-                        READ ENTRY →
+                        NOTE EXCERPT
                     </div>
                 </article>
 
                 <!-- Entry 3 -->
-                <article style="background: var(--surface-100); padding: var(--space-32); border-radius: 8px; transition: transform 0.2s;" class="live-module-card">
+                <article style="background: var(--surface-100); padding: var(--space-32); border-radius: 8px; transition: transform 0.2s;" class="live-module-card journal-entry" data-tags="manufacturing case-study">
                     <div style="display: flex; justify-between; align-items: center; font-size: 0.75rem; color: var(--text-mid); margin-bottom: var(--space-12);">
                         <span>2026-07-12 // JOURNAL #02</span>
                         <span style="color: var(--accent-orange);">#manufacturing · #case-study</span>
@@ -109,15 +109,15 @@
                         Eliminating Un-Tracked Resin Scrap in Injection Molding
                     </h2>
                     <p style="font-size: 0.95rem; color: var(--text-high); line-height: 1.7; margin-bottom: var(--space-20);">
-                        A deep dive into how Business OS Enterprise Edition digitized raw polymer intake and masterbatch ratio batching for Tan Thanh Dung Plastic to reduce floor material waste by 14%.
+                        A deep dive into how Business OS Enterprise Edition digitized raw polymer intake and masterbatch ratio batching for TÂN THANH DUNG to reduce floor material waste by 14%.
                     </p>
                     <div style="font-size: 0.8rem; color: var(--accent-orange);">
-                        READ ENTRY →
+                        NOTE EXCERPT
                     </div>
                 </article>
 
                 <!-- Entry 4 -->
-                <article style="background: var(--surface-100); padding: var(--space-32); border-radius: 8px; transition: transform 0.2s;" class="live-module-card">
+                <article style="background: var(--surface-100); padding: var(--space-32); border-radius: 8px; transition: transform 0.2s;" class="live-module-card journal-entry" data-tags="workflow philosophy">
                     <div style="display: flex; justify-between; align-items: center; font-size: 0.75rem; color: var(--text-mid); margin-bottom: var(--space-12);">
                         <span>2026-07-01 // JOURNAL #01</span>
                         <span style="color: var(--text-white);">#workflow · #philosophy</span>
@@ -129,7 +129,7 @@
                         Why building enterprise software should start with operational state machines rather than database tables. The foundational philosophy behind all Business OS modules at gndme.
                     </p>
                     <div style="font-size: 0.8rem; color: var(--text-white);">
-                        READ ENTRY →
+                        NOTE EXCERPT
                     </div>
                 </article>
 
