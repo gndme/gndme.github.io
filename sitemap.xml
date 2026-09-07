@@ -62,6 +62,12 @@
 
   <!-- Enterprise Case Studies -->
   <url>
+    <loc>https://gndme.github.io/case-studies/fixory-lab/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
     <loc>https://gndme.github.io/case-studies/tan-thanh-dung/</loc>
     <lastmod>2026-09-07</lastmod>
     <changefreq>weekly</changefreq>

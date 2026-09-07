@@ -606,6 +606,70 @@ button:focus-visible {
     font-style: normal;
 }
 
+.case-brand-panel--fixory {
+    overflow: hidden;
+    border-color: rgba(130, 77, 255, 0.55);
+    background:
+        radial-gradient(circle at 82% 18%, rgba(181, 72, 255, 0.28), transparent 34%),
+        radial-gradient(circle at 18% 82%, rgba(72, 92, 255, 0.22), transparent 38%),
+        linear-gradient(145deg, #171126 0%, #090812 72%);
+    color: var(--text-white);
+    box-shadow: 0 32px 80px rgba(0, 0, 0, 0.55), 0 0 48px rgba(126, 72, 255, 0.14);
+}
+
+.fixory-wordmark {
+    color: var(--text-white);
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-style: italic;
+    letter-spacing: -2px;
+    line-height: 1;
+}
+
+.fixory-wordmark span {
+    color: #8d64ff;
+    font-size: 0.72em;
+}
+
+.fixory-signal {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: var(--space-24) 0;
+}
+
+.fixory-signal i {
+    width: 5px;
+    height: 18px;
+    display: block;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #8d64ff, #d451ff);
+    box-shadow: 0 0 16px rgba(141, 100, 255, 0.65);
+}
+
+.fixory-signal i:nth-child(2),
+.fixory-signal i:nth-child(4) {
+    height: 34px;
+}
+
+.fixory-signal i:nth-child(3) {
+    height: 52px;
+}
+
+.case-brand-panel--fixory .case-brand-statement {
+    border-color: rgba(255, 255, 255, 0.14);
+    color: var(--text-white);
+}
+
+.case-brand-panel--fixory p {
+    color: #a99bc5;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
 .case-facts {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -749,6 +813,27 @@ button:focus-visible {
     background: rgba(212, 255, 0, 0.04);
 }
 
+.case-stepper--eight {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.case-stepper--eight li:nth-child(3) {
+    border-color: var(--border-subtle);
+    background: var(--surface-100);
+}
+
+.case-stepper--eight li:nth-child(5) {
+    border-color: rgba(141, 100, 255, 0.55);
+    background: rgba(141, 100, 255, 0.07);
+}
+
+.case-stepper-note {
+    margin-top: var(--space-16);
+    color: var(--text-mid);
+    font-size: 0.82rem;
+    line-height: 1.65;
+}
+
 .case-stepper span,
 .case-capability-number {
     display: block;
@@ -833,11 +918,29 @@ button:focus-visible {
     margin-top: var(--space-12);
 }
 
+.case-list-panel--purple {
+    border-color: rgba(141, 100, 255, 0.55);
+    background: rgba(141, 100, 255, 0.07);
+}
+
+.case-list-panel--purple .case-list-label {
+    color: #a886ff;
+}
+
 .case-outcome {
     padding: var(--space-48);
     border: 1px solid var(--border-active);
     border-radius: 12px;
     background: radial-gradient(circle at 100% 0, rgba(212, 255, 0, 0.08), transparent 42%), var(--surface-100);
+}
+
+.case-outcome--purple {
+    border-color: rgba(141, 100, 255, 0.55);
+    background: radial-gradient(circle at 100% 0, rgba(141, 100, 255, 0.14), transparent 42%), var(--surface-100);
+}
+
+.case-outcome--purple .case-outcome-grid strong {
+    color: #a886ff;
 }
 
 .case-outcome-grid {
@@ -919,6 +1022,27 @@ button:focus-visible {
 
 .card-brand-lockup--center img {
     margin: 0 auto;
+}
+
+.card-brand-lockup--fixory {
+    justify-content: center;
+    border-color: rgba(141, 100, 255, 0.4);
+    background:
+        radial-gradient(circle at 80% 20%, rgba(181, 72, 255, 0.24), transparent 34%),
+        linear-gradient(135deg, #171126, #090812);
+}
+
+.card-brand-lockup--fixory > span {
+    color: var(--text-white);
+    font-family: var(--font-heading);
+    font-size: clamp(1.55rem, 3vw, 2.2rem);
+    font-style: italic;
+    letter-spacing: -1.5px;
+}
+
+.card-brand-lockup--fixory em {
+    color: #a886ff;
+    font-size: 0.72em;
 }
 
 .case-detail-logo {
@@ -1058,6 +1182,9 @@ button:focus-visible {
     .case-stepper--six {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+    .case-stepper--eight {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
     .case-stepper li,
     .case-stepper li:first-child,
     .case-stepper li:last-child {
@@ -1081,6 +1208,15 @@ button:focus-visible {
     }
     .case-stepper--six li:nth-child(4) {
         border-color: var(--border-active);
+    }
+    .case-stepper--eight li,
+    .case-stepper--eight li:first-child,
+    .case-stepper--eight li:last-child {
+        border: 1px solid var(--border-subtle);
+        border-radius: 0;
+    }
+    .case-stepper--eight li:nth-child(5) {
+        border-color: rgba(141, 100, 255, 0.55);
     }
     .case-outcome-grid--four {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1152,6 +1288,7 @@ button:focus-visible {
         grid-template-columns: 1fr;
     }
     .case-stepper--six,
+    .case-stepper--eight,
     .case-outcome-grid--four {
         grid-template-columns: 1fr;
     }
