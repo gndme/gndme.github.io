@@ -5,18 +5,66 @@
 document.addEventListener('DOMContentLoaded', function() {
     // 1. Custom Cursor & Hover States
     const cursor = document.getElementById('cursor');
-    if (cursor) {
+    const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    if (cursor && finePointer) {
         document.body.classList.add('has-custom-cursor');
-        
-        document.addEventListener('mousemove', function(e) {
-            cursor.style.left = e.clientX + 'px';
-            cursor.style.top = e.clientY + 'px';
+
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const interactiveSelector = 'a[href], button:not([disabled]), input, select, textarea, summary, [role="button"], [tabindex]:not([tabindex="-1"])';
+        let targetX = -100;
+        let targetY = -100;
+        let currentX = -100;
+        let currentY = -100;
+        let animationFrame = 0;
+        let hasMoved = false;
+
+        function renderCursor() {
+            const easing = reducedMotion ? 1 : 0.24;
+            currentX += (targetX - currentX) * easing;
+            currentY += (targetY - currentY) * easing;
+            cursor.style.transform = 'translate3d(' + currentX + 'px, ' + currentY + 'px, 0) translate(-50%, -50%)';
+
+            if (!reducedMotion && (Math.abs(targetX - currentX) > 0.1 || Math.abs(targetY - currentY) > 0.1)) {
+                animationFrame = window.requestAnimationFrame(renderCursor);
+            } else {
+                animationFrame = 0;
+            }
+        }
+
+        function queueCursorRender() {
+            if (!animationFrame) animationFrame = window.requestAnimationFrame(renderCursor);
+        }
+
+        document.addEventListener('pointermove', function(e) {
+            targetX = e.clientX;
+            targetY = e.clientY;
+            hasMoved = true;
+            cursor.classList.add('is-visible');
+            queueCursorRender();
+        }, { passive: true });
+
+        document.addEventListener('pointerover', function(e) {
+            cursor.classList.toggle('hovering', Boolean(e.target.closest(interactiveSelector)));
         });
 
-        const interactiveElements = document.querySelectorAll('a, button, .os-card, .live-module-card, input');
-        interactiveElements.forEach(function(el) {
-            el.addEventListener('mouseenter', function() { cursor.classList.add('hovering'); });
-            el.addEventListener('mouseleave', function() { cursor.classList.remove('hovering'); });
+        document.addEventListener('pointerdown', function() {
+            cursor.classList.add('is-pressed');
+        });
+
+        document.addEventListener('pointerup', function() {
+            cursor.classList.remove('is-pressed');
+        });
+
+        document.addEventListener('pointercancel', function() {
+            cursor.classList.remove('is-pressed');
+        });
+
+        document.documentElement.addEventListener('mouseleave', function() {
+            cursor.classList.remove('is-visible', 'hovering', 'is-pressed');
+        });
+
+        document.documentElement.addEventListener('mouseenter', function() {
+            if (hasMoved) cursor.classList.add('is-visible');
         });
     }
 
