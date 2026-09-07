@@ -555,7 +555,8 @@ button:focus-visible {
 }
 
 .case-brand-panel {
-    align-self: stretch;
+    width: 100%;
+    align-self: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
