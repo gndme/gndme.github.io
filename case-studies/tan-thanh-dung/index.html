@@ -4,32 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TÂN THANH DUNG — Plastic Manufacturing OS | gndme</title>
-    <meta name="description" content="How Lợi Mai Công Trung (gndme) designed and shipped TÂN THANH DUNG's public website and PlasticApp manufacturing operating system—from B2B orders and dual-warehouse inventory to BOM, 10 injection-molding machines, KCS, debt control, and M-Invoice.">
+    <meta name="description" content="How gndme built TÂN THANH DUNG's public website and nine-module PlasticApp for B2B orders, inventory, BOM, production, KCS and accounting.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://gndme.github.io/case-studies/tan-thanh-dung/">
+    <meta property="og:title" content="TÂN THANH DUNG Plastic Manufacturing OS | gndme">
+    <meta property="og:description" content="A nine-module manufacturing system connecting B2B orders, two warehouses, BOM, ten injection-molding machines, KCS and accounting.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://gndme.github.io/case-studies/tan-thanh-dung/">
+    <meta property="og:site_name" content="gndme">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="TÂN THANH DUNG Plastic Manufacturing OS | gndme">
+    <meta name="twitter:description" content="How gndme built a public website and nine-module PlasticApp for TÂN THANH DUNG.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles/style.css?v=4.4.1">
+    <link rel="stylesheet" href="../../styles/style.css?v=4.5.0">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "CreativeWork",
-      "name": "TÂN THANH DUNG — Plastic Manufacturing Operating System",
-      "url": "https://gndme.github.io/case-studies/tan-thanh-dung/",
-      "description": "A connected public website and manufacturing operating system for B2B orders, inventory, BOM, production, KCS, costing, debt control, and electronic invoicing.",
-      "dateCreated": "2026-01",
-      "datePublished": "2026-04",
-      "about": {
-        "@type": "Organization",
-        "name": "TÂN THANH DUNG",
-        "url": "https://tanthanhdung.vn"
-      },
-      "creator": {
-        "@type": "Person",
-        "name": "Lợi Mai Công Trung",
-        "alternateName": ["gndme", "TrungLMC"],
-        "url": "https://gndme.github.io/"
-      }
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://gndme.github.io/case-studies/tan-thanh-dung/#article",
+          "headline": "TÂN THANH DUNG — Plastic Manufacturing Operating System",
+          "url": "https://gndme.github.io/case-studies/tan-thanh-dung/",
+          "mainEntityOfPage": "https://gndme.github.io/case-studies/tan-thanh-dung/",
+          "description": "A connected public website and manufacturing operating system for B2B orders, inventory, BOM, production, KCS, costing, debt control, and electronic invoicing.",
+          "image": "https://gndme.github.io/assets/images/case-studies/tan-thanh-dung/public-website.webp",
+          "datePublished": "2026-09-07",
+          "dateModified": "2026-09-07",
+          "articleSection": "Case Studies",
+          "author": { "@id": "https://gndme.github.io/#person" },
+          "publisher": { "@id": "https://gndme.github.io/#person" },
+          "about": { "@id": "https://tanthanhdung.vn/#organization" },
+          "isPartOf": { "@id": "https://gndme.github.io/#website" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://gndme.github.io/#person",
+          "name": "Lợi Mai Công Trung",
+          "alternateName": ["gndme", "TrungLMC", "Loi Mai Cong Trung"],
+          "url": "https://gndme.github.io/about.html"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://tanthanhdung.vn/#organization",
+          "name": "TÂN THANH DUNG",
+          "url": "https://tanthanhdung.vn"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://gndme.github.io/case-studies/tan-thanh-dung/#breadcrumb",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://gndme.github.io/" },
+            { "@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://gndme.github.io/case-studies.html" },
+            { "@type": "ListItem", "position": 3, "name": "TÂN THANH DUNG", "item": "https://gndme.github.io/case-studies/tan-thanh-dung/" }
+          ]
+        }
+      ]
     }
     </script>
 </head>
@@ -61,6 +93,9 @@
         </header>
 
         <main>
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <ol><li><a href="../../index.html">Home</a></li><li><a href="../../case-studies.html">Case Studies</a></li><li aria-current="page">TÂN THANH DUNG</li></ol>
+            </nav>
             <section class="case-hero case-hero--split">
                 <div>
                     <div class="case-eyebrow">// PLASTIC MANUFACTURING OPERATING SYSTEM</div>
@@ -79,6 +114,12 @@
                     <div class="case-brand-statement">FROM ORDER.<br>TO FACTORY FLOOR.</div>
                     <p>Digital operations for real plastic manufacturing.</p>
                 </div>
+            </section>
+
+            <section class="answer-panel" aria-labelledby="ttd-answer">
+                <div class="case-eyebrow">// CASE STUDY ANSWER</div>
+                <h2 id="ttd-answer">WHAT DID GNDME BUILD FOR TÂN THANH DUNG?</h2>
+                <p>gndme built TÂN THANH DUNG's public website and PlasticApp, a nine-module manufacturing operating system connecting B2B orders, two warehouses, BOM material planning, ten injection-molding machines, KCS, costing, debt control, and electronic invoicing. The workflow replaced fragmented paper tracking and reduced routine order-progress checks from 15–20 minutes to under three minutes.</p>
             </section>
 
             <dl class="case-facts" aria-label="Project facts">

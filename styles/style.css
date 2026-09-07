@@ -600,6 +600,48 @@ button:focus-visible {
 /* =========================================
    CASE STUDY SYSTEM
    ========================================= */
+.breadcrumbs {
+    padding-top: var(--space-40);
+    color: var(--text-mid);
+    font-size: 0.78rem;
+}
+
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumbs li + li::before {
+    content: "/";
+    margin-right: 8px;
+    color: var(--text-dark);
+}
+
+.breadcrumbs a {
+    color: var(--text-high);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 4px;
+    transition: color 0.2s, text-decoration-color 0.2s;
+}
+
+.breadcrumbs a:hover {
+    color: var(--accent-lime);
+    text-decoration-color: currentColor;
+}
+
+.breadcrumbs [aria-current="page"] {
+    color: var(--accent-lime);
+}
+
+.breadcrumbs + .case-hero {
+    padding-top: var(--space-48);
+}
+
 .case-hero {
     padding: var(--space-96) 0 var(--space-64);
 }
@@ -629,6 +671,40 @@ button:focus-visible {
     flex-wrap: wrap;
     gap: var(--space-12);
     margin-top: var(--space-32);
+}
+
+.answer-panel {
+    margin-bottom: var(--space-32);
+    padding: clamp(24px, 4vw, 40px);
+    border: 1px solid var(--border-active);
+    border-left: 4px solid var(--accent-lime);
+    border-radius: 8px;
+    background: linear-gradient(120deg, rgba(212, 255, 0, 0.075), rgba(255, 255, 255, 0.025));
+}
+
+.answer-panel .case-eyebrow {
+    margin-bottom: var(--space-12);
+}
+
+.answer-panel h2 {
+    max-width: 920px;
+    margin-bottom: var(--space-16);
+    font-family: var(--font-heading);
+    font-size: clamp(1.45rem, 3vw, 2.2rem);
+    line-height: 1.1;
+}
+
+.answer-panel p {
+    max-width: 920px;
+    color: var(--text-high);
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.answer-panel p + p {
+    margin-top: var(--space-20);
+    padding-top: var(--space-20);
+    border-top: 1px solid var(--border-subtle);
 }
 
 .case-button {
@@ -1450,6 +1526,12 @@ button:focus-visible {
     }
     .case-hero {
         padding: var(--space-64) 0 var(--space-48);
+    }
+    .breadcrumbs {
+        padding-top: var(--space-24);
+    }
+    .breadcrumbs + .case-hero {
+        padding-top: var(--space-32);
     }
     .case-brand-panel,
     .case-outcome,
