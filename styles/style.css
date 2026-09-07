@@ -318,6 +318,23 @@ button:focus-visible {
     margin-bottom: var(--space-120);
 }
 
+.projects-grid--aligned .os-card > div:first-child {
+    display: grid;
+    grid-template-rows: 40px 104px 66px auto;
+    row-gap: var(--space-16);
+}
+
+.projects-grid--aligned .os-card-header,
+.projects-grid--aligned .card-brand-lockup,
+.projects-grid--aligned .os-name,
+.projects-grid--aligned .os-desc {
+    margin-bottom: 0;
+}
+
+.projects-grid--aligned .os-card-header {
+    align-items: flex-start;
+}
+
 .os-card {
     background: var(--surface-100);
     border: 1px solid var(--border-subtle);
