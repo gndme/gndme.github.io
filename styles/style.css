@@ -318,6 +318,10 @@ button:focus-visible {
     margin-bottom: var(--space-120);
 }
 
+.projects-grid--case-studies {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .projects-grid--aligned .os-card > div:first-child {
     display: grid;
     grid-template-rows: 40px 104px 66px auto;
@@ -687,6 +691,47 @@ button:focus-visible {
     letter-spacing: 1px;
 }
 
+.case-brand-panel--tuctac {
+    overflow: hidden;
+    border-color: rgba(168, 255, 85, 0.42);
+    background:
+        radial-gradient(circle at 82% 18%, rgba(168, 255, 85, 0.14), transparent 34%),
+        linear-gradient(145deg, #101313 0%, #050606 72%);
+    color: var(--text-white);
+    box-shadow: 0 32px 80px rgba(0, 0, 0, 0.58), 0 0 48px rgba(168, 255, 85, 0.08);
+}
+
+.tuctac-wordmark {
+    color: var(--text-white);
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3.6rem);
+    font-style: italic;
+    letter-spacing: -2.5px;
+    line-height: 0.92;
+}
+
+.tuctac-wordmark span {
+    display: block;
+    margin-top: 8px;
+    color: #a8ff55;
+    font-size: 0.42em;
+    letter-spacing: 5px;
+}
+
+.case-brand-panel--tuctac .case-brand-statement {
+    margin-top: var(--space-32);
+    border-color: rgba(255, 255, 255, 0.14);
+    color: var(--text-white);
+}
+
+.case-brand-panel--tuctac p {
+    color: #aab6ae;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-style: normal;
+    letter-spacing: 0.5px;
+}
+
 .case-facts {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -944,6 +989,15 @@ button:focus-visible {
     color: #a886ff;
 }
 
+.case-list-panel--tuctac {
+    border-color: rgba(168, 255, 85, 0.5);
+    background: rgba(168, 255, 85, 0.055);
+}
+
+.case-list-panel--tuctac .case-list-label {
+    color: #a8ff55;
+}
+
 .case-outcome {
     padding: var(--space-48);
     border: 1px solid var(--border-active);
@@ -958,6 +1012,15 @@ button:focus-visible {
 
 .case-outcome--purple .case-outcome-grid strong {
     color: #a886ff;
+}
+
+.case-outcome--tuctac {
+    border-color: rgba(168, 255, 85, 0.5);
+    background: radial-gradient(circle at 100% 0, rgba(168, 255, 85, 0.11), transparent 42%), var(--surface-100);
+}
+
+.case-outcome--tuctac .case-outcome-grid strong {
+    color: #a8ff55;
 }
 
 .case-outcome-grid {
@@ -1017,6 +1080,17 @@ button:focus-visible {
     font-size: clamp(1.4rem, 3vw, 2.5rem);
 }
 
+.case-next--links > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: var(--space-12) var(--space-32);
+}
+
+.case-next--links a {
+    font-size: clamp(1.15rem, 2.2vw, 1.8rem);
+}
+
 .card-brand-lockup {
     width: 100%;
     height: 104px;
@@ -1060,6 +1134,28 @@ button:focus-visible {
 .card-brand-lockup--fixory em {
     color: #a886ff;
     font-size: 0.72em;
+}
+
+.card-brand-lockup--tuctac {
+    justify-content: center;
+    border-color: rgba(168, 255, 85, 0.36);
+    background:
+        radial-gradient(circle at 78% 18%, rgba(168, 255, 85, 0.13), transparent 38%),
+        linear-gradient(135deg, #111414, #050606);
+}
+
+.card-brand-lockup--tuctac > span {
+    color: var(--text-white);
+    font-family: var(--font-heading);
+    font-size: clamp(1.5rem, 3vw, 2.15rem);
+    font-style: italic;
+    letter-spacing: -1.5px;
+}
+
+.card-brand-lockup--tuctac em {
+    color: #a8ff55;
+    font-size: 0.56em;
+    letter-spacing: 2px;
 }
 
 .case-detail-logo {
@@ -1312,6 +1408,10 @@ button:focus-visible {
     .case-next {
         align-items: flex-start;
         flex-direction: column;
+    }
+
+    .case-next--links > div {
+        justify-content: flex-start;
     }
 }
 
