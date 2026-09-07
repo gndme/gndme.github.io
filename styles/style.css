@@ -591,6 +591,21 @@ button:focus-visible {
     font-style: italic;
 }
 
+.case-brand-panel--ttd img {
+    width: min(100%, 330px);
+}
+
+.case-brand-panel--ttd .case-brand-statement {
+    color: #001849;
+}
+
+.case-brand-panel--ttd p {
+    color: #33516e;
+    font-family: var(--font-mono);
+    font-size: 0.86rem;
+    font-style: normal;
+}
+
 .case-facts {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -720,6 +735,20 @@ button:focus-visible {
     background: rgba(212, 255, 0, 0.04);
 }
 
+.case-stepper--six {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.case-stepper--six li:nth-child(3) {
+    border-color: var(--border-subtle);
+    background: var(--surface-100);
+}
+
+.case-stepper--six li:nth-child(4) {
+    border-color: var(--border-active);
+    background: rgba(212, 255, 0, 0.04);
+}
+
 .case-stepper span,
 .case-capability-number {
     display: block;
@@ -816,6 +845,10 @@ button:focus-visible {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--space-24);
     margin: var(--space-32) 0;
+}
+
+.case-outcome-grid--four {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .case-outcome-grid div {
@@ -1022,6 +1055,9 @@ button:focus-visible {
     .case-stepper {
         grid-template-columns: 1fr;
     }
+    .case-stepper--six {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
     .case-stepper li,
     .case-stepper li:first-child,
     .case-stepper li:last-child {
@@ -1036,6 +1072,18 @@ button:focus-visible {
     .case-stepper li:last-child {
         border-bottom: 1px solid var(--border-subtle);
         border-radius: 0 0 8px 8px;
+    }
+    .case-stepper--six li,
+    .case-stepper--six li:first-child,
+    .case-stepper--six li:last-child {
+        border: 1px solid var(--border-subtle);
+        border-radius: 0;
+    }
+    .case-stepper--six li:nth-child(4) {
+        border-color: var(--border-active);
+    }
+    .case-outcome-grid--four {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     .case-capability-grid,
     .case-capability-grid--four {
@@ -1101,6 +1149,10 @@ button:focus-visible {
         margin-bottom: var(--space-96);
     }
     .case-outcome-grid {
+        grid-template-columns: 1fr;
+    }
+    .case-stepper--six,
+    .case-outcome-grid--four {
         grid-template-columns: 1fr;
     }
     .case-next {
