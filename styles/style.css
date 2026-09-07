@@ -254,6 +254,28 @@ button:focus-visible {
     text-decoration: underline !important;
 }
 
+.entity-link,
+.entity-link:visited {
+    color: var(--accent-lime);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: color 0.18s ease, text-decoration-color 0.18s ease;
+}
+
+.entity-link--case,
+.entity-link--case:visited {
+    color: var(--accent-cyan);
+}
+
+.entity-link:hover,
+.entity-link:focus-visible {
+    color: var(--text-white);
+    text-decoration-color: var(--text-white);
+}
+
 .primary-nav {
     display: flex;
     gap: var(--space-20);
