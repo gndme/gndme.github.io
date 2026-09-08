@@ -1,0 +1,153 @@
+---
+layout: null
+permalink: "/journal.html"
+section: "journal"
+cursor_label: "JOURNAL"
+status_label: "SYS.LOG // JOURNAL FEED"
+status_value: "PUBLISHED"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal // gndme - Builder Notes & System Design</title>
+    <meta name="description" content="Journal entries by gndme on Business OS Architecture, AI Integration, Workflow Design, and Industrial Systems.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://gndme.github.io/journal.html">
+    <meta property="og:title" content="Builder Journal | gndme">
+    <meta property="og:description" content="Notes by gndme on business operating systems, workflow design, AI integration, and industrial software.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gndme.github.io/journal.html">
+    <meta property="og:site_name" content="gndme">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Builder Journal | gndme">
+    <meta name="twitter:description" content="Notes on business operating systems, workflow design, AI integration, and industrial software.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css?v=4.8.0">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://gndme.github.io/journal.html#webpage",
+          "url": "https://gndme.github.io/journal.html",
+          "name": "Builder Journal",
+          "description": "Notes by gndme on business operating systems, workflow design, AI integration, and industrial software.",
+          "about": { "@id": "https://gndme.github.io/#person" },
+          "mainEntity": { "@id": "https://gndme.github.io/journal.html#list" }
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://gndme.github.io/journal.html#list",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Why Queue-First Architecture Matters in Hardware Repair", "url": "https://gndme.github.io/journal/queue-first-repair-architecture/" },
+            { "@type": "ListItem", "position": 2, "name": "Workflow Before CRUD: The Core Design Principle", "url": "https://gndme.github.io/journal/workflow-before-crud/" }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    {% include site-shell-start.html %}
+
+<!-- Hero -->
+            <section style="padding-top: var(--space-96); padding-bottom: var(--space-48);">
+                <div style="font-size: 0.75rem; color: var(--accent-lime); letter-spacing: 2px; margin-bottom: var(--space-16); text-transform: uppercase;">
+                    // BUILDER NOTES & SYSTEM THOUGHTS
+                </div>
+                <h1 class="hero-title-massive">
+                    BUILDER<br>
+                    <span style="color: var(--accent-lime);">JOURNAL</span>
+                </h1>
+                <p class="hero-subtitle-massive" style="margin-top: var(--space-24);">
+                    Real-world notes on Business OS architecture, workflow engineering, AI integration, and manufacturing telemetry.
+                </p>
+            </section>
+
+            <!-- Tag Filter Bar -->
+            <div class="journal-filters" role="group" aria-label="Filter journal entries">
+                <button class="journal-filter is-active" type="button" data-filter="all" aria-pressed="true">#ALL (04)</button>
+                <button class="journal-filter" type="button" data-filter="workflow" aria-pressed="false">#workflow</button>
+                <button class="journal-filter" type="button" data-filter="ai" aria-pressed="false">#ai</button>
+                <button class="journal-filter" type="button" data-filter="fixory" aria-pressed="false">#fixory</button>
+                <button class="journal-filter" type="button" data-filter="manufacturing" aria-pressed="false">#manufacturing</button>
+            </div>
+
+            <!-- Journal Entries List -->
+            <section style="display: flex; flex-direction: column; gap: var(--space-32); margin-bottom: var(--space-96);">
+                
+                <!-- Entry 1 -->
+                <article style="background: var(--surface-100); padding: var(--space-32); border-radius: 8px; transition: transform 0.2s;" class="live-module-card journal-entry" data-tags="workflow fixory">
+                    <div style="display: flex; justify-between; align-items: center; font-size: 0.75rem; color: var(--text-mid); margin-bottom: var(--space-12);">
+                        <span>2026-07-28 // JOURNAL #04</span>
+                        <span style="color: var(--accent-lime);">#workflow · #fixory</span>
+                    </div>
+                    <h2 style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--text-white); margin-bottom: var(--space-12);">
+                        <a class="journal-entry-title-link" href="journal/queue-first-repair-architecture/">Why Queue-First Architecture Matters in Hardware Repair</a>
+                    </h2>
+                    <p style="font-size: 0.95rem; color: var(--text-high); line-height: 1.7; margin-bottom: var(--space-20);">
+                        Traditional repair management relies on CRUD entries where orders sit passively in a database. FIXORY Lab was re-architected around a Queue-First SLA engine—forcing every incoming device through active status queues and live technician assignments.
+                    </p>
+                    <a class="journal-read-link" href="journal/queue-first-repair-architecture/">READ NOTE →</a>
+                </article>
+
+                <!-- Entry 2 -->
+                <article style="background: var(--surface-100); padding: var(--space-32); border-radius: 8px; transition: transform 0.2s;" class="live-module-card journal-entry" data-tags="ai manufacturing">
+                    <div style="display: flex; justify-between; align-items: center; font-size: 0.75rem; color: var(--text-mid); margin-bottom: var(--space-12);">
+                        <span>2026-07-20 // JOURNAL #03</span>
+                        <span style="color: var(--accent-cyan);">#ai · #manufacturing</span>
+                    </div>
+                    <h2 style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--text-white); margin-bottom: var(--space-12);">
+                        Edge AI vs Cloud Latency on Factory Conveyor Lines
+                    </h2>
+                    <p style="font-size: 0.95rem; color: var(--text-high); line-height: 1.7; margin-bottom: var(--space-20);">
+                        Arsvix is exploring how YOLO and TensorRT edge pipelines can target sub-5ms inspection decisions without depending on cloud round trips.
+                    </p>
+                    <div style="font-size: 0.8rem; color: var(--accent-cyan);">
+                        NOTE EXCERPT
+                    </div>
+                </article>
+
+                <!-- Entry 3 -->
+                <article style="background: var(--surface-100); padding: var(--space-32); border-radius: 8px; transition: transform 0.2s;" class="live-module-card journal-entry" data-tags="manufacturing case-study">
+                    <div style="display: flex; justify-between; align-items: center; font-size: 0.75rem; color: var(--text-mid); margin-bottom: var(--space-12);">
+                        <span>2026-07-12 // JOURNAL #02</span>
+                        <span style="color: var(--accent-orange);">#manufacturing · #case-study</span>
+                    </div>
+                    <h2 style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--text-white); margin-bottom: var(--space-12);">
+                        Eliminating Un-Tracked Resin Scrap in Injection Molding
+                    </h2>
+                    <p style="font-size: 0.95rem; color: var(--text-high); line-height: 1.7; margin-bottom: var(--space-20);">
+                        A design note on digitizing raw polymer intake and masterbatch ratio batching for TÂN THANH DUNG to make material variance visible and reduce untracked floor waste.
+                    </p>
+                    <div style="font-size: 0.8rem; color: var(--accent-orange);">
+                        NOTE EXCERPT
+                    </div>
+                </article>
+
+                <!-- Entry 4 -->
+                <article style="background: var(--surface-100); padding: var(--space-32); border-radius: 8px; transition: transform 0.2s;" class="live-module-card journal-entry" data-tags="workflow philosophy">
+                    <div style="display: flex; justify-between; align-items: center; font-size: 0.75rem; color: var(--text-mid); margin-bottom: var(--space-12);">
+                        <span>2026-07-01 // JOURNAL #01</span>
+                        <span style="color: var(--text-white);">#workflow · #philosophy</span>
+                    </div>
+                    <h2 style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--text-white); margin-bottom: var(--space-12);">
+                        <a class="journal-entry-title-link" href="journal/workflow-before-crud/">Workflow Before CRUD: The Core Design Principle</a>
+                    </h2>
+                    <p style="font-size: 0.95rem; color: var(--text-high); line-height: 1.7; margin-bottom: var(--space-20);">
+                        Why building enterprise software should start with operational state machines rather than database tables. The foundational philosophy behind all Business OS modules at gndme.
+                    </p>
+                    <a class="journal-read-link" href="journal/workflow-before-crud/">READ NOTE →</a>
+                </article>
+
+            </section>
+
+    {% include site-shell-end.html %}
+</body>
+</html>

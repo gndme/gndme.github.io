@@ -214,6 +214,10 @@ button:focus-visible {
     border-radius: 50%;
     box-shadow: 0 0 10px var(--accent-lime);
 }
+.status-dot--cyan {
+    background-color: var(--accent-cyan);
+    box-shadow: 0 0 10px var(--accent-cyan);
+}
 .status-badge {
     color: var(--accent-lime);
     font-weight: bold;

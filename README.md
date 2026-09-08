@@ -1,83 +1,51 @@
-# gndme // System Architecture & Brand Engineering Hub
+# gndme — Business Operating Systems & Brand Engineering
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-lime.svg)](LICENSE)
-[![Status: Pre-Release Active Dev](https://img.shields.io/badge/Status-Pre--Release_Active_Dev-00E5FF.svg)](https://gndme.github.io)
-[![Version: v0.6.0](https://img.shields.io/badge/Version-v0.6.0-D4FF00.svg)](CHANGELOG.md)
+Public systems architecture portfolio of **Lợi Mai Công Trung (gndme)**.
 
----
+[Live site](https://gndme.github.io/) · [Brands](https://gndme.github.io/brands.html) · [Case studies](https://gndme.github.io/case-studies.html) · [Journal](https://gndme.github.io/journal.html)
 
-## 1. Overview
+## Scope
 
-**`gndme.github.io`** is the public engineering portfolio of **gndme** (Lợi Mai Công Trung).
+The portfolio documents workflow-first operating systems and technical decisions across repair, niche commerce, manufacturing, and legal-service operations. It also connects the gndme identity with FIXORY Lab, TUCTAC Studio, Arsvix, TÂN THANH DUNG, and TT25 Investment Consulting.
 
-It documents system architecture, technical case studies, engineering decisions, and digital products built across multiple tech brands and enterprise projects.
+## Repository model
 
----
+The repository uses GitHub Pages' native Jekyll build instead of committing generated output or adding an unnecessary application framework.
 
-## 2. Architecture
-
-The ecosystem operates on a **2-Tier Internet Infrastructure**:
-* **Tier 1 (Architecture Hub)**: `gndme.github.io` — Public technical case profiles, design tokens, and enterprise case studies served via GitHub Pages Edge CDN.
-* **Tier 2 (Production Domains)**: Live operational platforms (`https://fixorylab.vn`, `https://tuctac.net`, `https://tanthanhdung.vn`, `https://tt25.vn`).
-
----
-
-## 3. Project Structure
+- `pages/` contains public page sources with explicit permalinks.
+- `_includes/` contains the shared navigation, status shell, and footer.
+- `assets/`, `styles/`, and `scripts/` contain runtime assets.
+- `docs/` contains engineering and contribution documentation.
+- Public URLs remain stable even though source files are grouped under `pages/`.
 
 ```text
 gndme.github.io/
-├── .github/              # Issue/PR Templates & Repository Governance
-├── docs/                 # Architectural Specifications (Architecture, Design System, UI QA, Roadmap)
-├── content/              # Structured JSON/MD Datasets (brands, case-studies)
-├── assets/               # High-Resolution Visual Assets & Logos (brands, case-studies, ui)
-├── styles/               # Design System CSS Engine (style.css)
-├── scripts/              # Standalone JavaScript Engine (script.js)
-├── brands/               # Brand Technical Profiles (fixory-lab, tuctac-studio, arsvix)
-├── case-studies/         # Enterprise Case Studies (tan-thanh-dung, tt25)
-├── index.html            # Personal Identity & Architecture Hub
-├── brands.html           # Brands Founded Hub
-├── case-studies.html     # Enterprise Case Studies Hub
-├── journal.html          # Architect Essays & Notes Hub
-├── about.html            # Profile & Technical Stack
-├── design-system.html    # Design System & UI/UX QA Hub
-├── .nojekyll             # Bypass Jekyll Static Delivery Directive
-├── sitemap.xml           # Structured XML Sitemap
-├── robots.txt            # Search Engine Directives
-├── CHANGELOG.md          # Honest Versioning History (v0.1.0 -> v0.6.0)
-├── SECURITY.md           # Security Policy & Directives
-└── LICENSE               # MIT License 2026
+├── .github/          # Repository governance
+├── _includes/        # Shared site shell
+├── assets/           # Images and brand assets
+├── docs/             # Engineering documentation
+├── pages/            # Public page sources and route content
+├── scripts/          # Browser interactions
+├── styles/           # Production stylesheet
+├── _config.yml       # GitHub Pages / Jekyll configuration
+├── robots.txt
+├── sitemap.xml
+├── README.md
+├── SECURITY.md
+├── CHANGELOG.md
+└── LICENSE
 ```
 
----
+## Publishing
 
-## 4. Development Workflow
+Commits to `main` are built and published by GitHub Pages. Every page declares an explicit `permalink`, preventing repository organization changes from altering canonical public URLs.
 
-Our engineering process enforces a strict **Documentation-First** philosophy:
+## Engineering principles
 
-```text
-Documentation First ──► Architecture ──► Implementation ──► QA Protocol ──► Release
-```
-
-1. **Documentation First**: Define project scope, requirements, and specifications before writing code.
-2. **Architecture**: Design state machines, data schemas, and API contracts.
-3. **Implementation**: Build using strict Design System tokens (8px grid spacing, HSL color scale).
-4. **QA Protocol**: Verify layout, typography, component states, and accessibility across all viewports.
-5. **Release**: Issue semantically versioned releases logged in `CHANGELOG.md`.
-
----
-
-## 5. Roadmap & Release Progress
-
-### Version Milestone Tracker
-- [x] **v0.1.0**: Repository initialized & setup
-- [x] **v0.2.0**: Mission Control Homepage
-- [x] **v0.3.0**: Brands Hub & Technical Profiles (`fixory-lab`, `tuctac-studio`, `arsvix`)
-- [x] **v0.4.0**: Enterprise Case Studies Hub (`tan-thanh-dung`, `tt25`)
-- [x] **v0.5.0**: Journal Engine (`journal.html`)
-- [x] **v0.6.0**: Design System & UI/UX QA Hub (`design-system.html`)
-- [ ] **v0.7.0**: Full Responsive Audit & Lighthouse Performance Optimizations
-- [ ] 🏁 **v1.0.0**: First Public Stable Release (Custom Domain & Official Launch)
-
----
+- Model operational states and transitions before CRUD screens.
+- Keep entity names, canonical URLs, structured data, and visible copy consistent.
+- Reuse the shared shell instead of duplicating navigation and footer markup.
+- Keep private operating data out of public case studies.
+- Add only assets and source files that are used in production.
 
 Distributed under the [MIT License](LICENSE). Copyright © 2026 gndme.

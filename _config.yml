@@ -1,0 +1,20 @@
+title: gndme
+url: https://gndme.github.io
+baseurl: ""
+encoding: utf-8
+timezone: Asia/Ho_Chi_Minh
+
+# GitHub Pages builds the source pages below and honors their explicit
+# permalinks, so public URLs remain stable while repository source stays tidy.
+include:
+  - pages
+
+exclude:
+  - docs
+  - upload
+  - README.md
+  - CHANGELOG.md
+  - SECURITY.md
+  - LICENSE
+  - node_modules
+  - vendor

@@ -1,0 +1,29 @@
+<div id="cursor" class="custom-cursor" aria-hidden="true">
+    <div class="cursor-crosshair"></div>
+    <div class="cursor-label">{{ page.cursor_label | default: "gndme" }}</div>
+</div>
+
+<div class="tech-grid"></div>
+
+<div class="sys-status">
+    <span class="status-dot{% if page.status_tone %} status-dot--{{ page.status_tone }}{% endif %}"></span>
+    <span>{{ page.status_label }}</span>
+    {% if page.status_value %}
+    <span class="status-separator">|</span>
+    <span>STATUS: <span class="status-badge">{{ page.status_value }}</span></span>
+    {% endif %}
+</div>
+
+<div class="container">
+    <header class="navbar">
+        <div class="brand-logo"><a href="/">gndme</a></div>
+        <nav class="primary-nav" aria-label="Primary navigation">
+            <a href="/brands.html" class="nav-link{% if page.section == 'brands' %} active{% endif %}">Brands</a>
+            <a href="/case-studies.html" class="nav-link{% if page.section == 'case-studies' %} active{% endif %}">Case Studies</a>
+            <a href="/journal.html" class="nav-link{% if page.section == 'journal' %} active{% endif %}">Journal</a>
+            <a href="/about.html" class="nav-link{% if page.section == 'about' %} active{% endif %}">About</a>
+            <a href="https://github.com/gndme" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub ↗</a>
+        </nav>
+    </header>
+
+    <main{% if page.main_class %} class="{{ page.main_class }}"{% endif %}>

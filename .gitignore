@@ -19,6 +19,10 @@
 
 # production
 /build
+/_site
+/.jekyll-cache
+/.jekyll-metadata
+/vendor
 
 # misc
 .DS_Store

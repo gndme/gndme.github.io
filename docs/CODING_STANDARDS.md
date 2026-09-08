@@ -1,31 +1,32 @@
-# Coding Standards & Guidelines
+# Coding standards
 
-This document outlines the code conventions, formatting rules, and naming standards enforced across `gndme.github.io`.
+## Source ownership
 
----
+- Edit public content in `pages/`.
+- Edit shared navigation, status, and footer markup in `_includes/`.
+- Keep production CSS in `styles/style.css` and browser behavior in `scripts/script.js`.
+- Add images only under the relevant `assets/images/<domain>/` directory.
 
-## 🎨 CSS Standards
+## Page contracts
 
-1. **Design Tokens First**: Always use custom properties defined in `styles/tokens.css` (e.g., `var(--space-24)`, `var(--accent-lime)`). Never hardcode magic pixel values like `padding: 17px;`.
-2. **Modular Organization**:
-   - `styles/reset.css`: Global resets.
-   - `styles/tokens.css`: Color, font, spacing & radius variables.
-   - `styles/layout.css`: Containers, navbar & grid layouts.
-   - `styles/components.css`: Card, cursor, badge & UI element styles.
-   - `styles/pages.css`: Hero section & page-specific layouts.
-   - `styles/utilities.css`: Atomic utility helper classes.
+Every page source must define:
 
----
+- `layout: null`
+- one unique, stable `permalink`
+- `cursor_label` and `status_label`
+- the correct navigation `section` when applicable
 
-## ⚡ JavaScript Standards
+Every indexable page must keep one title, one meta description, one canonical URL, and one H1. Structured data must use `https://gndme.github.io/#person` for the gndme identity.
 
-1. **ES Module Architecture**: Use native ES module `import` / `export` syntax.
-2. **Modular Single Responsibility**: Keep functions small and contained within dedicated modules (`scripts/cursor.js`, `scripts/navigation.js`, `scripts/scroll.js`).
-3. **No Global Pollution**: Keep variables scoped inside module functions.
+## CSS and JavaScript
 
----
+- Reuse existing custom properties before introducing a new visual value.
+- Keep selectors scoped to a component or page pattern.
+- Preserve keyboard focus, reduced-motion behavior, and mobile layout.
+- Avoid page-specific scripts when the shared interaction bundle can express the behavior.
 
-## 📄 HTML Standards
+## Repository hygiene
 
-1. **Semantic HTML5**: Use proper semantic tags (`<header>`, `<main>`, `<section>`, `<article>`, `<footer>`).
-2. **Accessibility (a11y)**: Every interactive button and image link must have accessible labels or `alt` text.
+- Do not commit generated site output, temporary screenshots, or unused experiments.
+- Remove superseded assets and code after confirming that no public page references them.
+- Keep public claims factual and avoid absolute metrics that cannot be independently supported.
