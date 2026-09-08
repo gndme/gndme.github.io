@@ -18,16 +18,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css?v=4.5.0">
+    <link rel="stylesheet" href="styles/style.css?v=4.6.0">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      "@id": "https://gndme.github.io/journal.html#webpage",
-      "url": "https://gndme.github.io/journal.html",
-      "name": "Builder Journal",
-      "description": "Notes by gndme on business operating systems, workflow design, AI integration, and industrial software.",
-      "about": { "@id": "https://gndme.github.io/#person" }
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://gndme.github.io/journal.html#webpage",
+          "url": "https://gndme.github.io/journal.html",
+          "name": "Builder Journal",
+          "description": "Notes by gndme on business operating systems, workflow design, AI integration, and industrial software.",
+          "about": { "@id": "https://gndme.github.io/#person" },
+          "mainEntity": { "@id": "https://gndme.github.io/journal.html#list" }
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://gndme.github.io/journal.html#list",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Why Queue-First Architecture Matters in Hardware Repair", "url": "https://gndme.github.io/journal/queue-first-repair-architecture/" },
+            { "@type": "ListItem", "position": 2, "name": "Workflow Before CRUD: The Core Design Principle", "url": "https://gndme.github.io/journal/workflow-before-crud/" }
+          ]
+        }
+      ]
     }
     </script>
 </head>
@@ -92,14 +105,12 @@
                         <span style="color: var(--accent-lime);">#workflow · #fixory</span>
                     </div>
                     <h2 style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--text-white); margin-bottom: var(--space-12);">
-                        Why Queue-First Architecture Matters in Hardware Repair
+                        <a class="journal-entry-title-link" href="journal/queue-first-repair-architecture/">Why Queue-First Architecture Matters in Hardware Repair</a>
                     </h2>
                     <p style="font-size: 0.95rem; color: var(--text-high); line-height: 1.7; margin-bottom: var(--space-20);">
                         Traditional repair management relies on CRUD entries where orders sit passively in a database. FIXORY Lab was re-architected around a Queue-First SLA engine—forcing every incoming device through active status queues and live technician assignments.
                     </p>
-                    <div style="font-size: 0.8rem; color: var(--accent-lime);">
-                        NOTE EXCERPT
-                    </div>
+                    <a class="journal-read-link" href="journal/queue-first-repair-architecture/">READ NOTE →</a>
                 </article>
 
                 <!-- Entry 2 -->
@@ -143,14 +154,12 @@
                         <span style="color: var(--text-white);">#workflow · #philosophy</span>
                     </div>
                     <h2 style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--text-white); margin-bottom: var(--space-12);">
-                        Workflow Before CRUD: The Core Design Principle
+                        <a class="journal-entry-title-link" href="journal/workflow-before-crud/">Workflow Before CRUD: The Core Design Principle</a>
                     </h2>
                     <p style="font-size: 0.95rem; color: var(--text-high); line-height: 1.7; margin-bottom: var(--space-20);">
                         Why building enterprise software should start with operational state machines rather than database tables. The foundational philosophy behind all Business OS modules at gndme.
                     </p>
-                    <div style="font-size: 0.8rem; color: var(--text-white);">
-                        NOTE EXCERPT
-                    </div>
+                    <a class="journal-read-link" href="journal/workflow-before-crud/">READ NOTE →</a>
                 </article>
 
             </section>

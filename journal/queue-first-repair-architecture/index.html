@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue-First Architecture for Hardware Repair | gndme</title>
+    <meta name="description" content="How gndme designed FIXORY Lab around active work queues, explicit ownership, SLA risk, diagnostics, and a 12-state repair workflow.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://gndme.github.io/journal/queue-first-repair-architecture/">
+    <meta property="og:title" content="Why Queue-First Architecture Matters in Hardware Repair">
+    <meta property="og:description" content="A field note on turning repair orders into owned, time-aware work at FIXORY Lab.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://gndme.github.io/journal/queue-first-repair-architecture/">
+    <meta property="og:site_name" content="gndme">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Why Queue-First Architecture Matters in Hardware Repair">
+    <meta name="twitter:description" content="How FIXORY Lab turns repair orders into owned, time-aware work with explicit technical states.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/style.css?v=4.6.0">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://gndme.github.io/journal/queue-first-repair-architecture/#article",
+          "headline": "Why Queue-First Architecture Matters in Hardware Repair",
+          "url": "https://gndme.github.io/journal/queue-first-repair-architecture/",
+          "mainEntityOfPage": "https://gndme.github.io/journal/queue-first-repair-architecture/",
+          "description": "How FIXORY Lab uses active work queues, explicit ownership, SLA risk, diagnostics, and a 12-state repair workflow.",
+          "image": "https://gndme.github.io/assets/images/case-studies/fixory-lab/operations-overview.webp",
+          "datePublished": "2026-07-28",
+          "dateModified": "2026-09-08",
+          "articleSection": "Repair Operating Systems",
+          "keywords": ["queue-first architecture", "repair management", "FIXORY Lab", "SLA", "workflow engineering"],
+          "author": { "@id": "https://gndme.github.io/#person" },
+          "publisher": { "@id": "https://gndme.github.io/#person" },
+          "about": { "@id": "https://fixorylab.vn/#organization" },
+          "isPartOf": { "@id": "https://gndme.github.io/#website" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://gndme.github.io/#person",
+          "name": "Lợi Mai Công Trung",
+          "alternateName": ["gndme", "TrungLMC", "Loi Mai Cong Trung"],
+          "url": "https://gndme.github.io/about.html",
+          "sameAs": ["https://github.com/gndme", "https://www.facebook.com/j73117"]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://fixorylab.vn/#organization",
+          "name": "FIXORY Lab",
+          "url": "https://fixorylab.vn"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://gndme.github.io/journal/queue-first-repair-architecture/#breadcrumb",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://gndme.github.io/" },
+            { "@type": "ListItem", "position": 2, "name": "Journal", "item": "https://gndme.github.io/journal.html" },
+            { "@type": "ListItem", "position": 3, "name": "Queue-First Repair Architecture", "item": "https://gndme.github.io/journal/queue-first-repair-architecture/" }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <div id="cursor" class="custom-cursor" aria-hidden="true">
+        <div class="cursor-crosshair"></div>
+        <div class="cursor-label">REPAIR_NOTE</div>
+    </div>
+    <div class="tech-grid"></div>
+    <div class="sys-status">
+        <span class="status-dot"></span>
+        <span>BUILDER JOURNAL // FIXORY LAB</span>
+        <span class="status-separator">|</span>
+        <span>STATUS: <span class="status-badge">PUBLISHED</span></span>
+    </div>
+
+    <div class="container">
+        <header class="navbar">
+            <div class="brand-logo"><a href="../../index.html">gndme</a></div>
+            <nav class="primary-nav" aria-label="Primary navigation">
+                <a href="../../brands.html" class="nav-link">Brands</a>
+                <a href="../../case-studies.html" class="nav-link">Case Studies</a>
+                <a href="../../journal.html" class="nav-link active">Journal</a>
+                <a href="../../about.html" class="nav-link">About</a>
+                <a href="https://github.com/gndme" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub ↗</a>
+            </nav>
+        </header>
+
+        <main class="journal-article">
+            <nav class="breadcrumbs" aria-label="Breadcrumb">
+                <ol><li><a href="../../index.html">Home</a></li><li><a href="../../journal.html">Journal</a></li><li aria-current="page">Queue-First Repair Architecture</li></ol>
+            </nav>
+
+            <header class="journal-article-header">
+                <div class="case-eyebrow">// WORKFLOW · FIXORY LAB · JOURNAL #04</div>
+                <h1>WHY QUEUE-FIRST ARCHITECTURE MATTERS IN HARDWARE REPAIR.</h1>
+                <p class="journal-article-dek">A repair order should never disappear into a database. It should remain visible as owned work—with a next action, a clock, and proof of completion.</p>
+                <div class="journal-meta">
+                    <span>By <strong>Lợi Mai Công Trung (gndme)</strong></span>
+                    <span>Published <time datetime="2026-07-28">July 28, 2026</time></span>
+                    <span>Updated <time datetime="2026-09-08">September 8, 2026</time></span>
+                    <span>9 min read</span>
+                </div>
+            </header>
+
+            <article class="journal-body">
+                <section class="journal-answer" aria-labelledby="queue-answer">
+                    <div class="case-eyebrow">// DIRECT ANSWER</div>
+                    <h2 id="queue-answer">WHAT IS QUEUE-FIRST REPAIR ARCHITECTURE?</h2>
+                    <p>Queue-first repair architecture organizes every device around the next required action instead of leaving orders as passive database records. At FIXORY Lab, each repair carries a technical state, accountable owner, SLA position, required evidence, and customer-facing progress—allowing two labs to coordinate more than 300 devices per month through a controlled 12-state workflow.</p>
+                </section>
+
+                <section>
+                    <h2>THE FAILURE MODE IS NOT MISSING DATA. IT IS INVISIBLE WORK.</h2>
+                    <p>Hardware repair creates a dense chain of small decisions. A device is received with a reported symptom. A technician must reproduce the fault, inspect the hardware, record a diagnosis, estimate parts and labor, wait for approval, perform the repair, measure the result, complete quality control, and hand the device back.</p>
+                    <p>A conventional order table can store all of those fields. It still does not guarantee that the next action happens. When responsibility lives in chat threads or personal memory, an order can be technically present in the system while operationally forgotten. The customer asks for an update, the front desk asks the technician, and the technician reconstructs context from messages and bench notes.</p>
+                    <p>At the scale of two physical labs and more than 300 premium devices per month, that coordination pattern becomes the bottleneck. The problem is not simply data entry. The problem is deciding which work deserves attention now.</p>
+                </section>
+
+                <figure class="journal-proof">
+                    <img src="../../assets/images/case-studies/fixory-lab/operations-overview.webp" alt="FIXORY Lab operations overview showing active repair queues, SLA status, technician assignments, inventory alerts, and diagnostics metrics" width="1440" height="900" loading="eager">
+                    <figcaption>Portfolio view with customer and financial details redacted. The operating surface prioritizes active work, SLA risk, assignments, inventory exceptions, and technical measurements.</figcaption>
+                </figure>
+
+                <section>
+                    <h2>THE QUEUE IS A DECISION SURFACE.</h2>
+                    <p>A queue is more than a filtered list of orders. It is a decision surface that ranks work using operational meaning. An effective repair queue should answer five questions without requiring a meeting:</p>
+                    <ul>
+                        <li>Which devices require action now?</li>
+                        <li>Which cases are approaching or violating their promised SLA?</li>
+                        <li>Who owns the next action?</li>
+                        <li>What dependency is blocking progress?</li>
+                        <li>What evidence is required before the device can move to the next state?</li>
+                    </ul>
+                    <p>This changes the daily experience for both specialists and managers. A technician sees owned bench work instead of browsing the entire order database. Operations sees exceptions and waiting states instead of asking for verbal updates. The system does not replace judgment; it makes the context for judgment visible.</p>
+                </section>
+
+                <section>
+                    <h2>TWELVE STATES CREATE A SHARED LANGUAGE.</h2>
+                    <p>FIXORY Lab uses a controlled 12-state technical workflow. The value is not the number itself. The value is that front desk staff, technicians, quality control, and customers interpret progress through the same canonical model.</p>
+                    <p>Each state represents a meaningful operational condition, not a decorative label. Transitions can require an assigned technician, customer approval, parts allocation, a diagnostic result, a completed checklist, or a quality-control measurement. Exception paths make waiting visible rather than allowing a stalled device to look like active work.</p>
+                    <p>The public tracking experience can then translate internal technical states into language customers understand. Internal detail stays protected, while progress remains transparent. One state machine supports both audiences without exposing customer data or financial information.</p>
+                </section>
+
+                <section>
+                    <h2>SLA CONTROL STARTS BEFORE A DEADLINE IS MISSED.</h2>
+                    <p>A useful SLA system does not merely report late cases. It changes priority while there is still time to act. That requires clocks to be attached to workflow conditions, not just to a generic order creation date.</p>
+                    <p>The queue can distinguish work that is actively being repaired from time spent waiting for customer approval, a replacement component, or another dependency. This prevents a single “age” number from hiding the real reason for delay. Warning thresholds then surface risk before breach, giving the team a chance to reassign work, contact the customer, or resolve a blocker.</p>
+                    <p>Across FIXORY Lab operations, the measured on-time SLA rate is 98.4%. The metric is useful because it is connected to explicit states and timestamps. Without that process context, a percentage can look precise while measuring inconsistent events.</p>
+                </section>
+
+                <section>
+                    <h2>DIAGNOSTICS AND QC MUST BE PART OF THE WORKFLOW.</h2>
+                    <p>Repair completion should not mean that a technician changed a component and clicked “Done.” For gaming mice and mechanical keyboards, the acceptance criteria may include switch behavior, key chatter, scrolling stability, connectivity, polling consistency, or repeated input tests.</p>
+                    <p>Measurements become stronger evidence when they are attached to the device, the repair state, and the responsible action. Parts consumption should follow the same principle. A component issued to an order belongs to the technical history of that device, not to a separate inventory note that must be reconciled later.</p>
+                    <p>This is the broader reason queue-first architecture matters: it connects action, evidence, parts, ownership, and time around one moving unit of work.</p>
+                </section>
+
+                <section>
+                    <h2>DESIGN RULES I WOULD REUSE.</h2>
+                    <div class="journal-principles">
+                        <article><h3>ACTIVE BY DEFAULT</h3><p>Open on actionable work, not a general dashboard full of passive totals.</p></article>
+                        <article><h3>ONE OWNER</h3><p>Every next action needs one accountable role even when several people can view it.</p></article>
+                        <article><h3>VISIBLE WAITING</h3><p>Customer approval, parts, and external dependencies should be explicit states.</p></article>
+                        <article><h3>RISK BEFORE BREACH</h3><p>Show approaching SLA risk early enough for the team to intervene.</p></article>
+                        <article><h3>EVIDENCE TO ADVANCE</h3><p>Require the relevant checklist, measurement, or approval at the transition.</p></article>
+                        <article><h3>SAFE TRANSPARENCY</h3><p>Translate internal progress for customers without exposing protected details.</p></article>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>THE OUTCOME IS OPERATIONAL CALM.</h2>
+                    <p>The most important result of a queue-first system is not another dashboard. It is a shared answer to “what needs attention next?” Devices remain visible, responsibilities remain explicit, and delays become conditions the team can act on rather than surprises discovered through customer follow-up.</p>
+                    <p>That pattern is transferable. Any service operation with incoming cases, specialist work, dependencies, deadlines, and proof of completion can benefit from the same architecture. The exact states will differ. The need to convert passive records into owned work does not.</p>
+                </section>
+
+                <aside class="journal-related" aria-label="Related reading">
+                    <div><div class="case-eyebrow">// RELATED CASE STUDY</div><strong>FIXORY Lab Repair Operating System</strong></div>
+                    <a href="../../case-studies/fixory-lab/">VIEW CASE STUDY →</a>
+                    <a href="../workflow-before-crud/">READ WORKFLOW BEFORE CRUD →</a>
+                </aside>
+            </article>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-text">SYS.BUILD: 2026 // Journal by <span>gndme</span></div>
+            <div class="footer-links">
+                <a href="../../brands.html">Brands</a><a href="../../case-studies.html">Case Studies</a><a href="../../journal.html">Journal</a><a href="../../about.html">About</a>
+            </div>
+        </footer>
+    </div>
+    <script src="../../scripts/script.js?v=4.0.0"></script>
+</body>
+</html>
