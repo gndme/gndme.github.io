@@ -1363,6 +1363,71 @@ button:focus-visible {
     display: none;
 }
 
+.framework-note {
+    max-width: 860px;
+    margin-bottom: var(--space-32);
+    color: var(--text-mid);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.framework-pipeline-shell {
+    padding: var(--space-32);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    background: var(--surface-100);
+}
+
+.framework-pipeline {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr) 24px) minmax(0, 1fr);
+    align-items: center;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.framework-step {
+    min-height: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-16);
+    border: 1px solid var(--border-subtle);
+    border-radius: 6px;
+    background: var(--surface-200);
+}
+
+.framework-step-label {
+    margin-bottom: var(--space-8);
+    color: var(--accent-lime);
+    font-size: 0.72rem;
+}
+
+.framework-step-label--cyan {
+    color: var(--accent-cyan);
+}
+
+.framework-step-label--orange {
+    color: var(--accent-orange);
+}
+
+.framework-step strong {
+    color: var(--text-white);
+    line-height: 1.45;
+}
+
+.framework-step--highlight {
+    border-color: var(--border-active);
+    box-shadow: 0 0 20px var(--accent-lime-glow);
+}
+
+.framework-arrow {
+    color: var(--accent-lime);
+    font-weight: 700;
+}
+
 .journal-entry-title-link {
     color: var(--text-white) !important;
     text-decoration: underline;
@@ -1613,6 +1678,13 @@ button:focus-visible {
     .projects-grid {
         grid-template-columns: 1fr;
     }
+    .framework-pipeline {
+        grid-template-columns: 1fr;
+        gap: var(--space-12);
+    }
+    .framework-arrow {
+        transform: rotate(90deg);
+    }
     .hero-title-massive { font-size: 2.8rem; }
     .hero-subtitle-massive { font-size: 1.1rem; }
     .case-hero--split,
@@ -1768,6 +1840,9 @@ button:focus-visible {
     }
     .journal-article-header h1 {
         letter-spacing: -1.5px;
+    }
+    .framework-pipeline-shell {
+        padding: var(--space-20);
     }
 }
 
